@@ -8,7 +8,6 @@ authors = [
     {name = "painswor28", email = "painswor@nd.edu"},
 ]
 dependencies = [
-    "nbdev>=2.3.12",
     "setuptools>=67.8.0",
 ]
 requires-python = ">=3.10"
