@@ -1,2 +1,0 @@
-[nbdev]
-sbom_analysis = sbom_analysis._modidx:d
