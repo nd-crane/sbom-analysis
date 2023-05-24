@@ -1,0 +1,3 @@
+[submodule "tools-python"]
+	path = tools-python
+	url = git@github.com:spdx/tools-python.git

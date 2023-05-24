@@ -1,0 +1,16 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Peter Ainsworth", email = "painswor@nd.edu"},
+]
+dependencies = [
+    "nbdev>=2.3.12",
+    "kglab>=0.6.6",
+    "spdx-tools @ file:///${PROJECT_ROOT}/tools-python",
+]
+requires-python = ">=3.9"
+license = {text = "MIT"}
