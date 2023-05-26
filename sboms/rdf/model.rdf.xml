@@ -1,87 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-  xmlns:ptr="http://www.w3.org/2009/pointers#"
   xmlns:spdx="http://spdx.org/rdf/terms#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ptr="http://www.w3.org/2009/pointers#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:doap="http://usefulinc.com/ns/doap#"
 >
-  <spdx:Snippet rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Snippet">
-    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
-    <spdx:snippetFromFile>
-      <spdx:File rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource">
-        <spdx:licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
-        <spdx:fileContributor>Open Logic Inc.</spdx:fileContributor>
-        <spdx:fileContributor>Source Auditor Inc.</spdx:fileContributor>
-        <spdx:fileContributor>SPDX Technical Team Members</spdx:fileContributor>
-        <spdx:fileContributor>Black Duck Software In.c</spdx:fileContributor>
-        <spdx:fileContributor>Protecode Inc.</spdx:fileContributor>
-        <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
-        <spdx:checksum>
-          <spdx:Checksum rdf:nodeID="Nd4ed75857f614797a7737becb9235e0d">
-            <spdx:checksumValue>2fd4e1c67a2d28fced849ee1bb76e7391b93eb12</spdx:checksumValue>
-            <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
-          </spdx:Checksum>
-        </spdx:checksum>
-        <spdx:fileName>./src/org/spdx/parser/DOAPProject.java</spdx:fileName>
-        <spdx:copyrightText>Copyright 2010, 2011 Source Auditor Inc.</spdx:copyrightText>
-        <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
-      </spdx:File>
-    </spdx:snippetFromFile>
-    <spdx:copyrightText>Copyright 2008-2010 John Smith</spdx:copyrightText>
-    <spdx:range>
-      <ptr:StartEndPointer rdf:nodeID="Naaaf889b5f494a3388c457f7f40ada30">
-        <ptr:startPointer>
-          <ptr:ByteOffsetPointer rdf:nodeID="N18a25d6b2ec04cf6a9dd95c209c7edf6">
-            <ptr:offset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">310</ptr:offset>
-            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
-          </ptr:ByteOffsetPointer>
-        </ptr:startPointer>
-        <ptr:endPointer>
-          <ptr:ByteOffsetPointer rdf:nodeID="Ndba99a68648f44a58e05368d1c61f01f">
-            <ptr:offset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</ptr:offset>
-            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
-          </ptr:ByteOffsetPointer>
-        </ptr:endPointer>
-      </ptr:StartEndPointer>
-    </spdx:range>
-    <spdx:range>
-      <ptr:StartEndPointer rdf:nodeID="N58e98fa198324a1c8a80130de73c1cc2">
-        <ptr:startPointer>
-          <ptr:LineCharPointer rdf:nodeID="N6c99533c18a1489295bf5ca1b6f51911">
-            <ptr:lineNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ptr:lineNumber>
-            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
-          </ptr:LineCharPointer>
-        </ptr:startPointer>
-        <ptr:endPointer>
-          <ptr:LineCharPointer rdf:nodeID="N1d9c00a912d246dbbcfa28cc1eb7fa99">
-            <ptr:lineNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</ptr:lineNumber>
-            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
-          </ptr:LineCharPointer>
-        </ptr:endPointer>
-      </ptr:StartEndPointer>
-    </spdx:range>
-    <spdx:name>from linux kernel</spdx:name>
-    <spdx:licenseComments>The concluded license was taken from package xyz, from which the snippet was copied into the current file. The concluded license information was found in the COPYING.txt file in package xyz.</spdx:licenseComments>
-    <rdfs:comment>This snippet was identified as significant and highlighted in this Apache-2.0 file, when a commercial scanner identified it as being derived from file foo.c in package xyz which is licensed under GPL-2.0.</rdfs:comment>
-    <spdx:licenseInfoInSnippet rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
-  </spdx:Snippet>
   <spdx:Package rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-fromDoap-1">
-    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
-    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
-    <spdx:name>Apache Commons Lang</spdx:name>
     <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
     <doap:homepage>http://commons.apache.org/proper/commons-lang/</doap:homepage>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>Apache Commons Lang</spdx:name>
     <spdx:copyrightText>NOASSERTION</spdx:copyrightText>
     <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
   </spdx:Package>
   <spdx:SpdxDocument rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DOCUMENT">
     <spdx:hasExtractedLicensingInfo>
+      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2">
+        <spdx:extractedText>This package includes the GRDDL parser developed by Hewlett Packard under the following license:
+� Copyright 2007 Hewlett-Packard Development Company, LP
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+The name of the author may not be used to endorse or promote products derived from this software without specific prior written permission. 
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</spdx:extractedText>
+        <spdx:licenseId>LicenseRef-2</spdx:licenseId>
+      </spdx:ExtractedLicensingInfo>
+    </spdx:hasExtractedLicensingInfo>
+    <spdx:hasExtractedLicensingInfo>
+      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-Beerware-4.2">
+        <spdx:extractedText>"THE BEER-WARE LICENSE" (Revision 42):
+phk@FreeBSD.ORG wrote this file. As long as you retain this notice you
+can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp</spdx:extractedText>
+        <spdx:licenseId>LicenseRef-Beerware-4.2</spdx:licenseId>
+        <rdfs:seeAlso>http://people.freebsd.org/~phk/</rdfs:seeAlso>
+        <spdx:name>Beer-Ware License (Version 42)</spdx:name>
+        <rdfs:comment>The beerware license has a couple of other standard variants.</rdfs:comment>
+      </spdx:ExtractedLicensingInfo>
+    </spdx:hasExtractedLicensingInfo>
+    <spdx:hasExtractedLicensingInfo>
+      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1">
+        <spdx:licenseId>LicenseRef-1</spdx:licenseId>
+        <spdx:extractedText>/*
+ * (c) Copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Hewlett-Packard Development Company, LP
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/</spdx:extractedText>
+      </spdx:ExtractedLicensingInfo>
+    </spdx:hasExtractedLicensingInfo>
+    <spdx:hasExtractedLicensingInfo>
+      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-4">
+        <spdx:extractedText>/*
+ * (c) Copyright 2009 University of Bristol
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/</spdx:extractedText>
+        <spdx:licenseId>LicenseRef-4</spdx:licenseId>
+      </spdx:ExtractedLicensingInfo>
+    </spdx:hasExtractedLicensingInfo>
+    <spdx:hasExtractedLicensingInfo>
       <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-3">
-        <spdx:licenseId>LicenseRef-3</spdx:licenseId>
-        <spdx:name>CyberNeko License</spdx:name>
-        <rdfs:seeAlso>http://justasample.url.com</rdfs:seeAlso>
-        <rdfs:seeAlso>http://people.apache.org/~andyc/neko/LICENSE</rdfs:seeAlso>
         <rdfs:comment>This is tye CyperNeko License</rdfs:comment>
         <spdx:extractedText>The CyberNeko Software License, Version 1.0
 
@@ -126,323 +149,121 @@ BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
 WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</spdx:extractedText>
+        <spdx:licenseId>LicenseRef-3</spdx:licenseId>
+        <rdfs:seeAlso>http://justasample.url.com</rdfs:seeAlso>
+        <rdfs:seeAlso>http://people.apache.org/~andyc/neko/LICENSE</rdfs:seeAlso>
+        <spdx:name>CyberNeko License</spdx:name>
       </spdx:ExtractedLicensingInfo>
     </spdx:hasExtractedLicensingInfo>
-    <spdx:hasExtractedLicensingInfo>
-      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2">
-        <spdx:extractedText>This package includes the GRDDL parser developed by Hewlett Packard under the following license:
-� Copyright 2007 Hewlett-Packard Development Company, LP
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
-
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
-The name of the author may not be used to endorse or promote products derived from this software without specific prior written permission. 
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</spdx:extractedText>
-        <spdx:licenseId>LicenseRef-2</spdx:licenseId>
-      </spdx:ExtractedLicensingInfo>
-    </spdx:hasExtractedLicensingInfo>
-    <spdx:hasExtractedLicensingInfo>
-      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1">
-        <spdx:extractedText>/*
- * (c) Copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Hewlett-Packard Development Company, LP
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/</spdx:extractedText>
-        <spdx:licenseId>LicenseRef-1</spdx:licenseId>
-      </spdx:ExtractedLicensingInfo>
-    </spdx:hasExtractedLicensingInfo>
-    <spdx:hasExtractedLicensingInfo>
-      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-4">
-        <spdx:licenseId>LicenseRef-4</spdx:licenseId>
-        <spdx:extractedText>/*
- * (c) Copyright 2009 University of Bristol
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/</spdx:extractedText>
-      </spdx:ExtractedLicensingInfo>
-    </spdx:hasExtractedLicensingInfo>
-    <spdx:hasExtractedLicensingInfo>
-      <spdx:ExtractedLicensingInfo rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-Beerware-4.2">
-        <spdx:licenseId>LicenseRef-Beerware-4.2</spdx:licenseId>
-        <spdx:name>Beer-Ware License (Version 42)</spdx:name>
-        <spdx:extractedText>"THE BEER-WARE LICENSE" (Revision 42):
-phk@FreeBSD.ORG wrote this file. As long as you retain this notice you
-can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp</spdx:extractedText>
-        <rdfs:comment>The beerware license has a couple of other standard variants.</rdfs:comment>
-        <rdfs:seeAlso>http://people.freebsd.org/~phk/</rdfs:seeAlso>
-      </spdx:ExtractedLicensingInfo>
-    </spdx:hasExtractedLicensingInfo>
-    <spdx:externalDocumentRef>
-      <spdx:ExternalDocumentRef rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#DocumentRef-spdx-tool-1.2">
-        <spdx:checksum>
-          <spdx:Checksum rdf:nodeID="N6ebd228fc8e445e1a9397d2199b3cdf6">
-            <spdx:checksumValue>d6a770ba38583ed4bb4525bd96e50461655d2759</spdx:checksumValue>
-            <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
-          </spdx:Checksum>
-        </spdx:checksum>
-        <spdx:spdxDocument rdf:resource="http://spdx.org/spdxdocs/spdx-tools-v1.2-3F2504E0-4F89-41D3-9A0C-0305E82C3301"/>
-      </spdx:ExternalDocumentRef>
-    </spdx:externalDocumentRef>
-    <spdx:dataLicense rdf:resource="http://spdx.org/licenses/CC0-1.0"/>
     <spdx:annotation>
-      <spdx:Annotation rdf:nodeID="Nc56919ef02744dd4a48ce4f3a687b7a5">
-        <rdfs:comment>Another example reviewer.</rdfs:comment>
+      <spdx:Annotation rdf:nodeID="N64184f13b7db41b398d496647eed0944">
         <spdx:annotator>Person: Suzanne Reviewer</spdx:annotator>
         <spdx:annotationDate>2011-03-13T00:00:00Z</spdx:annotationDate>
+        <rdfs:comment>Another example reviewer.</rdfs:comment>
         <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_review"/>
       </spdx:Annotation>
     </spdx:annotation>
     <spdx:annotation>
-      <spdx:Annotation rdf:nodeID="N87ca29964f664b4a9821ac3a906b2c0a">
-        <rdfs:comment>This is just an example.  Some of the non-standard licenses look like they are actually BSD 3 clause licenses</rdfs:comment>
-        <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_review"/>
-        <spdx:annotationDate>2010-02-10T00:00:00Z</spdx:annotationDate>
-        <spdx:annotator>Person: Joe Reviewer</spdx:annotator>
-      </spdx:Annotation>
-    </spdx:annotation>
-    <spdx:annotation>
-      <spdx:Annotation rdf:nodeID="N7de3c3e497974ee38c425fb6303a3785">
-        <spdx:annotationDate>2010-01-29T18:30:22Z</spdx:annotationDate>
+      <spdx:Annotation rdf:nodeID="N7e8fca3c27d34c6dba02de140e5416c9">
+        <spdx:annotator>Person: Jane Doe</spdx:annotator>
         <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_other"/>
         <rdfs:comment>Document level annotation</rdfs:comment>
-        <spdx:annotator>Person: Jane Doe</spdx:annotator>
+        <spdx:annotationDate>2010-01-29T18:30:22Z</spdx:annotationDate>
+      </spdx:Annotation>
+    </spdx:annotation>
+    <spdx:annotation>
+      <spdx:Annotation rdf:nodeID="N367a5a94d2b840c1ae092b3e0fabc8d4">
+        <spdx:annotator>Person: Joe Reviewer</spdx:annotator>
+        <rdfs:comment>This is just an example.  Some of the non-standard licenses look like they are actually BSD 3 clause licenses</rdfs:comment>
+        <spdx:annotationDate>2010-02-10T00:00:00Z</spdx:annotationDate>
+        <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_review"/>
       </spdx:Annotation>
     </spdx:annotation>
     <spdx:relationship>
-      <spdx:Relationship rdf:nodeID="N5a522a6804804726a5691c014a38afce">
-        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_copyOf"/>
-        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/spdxdocs/spdx-tools-v1.2-3F2504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-ToolsElement"/>
-      </spdx:Relationship>
-    </spdx:relationship>
-    <spdx:relationship>
-      <spdx:Relationship rdf:nodeID="N38ba581eb8724ba4a2f7e421bbfd13d8">
-        <spdx:relatedSpdxElement>
-          <spdx:File rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-File">
-            <spdx:checksum>
-              <spdx:Checksum rdf:nodeID="N6787ce5620dc41cd98d1cc2d9be2f066">
-                <spdx:checksumValue>624c1abb3664f4b35547e7c73864ad24</spdx:checksumValue>
-                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_md5"/>
-              </spdx:Checksum>
-            </spdx:checksum>
-            <spdx:checksum>
-              <spdx:Checksum rdf:nodeID="N7433f392ae5247388db3f731880cb86f">
-                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
-                <spdx:checksumValue>d6a770ba38583ed4bb4525bd96e50461655d2758</spdx:checksumValue>
-              </spdx:Checksum>
-            </spdx:checksum>
-            <spdx:relationship>
-              <spdx:Relationship rdf:nodeID="N316c089876e646538e71f4a8187813ed">
-                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_generatedFrom"/>
-                <spdx:relatedSpdxElement>
-                  <spdx:Package rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-fromDoap-0">
-                    <spdx:versionInfo>3.12.0</spdx:versionInfo>
-                    <doap:homepage>http://www.openjena.org/</doap:homepage>
-                    <spdx:externalRef>
-                      <spdx:ExternalRef rdf:nodeID="N5cf690319c8f4cc3ae4c9478343d8b14">
-                        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
-                        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
-                        <spdx:referenceLocator>pkg:maven/org.apache.jena/apache-jena@3.12.0</spdx:referenceLocator>
-                      </spdx:ExternalRef>
-                    </spdx:externalRef>
-                    <spdx:copyrightText>NOASSERTION</spdx:copyrightText>
-                    <spdx:name>Jena</spdx:name>
-                    <spdx:downloadLocation>https://search.maven.org/remotecontent?filepath=org/apache/jena/apache-jena/3.12.0/apache-jena-3.12.0.tar.gz</spdx:downloadLocation>
-                    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
-                    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
-                    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
-                  </spdx:Package>
-                </spdx:relatedSpdxElement>
-              </spdx:Relationship>
-            </spdx:relationship>
-            <spdx:annotation>
-              <spdx:Annotation rdf:nodeID="N9d2d9e29ed0d43589b3a7ab5518b7594">
-                <spdx:annotationDate>2011-01-29T18:30:22Z</spdx:annotationDate>
-                <rdfs:comment>File level annotation</rdfs:comment>
-                <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_other"/>
-                <spdx:annotator>Person: File Commenter</spdx:annotator>
-              </spdx:Annotation>
-            </spdx:annotation>
-            <spdx:fileContributor>Modified by Paul Mundt lethal@linux-sh.org</spdx:fileContributor>
-            <spdx:fileContributor>IBM Corporation</spdx:fileContributor>
-            <spdx:fileContributor>The Regents of the University of California</spdx:fileContributor>
-            <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
-            <spdx:licenseInfoInFile rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2"/>
-            <spdx:licenseInfoInFile rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
-            <spdx:fileName>./package/foo.c</spdx:fileName>
-            <rdfs:comment>The concluded license was taken from the package level that the file was included in.
-This information was found in the COPYING.txt file in the xyz directory.</rdfs:comment>
-            <spdx:licenseComments>The concluded license was taken from the package level that the file was included in.</spdx:licenseComments>
-            <spdx:licenseConcluded>
-              <spdx:DisjunctiveLicenseSet rdf:nodeID="Nffe229520159483b9b5f38e690684a53">
-                <spdx:member rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2"/>
-                <spdx:member rdf:resource="http://spdx.org/licenses/LGPL-2.0-only"/>
-              </spdx:DisjunctiveLicenseSet>
-            </spdx:licenseConcluded>
-            <spdx:noticeText>Copyright (c) 2001 Aaron Lehmann aaroni@vitelus.com
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the �Software�), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED �AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</spdx:noticeText>
-            <spdx:copyrightText>Copyright 2008-2010 John Smith</spdx:copyrightText>
-          </spdx:File>
-        </spdx:relatedSpdxElement>
-        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_describes"/>
-      </spdx:Relationship>
-    </spdx:relationship>
-    <spdx:relationship>
-      <spdx:Relationship rdf:nodeID="N2e938029a7ab4b82840e0fcc8a0d3b8d">
-        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_describes"/>
+      <spdx:Relationship rdf:nodeID="N5b6583a89055474bbc3150d1156e09a0">
+        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
         <spdx:relatedSpdxElement>
           <spdx:Package rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Package">
-            <spdx:packageVerificationCode>
-              <spdx:PackageVerificationCode rdf:nodeID="N1c0973dcbb9344ccbd4338759645c5b9">
-                <spdx:packageVerificationCodeExcludedFile>./package.spdx</spdx:packageVerificationCodeExcludedFile>
-                <spdx:packageVerificationCodeValue>d6a770ba38583ed4bb4525bd96e50461655d2758</spdx:packageVerificationCodeValue>
-              </spdx:PackageVerificationCode>
-            </spdx:packageVerificationCode>
-            <spdx:originator>Organization: ExampleCodeInspect (contact@example.com)</spdx:originator>
-            <spdx:annotation>
-              <spdx:Annotation rdf:nodeID="N3a5a11646ffd4d2492d9440b81703f28">
-                <spdx:annotator>Person: Package Commenter</spdx:annotator>
-                <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_other"/>
-                <spdx:annotationDate>2011-01-29T18:30:22Z</spdx:annotationDate>
-                <rdfs:comment>Package level annotation</rdfs:comment>
-              </spdx:Annotation>
-            </spdx:annotation>
-            <spdx:description>The GNU C Library defines functions that are specified by the ISO C standard, as well as additional features specific to POSIX and other derivatives of the Unix operating system, and extensions specific to GNU systems.</spdx:description>
-            <spdx:packageFileName>glibc-2.11.1.tar.gz</spdx:packageFileName>
-            <spdx:name>glibc</spdx:name>
-            <doap:homepage>http://ftp.gnu.org/gnu/glibc</doap:homepage>
-            <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</spdx:filesAnalyzed>
-            <spdx:externalRef>
-              <spdx:ExternalRef rdf:nodeID="N11d356f4f00647e095759ffe38bbfff9">
-                <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/cpe23Type"/>
-                <spdx:referenceLocator>cpe:2.3:a:pivotal_software:spring_framework:4.1.0:*:*:*:*:*:*:*</spdx:referenceLocator>
-                <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_security"/>
-              </spdx:ExternalRef>
-            </spdx:externalRef>
-            <spdx:externalRef>
-              <spdx:ExternalRef rdf:nodeID="N26e23ebbfb4942f788f9b56ac7cf2763">
-                <spdx:referenceLocator>acmecorp/acmenator/4.1.3-alpha</spdx:referenceLocator>
-                <spdx:referenceType rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LocationRef-acmeforge"/>
-                <rdfs:comment>This is the external ref for Acme</rdfs:comment>
-                <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_other"/>
-              </spdx:ExternalRef>
-            </spdx:externalRef>
-            <spdx:checksum>
-              <spdx:Checksum rdf:nodeID="N6d1339697d974b5a8d778132d45dd870">
-                <spdx:checksumValue>624c1abb3664f4b35547e7c73864ad24</spdx:checksumValue>
-                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_md5"/>
-              </spdx:Checksum>
-            </spdx:checksum>
-            <spdx:checksum>
-              <spdx:Checksum rdf:nodeID="N73438f80ba5346b59491d18a1ebb7523">
-                <spdx:checksumValue>11b6d3ee554eedf79299905a98f9b9a04e498210b59f15094c916c91d150efcd</spdx:checksumValue>
-                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256"/>
-              </spdx:Checksum>
-            </spdx:checksum>
-            <spdx:checksum>
-              <spdx:Checksum rdf:nodeID="N690ca08c31cd44eda25578323e79b57a">
-                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
-                <spdx:checksumValue>85ed0817af83a24ad8da68c2b5094de69833983c</spdx:checksumValue>
-              </spdx:Checksum>
-            </spdx:checksum>
-            <spdx:licenseInfoFromFiles rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2"/>
-            <spdx:licenseInfoFromFiles rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1"/>
-            <spdx:licenseInfoFromFiles rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
             <spdx:relationship>
-              <spdx:Relationship rdf:nodeID="Nd23ad979d1394e1aa6866e47e1f3bd52">
-                <spdx:relatedSpdxElement rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
+              <spdx:Relationship rdf:nodeID="N876d5515f54f4df9b5c2e0bb8caeb077">
                 <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
-              </spdx:Relationship>
-            </spdx:relationship>
-            <spdx:relationship>
-              <spdx:Relationship rdf:nodeID="N8618647d87814333b4d5659070c5ada3">
                 <spdx:relatedSpdxElement>
                   <spdx:File rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-JenaLib">
-                    <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_archive"/>
+                    <spdx:licenseInfoInFile rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1"/>
+                    <rdfs:comment>This file belongs to Jena</rdfs:comment>
+                    <spdx:licenseConcluded rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1"/>
                     <spdx:checksum>
-                      <spdx:Checksum rdf:nodeID="Nad41967cac144dd6bf9990efe87fd473">
-                        <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+                      <spdx:Checksum rdf:nodeID="N6b0c617f5ff7427aadf265b75d864db6">
                         <spdx:checksumValue>3ab4e1c67a2d28fced849ee1bb76e7391b93f125</spdx:checksumValue>
+                        <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
                       </spdx:Checksum>
                     </spdx:checksum>
-                    <spdx:licenseComments>This license is used by Jena</spdx:licenseComments>
-                    <rdfs:comment>This file belongs to Jena</rdfs:comment>
-                    <spdx:relationship>
-                      <spdx:Relationship rdf:nodeID="Ne081efcb4dfe465a9b998647aa21351a">
-                        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Package"/>
-                        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
-                      </spdx:Relationship>
-                    </spdx:relationship>
                     <spdx:fileContributor>Apache Software Foundation</spdx:fileContributor>
                     <spdx:fileContributor>Hewlett Packard Inc.</spdx:fileContributor>
-                    <spdx:licenseInfoInFile rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1"/>
-                    <spdx:copyrightText>(c) Copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Hewlett-Packard Development Company, LP</spdx:copyrightText>
-                    <spdx:licenseConcluded rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1"/>
+                    <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_archive"/>
+                    <spdx:relationship>
+                      <spdx:Relationship rdf:nodeID="N4e236d8a67e84a91bbef621cb64860bf">
+                        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
+                        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Package"/>
+                      </spdx:Relationship>
+                    </spdx:relationship>
+                    <spdx:licenseComments>This license is used by Jena</spdx:licenseComments>
                     <spdx:fileName>./lib-source/jena-2.6.3-sources.jar</spdx:fileName>
+                    <spdx:copyrightText>(c) Copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Hewlett-Packard Development Company, LP</spdx:copyrightText>
                   </spdx:File>
                 </spdx:relatedSpdxElement>
-                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
               </spdx:Relationship>
             </spdx:relationship>
             <spdx:relationship>
-              <spdx:Relationship rdf:nodeID="N11f416aea5da4da6956fa1fbd4931fb4">
+              <spdx:Relationship rdf:nodeID="N64704fc2e7cd444a90fbb6e1af7cb57f">
                 <spdx:relatedSpdxElement>
-                  <spdx:File rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-CommonsLangSrc">
-                    <spdx:copyrightText>Copyright 2001-2011 The Apache Software Foundation</spdx:copyrightText>
+                  <spdx:Package rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Saxon">
+                    <spdx:downloadLocation>https://sourceforge.net/projects/saxon/files/Saxon-B/8.8.0.7/saxonb8-8-0-7j.zip/download</spdx:downloadLocation>
+                    <spdx:licenseComments>Other versions available for a commercial license</spdx:licenseComments>
+                    <spdx:description>The Saxon package is a collection of tools for processing XML documents.</spdx:description>
+                    <spdx:name>Saxon</spdx:name>
+                    <spdx:licenseDeclared rdf:resource="http://spdx.org/licenses/MPL-1.0"/>
+                    <spdx:packageFileName>saxonB-8.8.zip</spdx:packageFileName>
+                    <spdx:copyrightText>Copyright Saxonica Ltd</spdx:copyrightText>
+                    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
                     <spdx:checksum>
-                      <spdx:Checksum rdf:nodeID="N2fd088937d374f51964f8298c543e06f">
-                        <spdx:checksumValue>c2b4e1c67a2d28fced849ee1bb76e7391b93f125</spdx:checksumValue>
+                      <spdx:Checksum rdf:nodeID="Ne78d474b189841268114a8bc0973aa24">
                         <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+                        <spdx:checksumValue>85ed0817af83a24ad8da68c2b5094de69833983c</spdx:checksumValue>
                       </spdx:Checksum>
                     </spdx:checksum>
+                    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MPL-1.0"/>
+                    <spdx:versionInfo>8.8</spdx:versionInfo>
+                    <doap:homepage>http://saxon.sourceforge.net/</doap:homepage>
+                  </spdx:Package>
+                </spdx:relatedSpdxElement>
+                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_dynamicLink"/>
+              </spdx:Relationship>
+            </spdx:relationship>
+            <spdx:relationship>
+              <spdx:Relationship rdf:nodeID="N25ba513656f64ccca4f3e53fc1413464">
+                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
+                <spdx:relatedSpdxElement>
+                  <spdx:File rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-CommonsLangSrc">
+                    <spdx:fileContributor>Apache Software Foundation</spdx:fileContributor>
+                    <spdx:relationship>
+                      <spdx:Relationship rdf:nodeID="Nec9075ad1b8f4be0b1ad58c627b2593e">
+                        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+                        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_generatedFrom"/>
+                      </spdx:Relationship>
+                    </spdx:relationship>
+                    <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_archive"/>
+                    <spdx:licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
                     <rdfs:comment>This file is used by Jena</rdfs:comment>
+                    <spdx:copyrightText>Copyright 2001-2011 The Apache Software Foundation</spdx:copyrightText>
                     <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+                    <spdx:fileName>./lib-source/commons-lang3-3.1-sources.jar</spdx:fileName>
+                    <spdx:checksum>
+                      <spdx:Checksum rdf:nodeID="N80751a16626247eb8ff4d3f00a9dc46d">
+                        <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+                        <spdx:checksumValue>c2b4e1c67a2d28fced849ee1bb76e7391b93f125</spdx:checksumValue>
+                      </spdx:Checksum>
+                    </spdx:checksum>
                     <spdx:noticeText>Apache Commons Lang
 Copyright 2001-2011 The Apache Software Foundation
 
@@ -451,91 +272,270 @@ The Apache Software Foundation (http://www.apache.org/).
 
 This product includes software from the Spring Framework,
 under the Apache License 2.0 (see: StringUtils.containsWhitespace())</spdx:noticeText>
-                    <spdx:licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
-                    <spdx:fileName>./lib-source/commons-lang3-3.1-sources.jar</spdx:fileName>
-                    <spdx:relationship>
-                      <spdx:Relationship rdf:nodeID="Nd03dff85f3e2488ab4a0db5b0f664e9a">
-                        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_generatedFrom"/>
-                        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
-                      </spdx:Relationship>
-                    </spdx:relationship>
-                    <spdx:fileContributor>Apache Software Foundation</spdx:fileContributor>
-                    <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_archive"/>
                   </spdx:File>
                 </spdx:relatedSpdxElement>
-                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
               </spdx:Relationship>
             </spdx:relationship>
             <spdx:relationship>
-              <spdx:Relationship rdf:nodeID="Nf44594ce1e0b411f8a3000a6270401d6">
-                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_dynamicLink"/>
+              <spdx:Relationship rdf:nodeID="Ne3181d94eace4f40850834383829fa9f">
+                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
                 <spdx:relatedSpdxElement>
-                  <spdx:Package rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Saxon">
-                    <spdx:description>The Saxon package is a collection of tools for processing XML documents.</spdx:description>
-                    <spdx:licenseComments>Other versions available for a commercial license</spdx:licenseComments>
-                    <spdx:downloadLocation>https://sourceforge.net/projects/saxon/files/Saxon-B/8.8.0.7/saxonb8-8-0-7j.zip/download</spdx:downloadLocation>
-                    <spdx:packageFileName>saxonB-8.8.zip</spdx:packageFileName>
-                    <spdx:copyrightText>Copyright Saxonica Ltd</spdx:copyrightText>
-                    <doap:homepage>http://saxon.sourceforge.net/</doap:homepage>
-                    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
-                    <spdx:versionInfo>8.8</spdx:versionInfo>
-                    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MPL-1.0"/>
+                  <spdx:File rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource">
+                    <spdx:licenseInfoInFile rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+                    <spdx:fileContributor>Source Auditor Inc.</spdx:fileContributor>
+                    <spdx:fileContributor>Black Duck Software In.c</spdx:fileContributor>
+                    <spdx:fileContributor>Open Logic Inc.</spdx:fileContributor>
+                    <spdx:fileContributor>Protecode Inc.</spdx:fileContributor>
+                    <spdx:fileContributor>SPDX Technical Team Members</spdx:fileContributor>
+                    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+                    <spdx:fileName>./src/org/spdx/parser/DOAPProject.java</spdx:fileName>
                     <spdx:checksum>
-                      <spdx:Checksum rdf:nodeID="N5badca372cd74dcb9ed4f8530904f557">
+                      <spdx:Checksum rdf:nodeID="N1d3fd1a421874b69ba82a5b9a022fd65">
                         <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
-                        <spdx:checksumValue>85ed0817af83a24ad8da68c2b5094de69833983c</spdx:checksumValue>
+                        <spdx:checksumValue>2fd4e1c67a2d28fced849ee1bb76e7391b93eb12</spdx:checksumValue>
                       </spdx:Checksum>
                     </spdx:checksum>
-                    <spdx:licenseDeclared rdf:resource="http://spdx.org/licenses/MPL-1.0"/>
-                    <spdx:name>Saxon</spdx:name>
-                  </spdx:Package>
+                    <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+                    <spdx:copyrightText>Copyright 2010, 2011 Source Auditor Inc.</spdx:copyrightText>
+                  </spdx:File>
                 </spdx:relatedSpdxElement>
               </spdx:Relationship>
             </spdx:relationship>
-            <spdx:sourceInfo>uses glibc-2_11-branch from git://sourceware.org/git/glibc.git.</spdx:sourceInfo>
+            <spdx:packageVerificationCode>
+              <spdx:PackageVerificationCode rdf:nodeID="N26b1c3429b9149c68aaf248399c592a6">
+                <spdx:packageVerificationCodeExcludedFile>./package.spdx</spdx:packageVerificationCodeExcludedFile>
+                <spdx:packageVerificationCodeValue>d6a770ba38583ed4bb4525bd96e50461655d2758</spdx:packageVerificationCodeValue>
+              </spdx:PackageVerificationCode>
+            </spdx:packageVerificationCode>
+            <spdx:description>The GNU C Library defines functions that are specified by the ISO C standard, as well as additional features specific to POSIX and other derivatives of the Unix operating system, and extensions specific to GNU systems.</spdx:description>
             <spdx:downloadLocation>http://ftp.gnu.org/gnu/glibc/glibc-ports-2.15.tar.gz</spdx:downloadLocation>
+            <spdx:licenseComments>The license for this project changed with the release of version x.y.  The version of the project included here post-dates the license change.</spdx:licenseComments>
+            <spdx:name>glibc</spdx:name>
             <spdx:attributionText>The GNU C Library is free software.  See the file COPYING.LIB for copying conditions, and LICENSES for notices about a few contributions that require these additional notices to be distributed.  License copyright years may be listed using range notation, e.g., 1996-2015, indicating that every year in the range, inclusive, is a copyrightable year that would otherwise be listed individually.</spdx:attributionText>
-            <spdx:copyrightText>Copyright 2008-2010 John Smith</spdx:copyrightText>
-            <spdx:supplier>Person: Jane Doe (jane.doe@example.com)</spdx:supplier>
-            <spdx:licenseDeclared>
-              <spdx:ConjunctiveLicenseSet rdf:nodeID="Nafce3a08b2644770a31123bae3c05232">
-                <spdx:member rdf:resource="http://spdx.org/licenses/LGPL-2.0-only"/>
-                <spdx:member rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-3"/>
-              </spdx:ConjunctiveLicenseSet>
-            </spdx:licenseDeclared>
+            <spdx:originator>Organization: ExampleCodeInspect (contact@example.com)</spdx:originator>
+            <doap:homepage>http://ftp.gnu.org/gnu/glibc</doap:homepage>
+            <spdx:licenseInfoFromFiles rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
+            <spdx:licenseInfoFromFiles rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2"/>
+            <spdx:licenseInfoFromFiles rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-1"/>
+            <spdx:externalRef>
+              <spdx:ExternalRef rdf:nodeID="Nfca706b0bbaa4dddab7e61b0c6b30084">
+                <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_security"/>
+                <spdx:referenceLocator>cpe:2.3:a:pivotal_software:spring_framework:4.1.0:*:*:*:*:*:*:*</spdx:referenceLocator>
+                <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/cpe23Type"/>
+              </spdx:ExternalRef>
+            </spdx:externalRef>
+            <spdx:externalRef>
+              <spdx:ExternalRef rdf:nodeID="N26cdb8a8c2634ff586575b5f355f1803">
+                <spdx:referenceLocator>acmecorp/acmenator/4.1.3-alpha</spdx:referenceLocator>
+                <spdx:referenceType rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LocationRef-acmeforge"/>
+                <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_other"/>
+                <rdfs:comment>This is the external ref for Acme</rdfs:comment>
+              </spdx:ExternalRef>
+            </spdx:externalRef>
+            <spdx:checksum>
+              <spdx:Checksum rdf:nodeID="Neba5bc89c0dc409497066327f7b918ad">
+                <spdx:checksumValue>85ed0817af83a24ad8da68c2b5094de69833983c</spdx:checksumValue>
+                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+              </spdx:Checksum>
+            </spdx:checksum>
+            <spdx:checksum>
+              <spdx:Checksum rdf:nodeID="N0f711b90ea514e3795d277f3fe973f60">
+                <spdx:checksumValue>11b6d3ee554eedf79299905a98f9b9a04e498210b59f15094c916c91d150efcd</spdx:checksumValue>
+                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256"/>
+              </spdx:Checksum>
+            </spdx:checksum>
+            <spdx:checksum>
+              <spdx:Checksum rdf:nodeID="N243576eef54f435b8283a5e05b7fcdbc">
+                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_md5"/>
+                <spdx:checksumValue>624c1abb3664f4b35547e7c73864ad24</spdx:checksumValue>
+              </spdx:Checksum>
+            </spdx:checksum>
+            <spdx:sourceInfo>uses glibc-2_11-branch from git://sourceware.org/git/glibc.git.</spdx:sourceInfo>
             <spdx:licenseConcluded>
-              <spdx:DisjunctiveLicenseSet rdf:nodeID="N02a10e3406614e6c8a4a3a63c5761d0f">
+              <spdx:DisjunctiveLicenseSet rdf:nodeID="Na36a063318884967a6e2643aa2b2f75d">
                 <spdx:member rdf:resource="http://spdx.org/licenses/LGPL-2.0-only"/>
                 <spdx:member rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-3"/>
               </spdx:DisjunctiveLicenseSet>
             </spdx:licenseConcluded>
-            <spdx:licenseComments>The license for this project changed with the release of version x.y.  The version of the project included here post-dates the license change.</spdx:licenseComments>
-            <spdx:versionInfo>2.11.1</spdx:versionInfo>
+            <spdx:licenseDeclared>
+              <spdx:ConjunctiveLicenseSet rdf:nodeID="N1b27f386267f49b489f9a355492bf9ec">
+                <spdx:member rdf:resource="http://spdx.org/licenses/LGPL-2.0-only"/>
+                <spdx:member rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-3"/>
+              </spdx:ConjunctiveLicenseSet>
+            </spdx:licenseDeclared>
+            <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</spdx:filesAnalyzed>
             <spdx:summary>GNU C library.</spdx:summary>
+            <spdx:supplier>Person: Jane Doe (jane.doe@example.com)</spdx:supplier>
+            <spdx:versionInfo>2.11.1</spdx:versionInfo>
+            <spdx:annotation>
+              <spdx:Annotation rdf:nodeID="N86ba86c8c1ff4648b72ad0c3411dc604">
+                <spdx:annotationDate>2011-01-29T18:30:22Z</spdx:annotationDate>
+                <spdx:annotator>Person: Package Commenter</spdx:annotator>
+                <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_other"/>
+                <rdfs:comment>Package level annotation</rdfs:comment>
+              </spdx:Annotation>
+            </spdx:annotation>
+            <spdx:packageFileName>glibc-2.11.1.tar.gz</spdx:packageFileName>
+            <spdx:copyrightText>Copyright 2008-2010 John Smith</spdx:copyrightText>
           </spdx:Package>
         </spdx:relatedSpdxElement>
       </spdx:Relationship>
     </spdx:relationship>
     <spdx:relationship>
-      <spdx:Relationship rdf:nodeID="Nea14554b68eb4885b8209f46f123885c">
-        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_contains"/>
-        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Package"/>
+      <spdx:Relationship rdf:nodeID="Nc102718bbbfb4eda8f7c98228e986fb8">
+        <spdx:relatedSpdxElement>
+          <spdx:File rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-File">
+            <spdx:copyrightText>Copyright 2008-2010 John Smith</spdx:copyrightText>
+            <spdx:fileName>./package/foo.c</spdx:fileName>
+            <spdx:licenseInfoInFile rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2"/>
+            <spdx:licenseInfoInFile rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
+            <spdx:checksum>
+              <spdx:Checksum rdf:nodeID="N68930e3584d94e0f8cf6869ede8e4516">
+                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+                <spdx:checksumValue>d6a770ba38583ed4bb4525bd96e50461655d2758</spdx:checksumValue>
+              </spdx:Checksum>
+            </spdx:checksum>
+            <spdx:checksum>
+              <spdx:Checksum rdf:nodeID="N804481b147aa49b8b4744dba3e916952">
+                <spdx:checksumValue>624c1abb3664f4b35547e7c73864ad24</spdx:checksumValue>
+                <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_md5"/>
+              </spdx:Checksum>
+            </spdx:checksum>
+            <spdx:fileContributor>IBM Corporation</spdx:fileContributor>
+            <spdx:fileContributor>Modified by Paul Mundt lethal@linux-sh.org</spdx:fileContributor>
+            <spdx:fileContributor>The Regents of the University of California</spdx:fileContributor>
+            <spdx:licenseComments>The concluded license was taken from the package level that the file was included in.</spdx:licenseComments>
+            <spdx:annotation>
+              <spdx:Annotation rdf:nodeID="N4c52c715cc4641469f589bffa86cee7c">
+                <spdx:annotator>Person: File Commenter</spdx:annotator>
+                <spdx:annotationType rdf:resource="http://spdx.org/rdf/terms#annotationType_other"/>
+                <spdx:annotationDate>2011-01-29T18:30:22Z</spdx:annotationDate>
+                <rdfs:comment>File level annotation</rdfs:comment>
+              </spdx:Annotation>
+            </spdx:annotation>
+            <spdx:licenseConcluded>
+              <spdx:DisjunctiveLicenseSet rdf:nodeID="N46f3168d5be24fed98cf4fc352f43be4">
+                <spdx:member rdf:resource="http://spdx.org/licenses/LGPL-2.0-only"/>
+                <spdx:member rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#LicenseRef-2"/>
+              </spdx:DisjunctiveLicenseSet>
+            </spdx:licenseConcluded>
+            <spdx:relationship>
+              <spdx:Relationship rdf:nodeID="N65c36b0305b24f8891943c863fbdd3a7">
+                <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_generatedFrom"/>
+                <spdx:relatedSpdxElement>
+                  <spdx:Package rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-fromDoap-0">
+                    <spdx:downloadLocation>https://search.maven.org/remotecontent?filepath=org/apache/jena/apache-jena/3.12.0/apache-jena-3.12.0.tar.gz</spdx:downloadLocation>
+                    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+                    <spdx:copyrightText>NOASSERTION</spdx:copyrightText>
+                    <doap:homepage>http://www.openjena.org/</doap:homepage>
+                    <spdx:name>Jena</spdx:name>
+                    <spdx:versionInfo>3.12.0</spdx:versionInfo>
+                    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+                    <spdx:externalRef>
+                      <spdx:ExternalRef rdf:nodeID="Ne0c078f34e4b481cb46a254c3f5fad64">
+                        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+                        <spdx:referenceLocator>pkg:maven/org.apache.jena/apache-jena@3.12.0</spdx:referenceLocator>
+                        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+                      </spdx:ExternalRef>
+                    </spdx:externalRef>
+                    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+                  </spdx:Package>
+                </spdx:relatedSpdxElement>
+              </spdx:Relationship>
+            </spdx:relationship>
+            <spdx:noticeText>Copyright (c) 2001 Aaron Lehmann aaroni@vitelus.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the �Software�), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED �AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</spdx:noticeText>
+            <spdx:fileType rdf:resource="http://spdx.org/rdf/terms#fileType_source"/>
+            <rdfs:comment>The concluded license was taken from the package level that the file was included in.
+This information was found in the COPYING.txt file in the xyz directory.</rdfs:comment>
+          </spdx:File>
+        </spdx:relatedSpdxElement>
+        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_describes"/>
       </spdx:Relationship>
     </spdx:relationship>
-    <spdx:name>SPDX-Tools-v2.0</spdx:name>
+    <spdx:relationship>
+      <spdx:Relationship rdf:nodeID="Ncdd655e12d61488db224c508daaa515f">
+        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Package"/>
+        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_describes"/>
+      </spdx:Relationship>
+    </spdx:relationship>
+    <spdx:relationship>
+      <spdx:Relationship rdf:nodeID="N5a466491b735440785f6b9777b0e56a3">
+        <spdx:relatedSpdxElement rdf:resource="http://spdx.org/spdxdocs/spdx-tools-v1.2-3F2504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-ToolsElement"/>
+        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_copyOf"/>
+      </spdx:Relationship>
+    </spdx:relationship>
     <spdx:creationInfo>
-      <spdx:CreationInfo rdf:nodeID="N4c4a8fe67bb1483e98e4275a8cf6cc92">
-        <spdx:created>2010-01-29T18:30:22Z</spdx:created>
+      <spdx:CreationInfo rdf:nodeID="N7e1d77c3e9d141a3818e4e9a9ee3be10">
+        <spdx:creator>Person: Jane Doe</spdx:creator>
+        <spdx:creator>Tool: LicenseFind-1.0</spdx:creator>
+        <spdx:creator>Organization: ExampleCodeInspect</spdx:creator>
         <rdfs:comment>This package has been shipped in source and binary form.
 The binaries were created with gcc 4.5.1 and expect to link to
 compatible system run time libraries.</rdfs:comment>
-        <spdx:creator>Organization: ExampleCodeInspect</spdx:creator>
-        <spdx:creator>Tool: LicenseFind-1.0</spdx:creator>
-        <spdx:creator>Person: Jane Doe</spdx:creator>
         <spdx:licenseListVersion>3.9</spdx:licenseListVersion>
+        <spdx:created>2010-01-29T18:30:22Z</spdx:created>
       </spdx:CreationInfo>
     </spdx:creationInfo>
-    <rdfs:comment>This document was created using SPDX 2.0 using licenses from the web site.</rdfs:comment>
     <spdx:specVersion>SPDX-2.2</spdx:specVersion>
+    <rdfs:comment>This document was created using SPDX 2.0 using licenses from the web site.</rdfs:comment>
+    <spdx:name>SPDX-Tools-v2.0</spdx:name>
+    <spdx:externalDocumentRef>
+      <spdx:ExternalDocumentRef rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#DocumentRef-spdx-tool-1.2">
+        <spdx:spdxDocument rdf:resource="http://spdx.org/spdxdocs/spdx-tools-v1.2-3F2504E0-4F89-41D3-9A0C-0305E82C3301"/>
+        <spdx:checksum>
+          <spdx:Checksum rdf:nodeID="N2869985df32c4b159b20d3b0e4414c36">
+            <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha1"/>
+            <spdx:checksumValue>d6a770ba38583ed4bb4525bd96e50461655d2759</spdx:checksumValue>
+          </spdx:Checksum>
+        </spdx:checksum>
+      </spdx:ExternalDocumentRef>
+    </spdx:externalDocumentRef>
+    <spdx:dataLicense rdf:resource="http://spdx.org/licenses/CC0-1.0"/>
   </spdx:SpdxDocument>
+  <spdx:Snippet rdf:about="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-Snippet">
+    <spdx:range>
+      <ptr:StartEndPointer rdf:nodeID="Nb0b3d36c0918471bbca40eb5abb041d8">
+        <ptr:endPointer>
+          <ptr:ByteOffsetPointer rdf:nodeID="N0137d8618bb1497bb995bd9b89c14e69">
+            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
+            <ptr:offset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</ptr:offset>
+          </ptr:ByteOffsetPointer>
+        </ptr:endPointer>
+        <ptr:startPointer>
+          <ptr:ByteOffsetPointer rdf:nodeID="Nc68e7d89f8004cf2afa1cf1436776d6a">
+            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
+            <ptr:offset rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">310</ptr:offset>
+          </ptr:ByteOffsetPointer>
+        </ptr:startPointer>
+      </ptr:StartEndPointer>
+    </spdx:range>
+    <spdx:range>
+      <ptr:StartEndPointer rdf:nodeID="N352123fa9d9247d5bc11be7acaa3c7a1">
+        <ptr:startPointer>
+          <ptr:LineCharPointer rdf:nodeID="N34fcdd14fe2e44d2b420f1357a604e8b">
+            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
+            <ptr:lineNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ptr:lineNumber>
+          </ptr:LineCharPointer>
+        </ptr:startPointer>
+        <ptr:endPointer>
+          <ptr:LineCharPointer rdf:nodeID="N9cda888e0be04d8980e171c09d87750e">
+            <ptr:lineNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</ptr:lineNumber>
+            <ptr:reference rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
+          </ptr:LineCharPointer>
+        </ptr:endPointer>
+      </ptr:StartEndPointer>
+    </spdx:range>
+    <rdfs:comment>This snippet was identified as significant and highlighted in this Apache-2.0 file, when a commercial scanner identified it as being derived from file foo.c in package xyz which is licensed under GPL-2.0.</rdfs:comment>
+    <spdx:copyrightText>Copyright 2008-2010 John Smith</spdx:copyrightText>
+    <spdx:snippetFromFile rdf:resource="http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#SPDXRef-DoapSource"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
+    <spdx:name>from linux kernel</spdx:name>
+    <spdx:licenseInfoInSnippet rdf:resource="http://spdx.org/licenses/GPL-2.0-only"/>
+    <spdx:licenseComments>The concluded license was taken from package xyz, from which the snippet was copied into the current file. The concluded license information was found in the COPYING.txt file in package xyz.</spdx:licenseComments>
+  </spdx:Snippet>
 </rdf:RDF>
