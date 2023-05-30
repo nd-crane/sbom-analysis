@@ -5,4 +5,7 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://nd-crane.github.io',
                 'git_url': 'https://github.com/nd-crane/sbom-analysis',
                 'lib_path': 'sbom_analysis'},
-  'syms': {'sbom_analysis.core': {'sbom_analysis.core.show_metadata': ('core.html#show_metadata', 'sbom_analysis/core.py')}}}
+  'syms': { 'sbom_analysis.core': { 'sbom_analysis.core.show_entity_types': ('core.html#show_entity_types', 'sbom_analysis/core.py'),
+                                    'sbom_analysis.core.show_measures': ('core.html#show_measures', 'sbom_analysis/core.py'),
+                                    'sbom_analysis.core.show_metadata': ('core.html#show_metadata', 'sbom_analysis/core.py'),
+                                    'sbom_analysis.core.show_top_n_props': ('core.html#show_top_n_props', 'sbom_analysis/core.py')}}}
