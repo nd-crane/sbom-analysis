@@ -12,16 +12,19 @@ def show_metadata(kg, dataframe=True):
     
     query = """
     SELECT 
-        (COUNT(*) as ?count)
+        (COUNT(*) AS ?triples)
+        (COUNT(DISTINCT ?entity) AS ?entities)
+        (COUNT(DISTINCT ?property) AS ?properties)
     WHERE {
-      ?s ?p ?o .
+        ?subject ?property ?object .
+        BIND(?subject AS ?entity) .
     }
     """
 
     if dataframe:
         return kg.query_as_df(query)
-    
-    result = kg.query(query)
-    for row in result:
-        print("Total Triples:", row["count"])
 
+    for row in kg.query(query):
+        print("Total Triples:", row['triples'])
+        print("Distinct Entities:", row['entities'])
+        print("Distinct Properties:", row['properties'])
