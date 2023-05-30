@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://nd-crane.github.io/sbom-analysis/core.html</loc>
+    <lastmod>2023-05-30T20:55:29.183Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nd-crane.github.io/sbom-analysis/spdx_example.html</loc>
+    <lastmod>2023-05-30T19:39:12.565Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nd-crane.github.io/sbom-analysis/index.html</loc>
+    <lastmod>2023-05-30T19:39:12.914Z</lastmod>
+  </url>
 </urlset>
