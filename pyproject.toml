@@ -16,6 +16,7 @@ dependencies = [
     "kglab>=0.6.6",
     "jupyter>=1.0.0",
     "pandas>=1.5.3",
+    "networkx>=3.1",
 ]
 requires-python = ">=3.9"
 license = {text = "MIT"}
