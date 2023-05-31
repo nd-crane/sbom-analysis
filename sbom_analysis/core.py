@@ -135,13 +135,13 @@ def get_files_data(kg:KnowledgeGraph #Knowledge graph to query from
     ?noticeText
     WHERE {
     ?file rdf:type spdx:File .
-    ?file spdx:fileName ?fileName .
-    ?file spdx:fileContributor ?contributor .
-    ?file spdx:licenseInfoInFile ?licenseInFile .
-    ?file spdx:licenseConcluded ?licenseConcluded .
-    ?file spdx:checksum ?checksum .
-    ?file spdx:copyrightText ?copyrightText .
-    ?file spdx:fileType ?fileType .
+    OPTIONAL {?file spdx:fileName ?fileName .}
+    OPTIONAL {?file spdx:fileContributor ?contributor .}
+    OPTIONAL {?file spdx:licenseInfoInFile ?licenseInFile .}
+    OPTIONAL {?file spdx:licenseConcluded ?licenseConcluded .}
+    OPTIONAL {?file spdx:checksum ?checksum .}
+    OPTIONAL {?file spdx:copyrightText ?copyrightText .}
+    OPTIONAL {?file spdx:fileType ?fileType .}
     OPTIONAL {?file spdx:relationship ?relationship .}
     OPTIONAL {?file spdx:annotation ?annotation . }
     OPTIONAL {?file rdfs:comment ?comment . }
@@ -177,9 +177,9 @@ def get_files_graph(kg:KnowledgeGraph #Knowledge graph to query from
     }
     WHERE {
         ?file rdf:type spdx:File .
-        ?file spdx:fileName ?fileName .
-        ?file spdx:fileContributor ?contributor .
-        ?file spdx:licenseInfoInFile ?licenseInFile .
+        OPTIONAL {?file spdx:fileName ?fileName .}
+        OPTIONAL {?file spdx:fileContributor ?contributor .}
+        OPTIONAL {?file spdx:licenseInfoInFile ?licenseInFile .}
         OPTIONAL {?file spdx:relationship ?relationship .}
     }
     """
