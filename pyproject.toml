@@ -1,7 +1,7 @@
 [tool.pdm]
 [tool.pdm.dev-dependencies]
 dev = [
-    "-e file:///${PROJECT_ROOT}/tools-python#egg=spdx-tools",
+    "-e git+ssh://git@github.com/spdx/tools-python.git@main#egg=spdx-tools",
 ]
 
 [project]
