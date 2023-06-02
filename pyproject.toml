@@ -1,7 +1,7 @@
 [tool.pdm]
 [tool.pdm.dev-dependencies]
 dev = [
-    "-e git+ssh://git@github.com/spdx/tools-python.git@main#egg=spdx-tools",
+    "-e git+ssh://git@github.com/spdx/tools-python.git@cb680ccfb252e278ed9ffe23bde42487846c54d0#egg=spdx-tools",
 ]
 
 [project]
@@ -17,6 +17,7 @@ dependencies = [
     "jupyter>=1.0.0",
     "pandas>=1.5.3",
     "networkx>=3.1",
+    "setuptools>=67.8.0",
 ]
 requires-python = ">=3.9"
 license = {text = "MIT"}
