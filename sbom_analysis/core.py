@@ -190,7 +190,7 @@ def get_files_graph(kg:KnowledgeGraph #Knowledge graph to query from
 
     return subgraph # Return the subgraph
 
-# %% ../nbs/00_core.ipynb 21
+# %% ../nbs/00_core.ipynb 20
 def package_schema(kg:KnowledgeGraph #Knowledge graph to query from
                   )-> DataFrame: #Return result to dataframe
   """
@@ -207,7 +207,7 @@ def package_schema(kg:KnowledgeGraph #Knowledge graph to query from
   """
   return kg.query_as_df(query)
 
-# %% ../nbs/00_core.ipynb 23
+# %% ../nbs/00_core.ipynb 22
 def get_package_data(kg:KnowledgeGraph #Knowledge graph to query from
                      ) -> DataFrame: #Return result to dataframe
     """
@@ -280,7 +280,7 @@ def get_package_data(kg:KnowledgeGraph #Knowledge graph to query from
 
     return kg.query_as_df(query)
 
-# %% ../nbs/00_core.ipynb 25
+# %% ../nbs/00_core.ipynb 24
 def get_package_graph(kg:KnowledgeGraph #Knowledge graph to query from
                       ) -> KnowledgeGraph: #Return result to knowledge graph
     """
@@ -367,7 +367,7 @@ def get_package_graph(kg:KnowledgeGraph #Knowledge graph to query from
 
     return subgraph # Return the subgraph
 
-# %% ../nbs/00_core.ipynb 27
+# %% ../nbs/00_core.ipynb 26
 def relationship_schema(kg : KnowledgeGraph #Knowledge graph to query from
                         ) -> DataFrame: #Return result to dataframe
     """
@@ -387,7 +387,7 @@ def relationship_schema(kg : KnowledgeGraph #Knowledge graph to query from
     return kg.query_as_df(query)
 
 
-# %% ../nbs/00_core.ipynb 29
+# %% ../nbs/00_core.ipynb 28
 def get_relationship_data(kg:KnowledgeGraph #Knowledge graph to query from
                           ) -> DataFrame: #Return result to dataframe
     
@@ -405,7 +405,7 @@ def get_relationship_data(kg:KnowledgeGraph #Knowledge graph to query from
 
     return kg.query_as_df(query)
 
-# %% ../nbs/00_core.ipynb 31
+# %% ../nbs/00_core.ipynb 30
 def get_relationship_graph(kg: KnowledgeGraph #Knowledge graph to query from
                            ) -> KnowledgeGraph: #Return result to knowledge graph
     """
@@ -443,7 +443,7 @@ def get_relationship_graph(kg: KnowledgeGraph #Knowledge graph to query from
 
     return subgraph
 
-# %% ../nbs/00_core.ipynb 35
+# %% ../nbs/00_core.ipynb 34
 import kglab
 def visualize_graph(kg:KnowledgeGraph, #Knowledge graph to query from
                     VIS_STYLE: str={} #Optional, visualization style
