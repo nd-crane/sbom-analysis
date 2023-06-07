@@ -1,0 +1,2553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:spdx="http://spdx.org/rdf/terms#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-python-57ded4d7d5e986d7296eab16560982c6dd7c923b">
+    <spdx:name>actions:actions/setup-python</spdx:name>
+    <spdx:versionInfo>57ded4d7d5e986d7296eab16560982c6dd7c923b</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne93f028896e345d4a3c29d85ae4b3b41">
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-python@57ded4d7d5e986d7296eab16560982c6dd7c923b</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-nose">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>pip:nose</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-83f0fe6c4988d98a455712a27f0255212bba9bd4">
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf417a56b4cea46738d563ba32bc967f5">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-sphinx">
+    <spdx:name>pip:sphinx</spdx:name>
+    <spdx:versionInfo>&gt;= 4.5.0</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-wheel-0.38.1">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:versionInfo>0.38.1</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7b1eb1e60c0f4ac7a15b54016985291b">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/wheel@0.38.1</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>pip:wheel</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pytz-2021.3">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7a3551f0413544689ec4ac9800eaa702">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/pytz@2021.3</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>2021.3</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>pip:pytz</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-f0e3dfb30302f8a0881bb509b044e0de4f6ef589">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne82d748a441846088856f5659c0c105f">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-168b99b3c22180941ae7dbdd5f5c9678ede476ba">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:versionInfo>168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7f400bbcdc674a8db67cefca65d6f73a">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-towncrier">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:towncrier</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pygithub">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:pygithub</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-conda-incubator-setup-miniconda-3b0f2504dd76ef23b6d31f291f4913fb60ab5ff3">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:conda-incubator/setup-miniconda</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N1aa21c7031db441580a3c7b7cc071add">
+        <spdx:referenceLocator>pkg:githubactions/conda-incubator/setup-miniconda@3b0f2504dd76ef23b6d31f291f4913fb60ab5ff3</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>3b0f2504dd76ef23b6d31f291f4913fb60ab5ff3</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-67a35a08586135a9573f4327e904ecbf517a882d">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nc325415c3be747f9a70845405da5df45">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@67a35a08586135a9573f4327e904ecbf517a882d</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>67a35a08586135a9573f4327e904ecbf517a882d</spdx:versionInfo>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-mymindstorm-setup-emsdk-ab889da2abbcbb280f91ec4c215d3bb4f3a8f775">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:mymindstorm/setup-emsdk</spdx:name>
+    <spdx:versionInfo>ab889da2abbcbb280f91ec4c215d3bb4f3a8f775</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7afaca6f2229471fa75f05174025f481">
+        <spdx:referenceLocator>pkg:githubactions/mymindstorm/setup-emsdk@ab889da2abbcbb280f91ec4c215d3bb4f3a8f775</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-8662eabe0e9f338a07350b7fd050732745f93848">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N34da1c95f7c8462180ec970517c56451">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@8662eabe0e9f338a07350b7fd050732745f93848</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>8662eabe0e9f338a07350b7fd050732745f93848</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-meson-python">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>&gt;= 0.10.0</spdx:versionInfo>
+    <spdx:name>pip:meson-python</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-conda-incubator-setup-miniconda-2">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne8ac3f680cdc4371bb9cd2328c7c167e">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/conda-incubator/setup-miniconda@2</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:conda-incubator/setup-miniconda</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>2</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-0225834cc549ee0ca93cb085b92954821a145866">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>0225834cc549ee0ca93cb085b92954821a145866</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N5fa735885502482188eefa5ca646c46d">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@0225834cc549ee0ca93cb085b92954821a145866</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-f3feb00acb00f31a6f60280e6ace9ca31d91c76a">
+    <spdx:versionInfo>f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:versionInfo>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N67b4475cafe942d28bc563a2b59fa7ea">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-d186a2a36cc67bfa1b860e6170d37fb9634742c7">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N26da79c13e184744a259bcdcd9bcba1f">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:versionInfo>d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pydata-sphinx-theme-0.8.1">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N080de69feb2f446fb95514b0e54bd6a8">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:pypi/pydata-sphinx-theme@0.8.1</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:pydata-sphinx-theme</spdx:name>
+    <spdx:versionInfo>0.8.1</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-breathe">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:breathe</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-29b1f65c5e92e24fe6b6647da1eaabe529cec70f">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N881256e935e0454a855e641bf783294e">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-charset-normalizer">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:charset-normalizer</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-168b99b3c22180941ae7dbdd5f5c9678ede476ba">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:versionInfo>168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N586a7e9fb5e04d609c1ef37295e064bc">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-ninja">
+    <spdx:name>pip:ninja</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-numpydoc-1.3.1">
+    <spdx:versionInfo>1.3.1</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne87ecb48d3c24407a2976f51cb4f0d4b">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/numpydoc@1.3.1</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>pip:numpydoc</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-02ad79a31bf7aa0eee07f690509048d2fb9fd445">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>02ad79a31bf7aa0eee07f690509048d2fb9fd445</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nd43bfbf77a754d83bfddeccc7a6e090f">
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@02ad79a31bf7aa0eee07f690509048d2fb9fd445</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-larsoner-circleci-artifacts-redirector-action-1e28a97d7b1e273a8f78ed4692bfd10f84706a45">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N988311b80dcc4d93af2eb18ad8920f92">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/larsoner/circleci-artifacts-redirector-action@1e28a97d7b1e273a8f78ed4692bfd10f84706a45</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:larsoner/circleci-artifacts-redirector-action</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>1e28a97d7b1e273a8f78ed4692bfd10f84706a45</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-8c8d71dde4abced210732d8486586914b97752e8">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N5785298012584d49b6670b5da221f556">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@8c8d71dde4abced210732d8486586914b97752e8</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>8c8d71dde4abced210732d8486586914b97752e8</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-sphinx-4.2.0">
+    <spdx:name>pip:sphinx</spdx:name>
+    <spdx:versionInfo>4.2.0</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N8b573d414c404f4b9eb4b143f74cbe02">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:pypi/sphinx@4.2.0</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-paver">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:paver</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-wheel-0.37.0">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:name>pip:wheel</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N4ec3f2e6d8d140c084174dc5b8702657">
+        <spdx:referenceLocator>pkg:pypi/wheel@0.37.0</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>0.37.0</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-python-4">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>4</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N69e237e3c61b4f83bd148c7e3c31b77f">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-python@4</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:actions/setup-python</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-egor-tensin-cleanup-path-8469525c8ee3eddabbd3487658621a6235b3c581">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:egor-tensin/cleanup-path</spdx:name>
+    <spdx:versionInfo>8469525c8ee3eddabbd3487658621a6235b3c581</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N27b7e60485914254817b545f336a01fd">
+        <spdx:referenceLocator>pkg:githubactions/egor-tensin/cleanup-path@8469525c8ee3eddabbd3487658621a6235b3c581</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pytest-6.2.5">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N65b79ae3f6a44131a61926de0af6b023">
+        <spdx:referenceLocator>pkg:pypi/pytest@6.2.5</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>6.2.5</spdx:versionInfo>
+    <spdx:name>pip:pytest</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-upload-artifact-3">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>3</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ncd1acccb6d0e4263a16fb493e1022785">
+        <spdx:referenceLocator>pkg:githubactions/actions/upload-artifact@3</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:actions/upload-artifact</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-ipython">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:name>pip:ipython</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-mypy-0.942">
+    <spdx:name>pip:mypy</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N46d94130ea8e485e873ce6bd024ed093">
+        <spdx:referenceLocator>pkg:pypi/mypy@0.942</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>0.942</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N9bbeb20187c64e159c3307115103d607">
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-29b1f65c5e92e24fe6b6647da1eaabe529cec70f">
+    <spdx:versionInfo>29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf5080975d6554f35a4a15558f7105553">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-8662eabe0e9f338a07350b7fd050732745f93848">
+    <spdx:versionInfo>8662eabe0e9f338a07350b7fd050732745f93848</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nadf578268b9e4340b37dae37dcabfedb">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@8662eabe0e9f338a07350b7fd050732745f93848</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-2.11.2">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>2.11.2</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nae2b6a71e176494a9f5914de81b22d4f">
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@2.11.2</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-mypy-0.950">
+    <spdx:name>pip:mypy</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N0631f7bcd38f4921a046d653f88465ab">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:pypi/mypy@0.950</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>0.950</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-dependency-review-action-0efb1d1d84fc9633afcdaad14c485cbbc90ef46c">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:actions/dependency-review-action</spdx:name>
+    <spdx:versionInfo>0efb1d1d84fc9633afcdaad14c485cbbc90ef46c</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N5b8f5f05ef6840a496385717d0fd4c8f">
+        <spdx:referenceLocator>pkg:githubactions/actions/dependency-review-action@0efb1d1d84fc9633afcdaad14c485cbbc90ef46c</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-8c8d71dde4abced210732d8486586914b97752e8">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:versionInfo>8c8d71dde4abced210732d8486586914b97752e8</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7523648feb4e461e957a08d2d936c18a">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@8c8d71dde4abced210732d8486586914b97752e8</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-node-3">
+    <spdx:name>actions:actions/setup-node</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>3</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N8bbeabe7fa44419c95ed9e1d889b868a">
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-node@3</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-04df1262e6247151b5ac09cd2c303ac36ad3f62b">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N8c0d266282ed45a8a7a4f62c841d5c1b">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-32dc499307d133bb5085bae78498c0ac2cf762d5">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>32dc499307d133bb5085bae78498c0ac2cf762d5</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf76203cdce8f46479a112e39fc48d0b1">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@32dc499307d133bb5085bae78498c0ac2cf762d5</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-67a35a08586135a9573f4327e904ecbf517a882d">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne70f2bccfc7c497b89463c8054ac5efd">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@67a35a08586135a9573f4327e904ecbf517a882d</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>67a35a08586135a9573f4327e904ecbf517a882d</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-b2c19fb9a2a485599ccf4ed5d65527d94bc57226">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3f6f9ee93b3c4f72ac4b96e6550048f6">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-towncrier-21.9.0">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:towncrier</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N38fdf563ee2d4bf08e5c0bd9af3cd2ef">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/towncrier@21.9.0</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>21.9.0</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-larsoner-circleci-artifacts-redirector-action-0a7552bf8cf99cbd40a8928fa48e858e205b98c8">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N83838c8a04804ea8a79326d1d5ebffc0">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/larsoner/circleci-artifacts-redirector-action@0a7552bf8cf99cbd40a8928fa48e858e205b98c8</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:larsoner/circleci-artifacts-redirector-action</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>0a7552bf8cf99cbd40a8928fa48e858e205b98c8</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-ossf-scorecard-action-80e868c13c90f172d68d1f4501dee99e2479f7af">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N65f8de8e7282441bbf72387f03be6ae5">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/ossf/scorecard-action@80e868c13c90f172d68d1f4501dee99e2479f7af</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>80e868c13c90f172d68d1f4501dee99e2479f7af</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:ossf/scorecard-action</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-spin-0.3">
+    <spdx:versionInfo>0.3</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N10a0b91a0cd04763bdda350557a1e009">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/spin@0.3</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:spin</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-8c8d71dde4abced210732d8486586914b97752e8">
+    <spdx:versionInfo>8c8d71dde4abced210732d8486586914b97752e8</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne8f9b7283ab849e9a7953694b115e3a6">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@8c8d71dde4abced210732d8486586914b97752e8</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-ac593985615ec2ede58e132d2e21d2b1cbd6127c">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+    <spdx:versionInfo>ac593985615ec2ede58e132d2e21d2b1cbd6127c</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ncd02757dbd4b42b38ef0a46ff256104a">
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-spin">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:spin</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>&gt;= 0.2</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-2.3.0">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>2.3.0</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N8584c50f6aa14c72a8a5425bc051a676">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@2.3.0</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-83f0fe6c4988d98a455712a27f0255212bba9bd4">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:versionInfo>83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf583377967e94597acefc80bb109fa7a">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-83f0fe6c4988d98a455712a27f0255212bba9bd4">
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N38975d9a523f4de5b4852905eab3818a">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-d186a2a36cc67bfa1b860e6170d37fb9634742c7">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6a0ab94ebbce4b27ad28405d5c5b5976">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pydata-sphinx-theme-0.7.2">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>0.7.2</spdx:versionInfo>
+    <spdx:name>pip:pydata-sphinx-theme</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N285a696c89904943b6a31d5a92de1fd3">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:pypi/pydata-sphinx-theme@0.7.2</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-dependency-review-action-c090f4e553673e6e505ea70d6a95362ee12adb94">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>c090f4e553673e6e505ea70d6a95362ee12adb94</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:actions/dependency-review-action</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N380bb6645db14473b717d9e97add6de0">
+        <spdx:referenceLocator>pkg:githubactions/actions/dependency-review-action@c090f4e553673e6e505ea70d6a95362ee12adb94</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-larsoner-circleci-artifacts-redirector-action-590e7142d7dc855dabe2e9225fa4a5694b76b7cb">
+    <spdx:name>actions:larsoner/circleci-artifacts-redirector-action</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>590e7142d7dc855dabe2e9225fa4a5694b76b7cb</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N97bc573ceb4349d388fddc6cca9b619c">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/larsoner/circleci-artifacts-redirector-action@590e7142d7dc855dabe2e9225fa4a5694b76b7cb</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-d186a2a36cc67bfa1b860e6170d37fb9634742c7">
+    <spdx:versionInfo>d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6145bd4a158445b8b81173f896fd6566">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-cygwin-cygwin-install-action-006ad0b0946ca6d0a3ea2d4437677fa767392401">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>006ad0b0946ca6d0a3ea2d4437677fa767392401</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:cygwin/cygwin-install-action</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nc46dfc14d0a146de87cd71208acb74c5">
+        <spdx:referenceLocator>pkg:githubactions/cygwin/cygwin-install-action@006ad0b0946ca6d0a3ea2d4437677fa767392401</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pandas">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:pandas</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-168b99b3c22180941ae7dbdd5f5c9678ede476ba">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7b33149139c340159f871a66ce5ac760">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-24cb9080177205b6e8c946b17badbe402adc938f">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Na99a0ee8eb2441b29d87d2984d474a48">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>24cb9080177205b6e8c946b17badbe402adc938f</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-b2c19fb9a2a485599ccf4ed5d65527d94bc57226">
+    <spdx:versionInfo>b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6d06accdbd4845e6979add2f9415f19e">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-dependency-review-action-1360a344ccb0ab6e9475edef90ad2f46bf8003b1">
+    <spdx:name>actions:actions/dependency-review-action</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nfb718bc484744a3c8b464597e8cbb6c5">
+        <spdx:referenceLocator>pkg:githubactions/actions/dependency-review-action@1360a344ccb0ab6e9475edef90ad2f46bf8003b1</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>1360a344ccb0ab6e9475edef90ad2f46bf8003b1</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-f0e3dfb30302f8a0881bb509b044e0de4f6ef589">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:versionInfo>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N0d388b56be56470aaa4eff623f723d6b">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-a808017c3962f4d678fe685239668aad8c150932">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>a808017c3962f4d678fe685239668aad8c150932</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nb18a2c4cd2544f2493259a15f031234b">
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@a808017c3962f4d678fe685239668aad8c150932</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-f3feb00acb00f31a6f60280e6ace9ca31d91c76a">
+    <spdx:versionInfo>f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N54100b56511543e09f44a54128ef2806">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-cygwin-cygwin-install-action-f5e0f048310c425e84bc789f493a828c6dc80a25">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nac6fb9f56c174f3c9b4b55e72db9377f">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/cygwin/cygwin-install-action@f5e0f048310c425e84bc789f493a828c6dc80a25</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>f5e0f048310c425e84bc789f493a828c6dc80a25</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:cygwin/cygwin-install-action</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pycodestyle-2.8.0">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf362390175b848d1b8fb1a6f3de8bc1f">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/pycodestyle@2.8.0</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>pip:pycodestyle</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>2.8.0</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-upload-artifact-2">
+    <spdx:name>actions:actions/upload-artifact</spdx:name>
+    <spdx:versionInfo>2</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N776b29b040844257950f2696117b3501">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/upload-artifact@2</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pydata-sphinx-theme-0.13.3">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>0.13.3</spdx:versionInfo>
+    <spdx:licenseConcluded>
+      <spdx:ConjunctiveLicenseSet rdf:nodeID="N2d5fdda18902461783470528bb9b46cc">
+        <spdx:member rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+        <spdx:member rdf:resource="http://spdx.org/licenses/BSD-3-Clause"/>
+      </spdx:ConjunctiveLicenseSet>
+    </spdx:licenseConcluded>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:pydata-sphinx-theme</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ndb54b979b8114e008622bfedeceaa721">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/pydata-sphinx-theme@0.13.3</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-8c8d71dde4abced210732d8486586914b97752e8">
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:versionInfo>8c8d71dde4abced210732d8486586914b97752e8</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nd95c0de7cbce4b9ba630d0c61c9f4028">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@8c8d71dde4abced210732d8486586914b97752e8</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-32dc499307d133bb5085bae78498c0ac2cf762d5">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne7e92cbdff9b486383967a71e5b7854f">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@32dc499307d133bb5085bae78498c0ac2cf762d5</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>32dc499307d133bb5085bae78498c0ac2cf762d5</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-8662eabe0e9f338a07350b7fd050732745f93848">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7792c1f10e954d679b81b412db534584">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@8662eabe0e9f338a07350b7fd050732745f93848</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:versionInfo>8662eabe0e9f338a07350b7fd050732745f93848</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-32dc499307d133bb5085bae78498c0ac2cf762d5">
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:versionInfo>32dc499307d133bb5085bae78498c0ac2cf762d5</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N4cdf025d682f4c26b25e49c655fa04b5">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@32dc499307d133bb5085bae78498c0ac2cf762d5</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-sphinx-design">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:name>pip:sphinx-design</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-egor-tensin-setup-cygwin-2">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:egor-tensin/setup-cygwin</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N8cdab7d33c5e4cd19481a32f1e29b068">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/egor-tensin/setup-cygwin@2</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>2</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pygments-2.6.1">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3029852c1e264071b6b36c9a85f11c32">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/pygments@2.6.1</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>pip:pygments</spdx:name>
+    <spdx:versionInfo>2.6.1</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-larsoner-circleci-artifacts-redirector-action-master">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3795ad912c4748f694b3d5b99c658da1">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/larsoner/circleci-artifacts-redirector-action@master</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>master</spdx:versionInfo>
+    <spdx:name>actions:larsoner/circleci-artifacts-redirector-action</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-egor-tensin-cleanup-path-39324b3c13fae7f8237b32d446b474ba9f135531">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N051024eb8d3d4c41b338e10d436855a1">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/egor-tensin/cleanup-path@39324b3c13fae7f8237b32d446b474ba9f135531</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>39324b3c13fae7f8237b32d446b474ba9f135531</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:egor-tensin/cleanup-path</spdx:name>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-node-64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/setup-node</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Na03a7ddca86b4101adaaa71edbb856dd">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-gerrymanoim-pr-prefix-labeler-c8062327f6de59a9ae1c19f7f07cacd0b976b6fa">
+    <spdx:versionInfo>c8062327f6de59a9ae1c19f7f07cacd0b976b6fa</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:gerrymanoim/pr-prefix-labeler</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N9955deb178e44e9ea11cd75dab53e10e">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/gerrymanoim/pr-prefix-labeler@c8062327f6de59a9ae1c19f7f07cacd0b976b6fa</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-numpydoc-1.2.0">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N1a1229f9abde46388e9d1385cfdb547e">
+        <spdx:referenceLocator>pkg:pypi/numpydoc@1.2.0</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>1.2.0</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>pip:numpydoc</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-upload-artifact-3cea5372237819ed00197afe530f5a7ea3e805c8">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>3cea5372237819ed00197afe530f5a7ea3e805c8</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:actions/upload-artifact</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6a460c7be0524870ace05652bac8e6c9">
+        <spdx:referenceLocator>pkg:githubactions/actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-twine">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:twine</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-cygwin-cygwin-install-action-49f298a7ebb00d4b3ddf58000c3e78eff5fbd6b9">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N9769c766d55f46d39c5298e3e31e3b4b">
+        <spdx:referenceLocator>pkg:githubactions/cygwin/cygwin-install-action@49f298a7ebb00d4b3ddf58000c3e78eff5fbd6b9</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>49f298a7ebb00d4b3ddf58000c3e78eff5fbd6b9</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:cygwin/cygwin-install-action</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-upload-artifact-0b7f8abb1508181956e8e162db84b466c27e18ce">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6e3d6403877d45ddac5ca67e15fe872a">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>0b7f8abb1508181956e8e162db84b466c27e18ce</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:actions/upload-artifact</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-cython-0.29.24">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>0.29.24</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/Apache-2.0"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:cython</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N66bfbd2b73374355a567687179ec38cb">
+        <spdx:referenceLocator>pkg:pypi/cython@0.29.24</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-mypy-0.931">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne28b02d540364a959770d5eb9db4ffd5">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:pypi/mypy@0.931</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>pip:mypy</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:versionInfo>0.931</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-hypothesis-6.24.1">
+    <spdx:name>pip:hypothesis</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N70b4ee90af6d47adb9f12def3a7acffe">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/hypothesis@6.24.1</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded>
+      <spdx:ConjunctiveLicenseSet rdf:nodeID="Na0bf43a7f5554a7988807a25182fdbad">
+        <spdx:member rdf:resource="http://spdx.org/licenses/MPL-2.0"/>
+        <spdx:member rdf:resource="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#NOASSERTION"/>
+      </spdx:ConjunctiveLicenseSet>
+    </spdx:licenseConcluded>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>6.24.1</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-67a35a08586135a9573f4327e904ecbf517a882d">
+    <spdx:versionInfo>67a35a08586135a9573f4327e904ecbf517a882d</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf460700b06bb483fa33195f6cc33bb1f">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@67a35a08586135a9573f4327e904ecbf517a882d</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-gerrymanoim-pr-prefix-labeler-3">
+    <spdx:versionInfo>3</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:gerrymanoim/pr-prefix-labeler</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nc8d5334cca124267999e20b30777a3ef">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/gerrymanoim/pr-prefix-labeler@3</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-7df0ce34898d659f95c0c4a09eaa8d4e32ee64db">
+    <spdx:versionInfo>7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne1da37af21b04271bbf57a6d2ad5a21e">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-beautifulsoup4">
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>pip:beautifulsoup4</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-2.4.0">
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>2.4.0</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nc727e7d2afd54e3d8b599de3147e351c">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@2.4.0</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-04df1262e6247151b5ac09cd2c303ac36ad3f62b">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N33305c3d0f3f41d9a24b2de4ef0de6e7">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-807578363a7869ca324a79039e6db9c843e0e100">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>807578363a7869ca324a79039e6db9c843e0e100</spdx:versionInfo>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nb3eb623920ec43a78d1815bf853bada2">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@807578363a7869ca324a79039e6db9c843e0e100</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-egor-tensin-cleanup-path-1">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:egor-tensin/cleanup-path</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne84a56465e8d4a55802a2c3bba3fede4">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/egor-tensin/cleanup-path@1</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>1</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:SpdxDocument rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-DOCUMENT">
+    <spdx:specVersion>SPDX-2.3</spdx:specVersion>
+    <spdx:relationship>
+      <spdx:Relationship rdf:nodeID="N5444ecf78d14492b826444f371c3f6c9">
+        <spdx:relationshipType rdf:resource="http://spdx.org/rdf/terms#relationshipType_describes"/>
+        <spdx:relatedSpdxElement>
+          <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-com.github.numpy-numpy">
+            <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+            <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+            <spdx:name>com.github.numpy/numpy</spdx:name>
+            <spdx:versionInfo></spdx:versionInfo>
+            <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+            <spdx:supplier>NOASSERTION</spdx:supplier>
+            <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+          </spdx:Package>
+        </spdx:relatedSpdxElement>
+      </spdx:Relationship>
+    </spdx:relationship>
+    <spdx:creationInfo>
+      <spdx:CreationInfo rdf:nodeID="Na9954cab29f6481f9c2d59c06ae59a31">
+        <spdx:created>2023-06-06T14:24:57Z</spdx:created>
+        <spdx:creator>Tool: GitHub.com-Dependency-Graph</spdx:creator>
+      </spdx:CreationInfo>
+    </spdx:creationInfo>
+    <spdx:dataLicense rdf:resource="http://spdx.org/licenses/CC0-1.0"/>
+    <spdx:name>com.github.numpy/numpy</spdx:name>
+  </spdx:SpdxDocument>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-mymindstorm-setup-emsdk-11">
+    <spdx:versionInfo>11</spdx:versionInfo>
+    <spdx:name>actions:mymindstorm/setup-emsdk</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N03a3874164af4234b06c11e6316dbff3">
+        <spdx:referenceLocator>pkg:githubactions/mymindstorm/setup-emsdk@11</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-b2c19fb9a2a485599ccf4ed5d65527d94bc57226">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3c895d9598e547b59aad319956c6e145">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-sphinx-panels">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:sphinx-panels</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-04df1262e6247151b5ac09cd2c303ac36ad3f62b">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:versionInfo>04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6adc65aab78c471f9ea7794bb07bf026">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-04df1262e6247151b5ac09cd2c303ac36ad3f62b">
+    <spdx:versionInfo>04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:versionInfo>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N81067f32cc1f4a3582aae00bab008abd">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@04df1262e6247151b5ac09cd2c303ac36ad3f62b</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-2.12.0">
+    <spdx:versionInfo>2.12.0</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Na10d3fd66da04ee99faf959bd525483a">
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@2.12.0</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-168b99b3c22180941ae7dbdd5f5c9678ede476ba">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3b381bdb7d534a6b858d60d0d57c1ac7">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@168b99b3c22180941ae7dbdd5f5c9678ede476ba</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-egor-tensin-setup-cygwin-3">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>3</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N1c550d47aa384ddcaff1f0b30d0928ae">
+        <spdx:referenceLocator>pkg:githubactions/egor-tensin/setup-cygwin@3</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:egor-tensin/setup-cygwin</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-8e5e7e5ab8b370d6c329ec480221332ada57f0ab">
+    <spdx:versionInfo>8e5e7e5ab8b370d6c329ec480221332ada57f0ab</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6b92dda50163486fbc01695041d83036">
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pydata-sphinx-theme-0.9.0">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N10794ca119d74104bcfb8130d3a1228b">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/pydata-sphinx-theme@0.9.0</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>0.9.0</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:pydata-sphinx-theme</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-typing-extensions">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>&gt;= 4.2.0</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:typing-extensions</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-f3feb00acb00f31a6f60280e6ace9ca31d91c76a">
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:versionInfo>f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ne5632e5b42684e98ae635c8ee4e0df39">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-mypy-0.981">
+    <spdx:name>pip:mypy</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>0.981</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N9abb0862a50e428f81e2a8b39765892f">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/mypy@0.981</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-8f4b7f84864484a7bf31766abe9204da3cbe65b3">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7201b60bcfb2461e8098df7b2dd5ab9a">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+    <spdx:versionInfo>8f4b7f84864484a7bf31766abe9204da3cbe65b3</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pytest-cov-3.0.0">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:versionInfo>3.0.0</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N5a63162e228f4d59997b8a7790cade37">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/pytest-cov@3.0.0</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>pip:pytest-cov</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-pickle5">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:pickle5</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-numpydoc-1.1.0">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>pip:numpydoc</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+    <spdx:versionInfo>1.1.0</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nbe5f9c4d33524ee6805d32aeeeb6bf24">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/numpydoc@1.1.0</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-typing-extensions-3.10.0.0">
+    <spdx:licenseConcluded rdf:resource="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#OTHER"/>
+    <spdx:versionInfo>3.10.0.0</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nb574caef125a410fbdb294e89ff8161e">
+        <spdx:referenceLocator>pkg:pypi/typing-extensions@3.10.0.0</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>pip:typing-extensions</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-r-windows-install-rtools-13886bb4048f1b862d33869a18b73cdd446a3961">
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>13886bb4048f1b862d33869a18b73cdd446a3961</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N36391624074d4808a82c7fd7e3e5459e">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/r-windows/install-rtools@13886bb4048f1b862d33869a18b73cdd446a3961</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:r-windows/install-rtools</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-51f5c7fe68ff24694d5a6ac0eb3ad476ddd062a8">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3119ec0ddf9c42d1826e20f00b2768b6">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@51f5c7fe68ff24694d5a6ac0eb3ad476ddd062a8</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:versionInfo>51f5c7fe68ff24694d5a6ac0eb3ad476ddd062a8</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-sphinx-4.5.0">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/BSD-2-Clause"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:sphinx</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>4.5.0</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Necffa0818ca14bbdbcf1b309b5830f72">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:pypi/sphinx@4.5.0</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-python-bd6b4b6205c4dbad673328db7b31b7fab9e241c0">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>bd6b4b6205c4dbad673328db7b31b7fab9e241c0</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:actions/setup-python</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3ca106d1318242cca8e40c173541cd61">
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-python@bd6b4b6205c4dbad673328db7b31b7fab9e241c0</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-dependency-review-action-f46c48ed6d4f1227fb2d9ea62bf6bcbed315589e">
+    <spdx:name>actions:actions/dependency-review-action</spdx:name>
+    <spdx:versionInfo>f46c48ed6d4f1227fb2d9ea62bf6bcbed315589e</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N2d860143d1c14566ad1077b9f75e6d95">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/dependency-review-action@f46c48ed6d4f1227fb2d9ea62bf6bcbed315589e</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-f0e3dfb30302f8a0881bb509b044e0de4f6ef589">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N7e1ab66edad54f31b5a80997f8b6dc53">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-cygwin-cygwin-install-action-2">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:cygwin/cygwin-install-action</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>2</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N86cef2c281814ab481a6a3225b3f0aee">
+        <spdx:referenceLocator>pkg:githubactions/cygwin/cygwin-install-action@2</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-python-d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435">
+    <spdx:name>actions:actions/setup-python</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N551fed6087f04b7eb7d0891f4d85fa0c">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-python@d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-f0e3dfb30302f8a0881bb509b044e0de4f6ef589">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N886ed301c9be4cd09a6a3188c685f4ab">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>f0e3dfb30302f8a0881bb509b044e0de4f6ef589</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-83b7061638ee4956cf7545a6f7efe594e5ad0247">
+    <spdx:versionInfo>83b7061638ee4956cf7545a6f7efe594e5ad0247</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nd8ccc5ff45604317a2ea0ef64eee7d8b">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@83b7061638ee4956cf7545a6f7efe594e5ad0247</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-d186a2a36cc67bfa1b860e6170d37fb9634742c7">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N9d6a5c14d2ee442981c4001b06c7ed1c">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@d186a2a36cc67bfa1b860e6170d37fb9634742c7</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-7df0ce34898d659f95c0c4a09eaa8d4e32ee64db">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N99a926e3009a453c8ec81a4bf30ac557">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-matplotlib">
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:matplotlib</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-gitpython">
+    <spdx:name>pip:gitpython</spdx:name>
+    <spdx:versionInfo>&gt;= 3.1.30</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-67a35a08586135a9573f4327e904ecbf517a882d">
+    <spdx:versionInfo>67a35a08586135a9573f4327e904ecbf517a882d</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N312836119cd44ea6ae55550321458caa">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@67a35a08586135a9573f4327e904ecbf517a882d</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-8662eabe0e9f338a07350b7fd050732745f93848">
+    <spdx:versionInfo>8662eabe0e9f338a07350b7fd050732745f93848</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nab47047c646c466d9d40cfccd3c7022b">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@8662eabe0e9f338a07350b7fd050732745f93848</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-ossf-scorecard-action-99c53751e09b9529366343771cc321ec74e9bd3d">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>99c53751e09b9529366343771cc321ec74e9bd3d</spdx:versionInfo>
+    <spdx:name>actions:ossf/scorecard-action</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N3b76401314554501b0fe955e80875ef5">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/ossf/scorecard-action@99c53751e09b9529366343771cc321ec74e9bd3d</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-numpydoc-1.4">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>1.4</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf15b59143e6f49faa0db9fa71f6c7f03">
+        <spdx:referenceLocator>pkg:pypi/numpydoc@1.4</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>pip:numpydoc</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-cffi">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:cffi</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-29b1f65c5e92e24fe6b6647da1eaabe529cec70f">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nd00097440fef479c9b2f6c60e656d46d">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-python-2">
+    <spdx:name>actions:actions/setup-python</spdx:name>
+    <spdx:versionInfo>2</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N665fb248be8649d7bb464751cb7446ed">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-python@2</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-83f0fe6c4988d98a455712a27f0255212bba9bd4">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nd4f9b0dac1e74b16ad1133bb09da7570">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>83f0fe6c4988d98a455712a27f0255212bba9bd4</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-29b1f65c5e92e24fe6b6647da1eaabe529cec70f">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ncbf8acebdb1744f297459715bca0a286">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>29b1f65c5e92e24fe6b6647da1eaabe529cec70f</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-7df0ce34898d659f95c0c4a09eaa8d4e32ee64db">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6cba73acbbe341f18b52504222ee2a81">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:versionInfo>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-2.9.0">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N48a810b2dffd45a493c12eb2961af046">
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@2.9.0</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>2.9.0</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-f3feb00acb00f31a6f60280e6ace9ca31d91c76a">
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N9beaf9ee3dba4329ac953d5e9a34f7a8">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@f3feb00acb00f31a6f60280e6ace9ca31d91c76a</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-0225834cc549ee0ca93cb085b92954821a145866">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nc79ab454c892431392edad222acca8dd">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@0225834cc549ee0ca93cb085b92954821a145866</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:versionInfo>0225834cc549ee0ca93cb085b92954821a145866</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-mymindstorm-setup-emsdk-12">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N05da6352228247d688c4946d55cfe39c">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/mymindstorm/setup-emsdk@12</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:mymindstorm/setup-emsdk</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>12</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-larsoner-circleci-artifacts-redirector-action-24d48fa16ba1f5e23907ebcb74150363d37499d3">
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>24d48fa16ba1f5e23907ebcb74150363d37499d3</spdx:versionInfo>
+    <spdx:name>actions:larsoner/circleci-artifacts-redirector-action</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Ndaa849121d124c5cb402fe88081d9fae">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/larsoner/circleci-artifacts-redirector-action@24d48fa16ba1f5e23907ebcb74150363d37499d3</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-upload-sarif-7df0ce34898d659f95c0c4a09eaa8d4e32ee64db">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N75fbc7dcb544454886c9c7e7a033d889">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/upload-sarif@7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>7df0ce34898d659f95c0c4a09eaa8d4e32ee64db</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:github/codeql-action/upload-sarif</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-init-0225834cc549ee0ca93cb085b92954821a145866">
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Necf3aabfc4aa45599d0bdb2fdd530891">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/init@0225834cc549ee0ca93cb085b92954821a145866</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>0225834cc549ee0ca93cb085b92954821a145866</spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:name>actions:github/codeql-action/init</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-scipy">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:scipy</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-autobuild-b2c19fb9a2a485599ccf4ed5d65527d94bc57226">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nf7f8789e865d4f69b2cabca039dcceeb">
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/autobuild@b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>b2c19fb9a2a485599ccf4ed5d65527d94bc57226</spdx:versionInfo>
+    <spdx:name>actions:github/codeql-action/autobuild</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-mypy-0.940">
+    <spdx:name>pip:mypy</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N50034682b6f6456d800787329b2f93f1">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:pypi/mypy@0.940</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:versionInfo>0.940</spdx:versionInfo>
+    <spdx:licenseConcluded>
+      <spdx:ConjunctiveLicenseSet rdf:nodeID="N7f4bda4155c145e396af9a5985a6e3bc">
+        <spdx:member rdf:resource="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#NOASSERTION"/>
+        <spdx:member rdf:resource="http://spdx.org/licenses/MIT"/>
+        <spdx:member rdf:resource="http://spdx.org/licenses/Python-2.0"/>
+      </spdx:ConjunctiveLicenseSet>
+    </spdx:licenseConcluded>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-setuptools-59.2.0">
+    <spdx:versionInfo>59.2.0</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nc974898495184b5c9b9523dd66e7267a">
+        <spdx:referenceLocator>pkg:pypi/setuptools@59.2.0</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>pip:setuptools</spdx:name>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/licenses/MIT"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-2">
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N28ddc4ec1ca4407ea11a86fcc8d6115f">
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@2</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>2</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-cython">
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo><![CDATA[>= 0.29.30,< 3.0]]></spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:cython</spdx:name>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-pip-urllib3">
+    <spdx:versionInfo></spdx:versionInfo>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>pip:urllib3</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-setup-python-3">
+    <spdx:name>actions:actions/setup-python</spdx:name>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>3</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N568bf1341c6f45098a81b08d4e67a416">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/setup-python@3</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-actions-checkout-3">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N01a0a16d76b44e0793c981c0bd1079e1">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceLocator>pkg:githubactions/actions/checkout@3</spdx:referenceLocator>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:versionInfo>3</spdx:versionInfo>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:actions/checkout</spdx:name>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-5e15bb25b428e1bf2daf2215f173d2b40135f56f">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Nb6a3a7b656324bbdb2b5d7b6ab965e09">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@5e15bb25b428e1bf2daf2215f173d2b40135f56f</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>5e15bb25b428e1bf2daf2215f173d2b40135f56f</spdx:versionInfo>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-github-codeql-action-analyze-0225834cc549ee0ca93cb085b92954821a145866">
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:versionInfo>0225834cc549ee0ca93cb085b92954821a145866</spdx:versionInfo>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N6397ca3a07754f1796949d475a858caa">
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/github/codeql-action/analyze@0225834cc549ee0ca93cb085b92954821a145866</spdx:referenceLocator>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:name>actions:github/codeql-action/analyze</spdx:name>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-pypa-cibuildwheel-2.3.1">
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>2.3.1</spdx:versionInfo>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:name>actions:pypa/cibuildwheel</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="Necc96d46a33a40e6ad548e603fdcf12d">
+        <spdx:referenceLocator>pkg:githubactions/pypa/cibuildwheel@2.3.1</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+  </spdx:Package>
+  <spdx:Package rdf:about="https://github.com/numpy/numpy/dependency_graph/sbom-5ad4f43747c54c90#SPDXRef-actions-ossf-scorecard-action-e38b1902ae4f44df626f11ba0734b14fb91f8f86">
+    <spdx:name>actions:ossf/scorecard-action</spdx:name>
+    <spdx:licenseDeclared rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:externalRef>
+      <spdx:ExternalRef rdf:nodeID="N77f5af47925446a29e06a6dc13c3f412">
+        <spdx:referenceType rdf:resource="http://spdx.org/rdf/references/purl"/>
+        <spdx:referenceLocator>pkg:githubactions/ossf/scorecard-action@e38b1902ae4f44df626f11ba0734b14fb91f8f86</spdx:referenceLocator>
+        <spdx:referenceCategory rdf:resource="http://spdx.org/rdf/terms#referenceCategory_packageManager"/>
+      </spdx:ExternalRef>
+    </spdx:externalRef>
+    <spdx:downloadLocation rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:filesAnalyzed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</spdx:filesAnalyzed>
+    <spdx:versionInfo>e38b1902ae4f44df626f11ba0734b14fb91f8f86</spdx:versionInfo>
+    <spdx:licenseConcluded rdf:resource="http://spdx.org/rdf/terms#noassertion"/>
+    <spdx:supplier>NOASSERTION</spdx:supplier>
+  </spdx:Package>
+</rdf:RDF>
