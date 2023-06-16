@@ -3,7 +3,8 @@
 # %% auto 0
 __all__ = ['show_metadata', 'show_entity_types', 'show_top_n_props', 'show_measures', 'file_schema', 'get_files_data',
            'get_files_graph', 'package_schema', 'get_package_data', 'get_package_graph', 'relationship_schema',
-           'get_relationship_data', 'get_relationship_graph', 'visualize_graph']
+           'get_relationship_data', 'get_relationship_graph', 'visualize_graph', 'visualize_relationship_graph',
+           'display_relationship_graph_legend']
 
 # %% ../nbs/00_core.ipynb 6
 from kglab import KnowledgeGraph
@@ -414,7 +415,6 @@ def get_relationship_graph(kg: KnowledgeGraph #Knowledge graph to query from
 
     namespaces = {
     "spdx": "http://spdx.org/rdf/terms#",
-    "this": "http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#"
     }
     subgraph = kglab.KnowledgeGraph(
         namespaces = namespaces,
@@ -468,3 +468,169 @@ def visualize_graph(kg:KnowledgeGraph, #Knowledge graph to query from
         }
     subgraph = kglab.SubgraphTensor(kg)
     return subgraph.build_pyvis_graph(notebook=True, style=VIS_STYLE)
+
+# %% ../nbs/00_core.ipynb 36
+import kglab
+from pyvis.network import Network
+
+def visualize_relationship_graph(
+    kg: KnowledgeGraph,     # Knowledge graph to query from
+    hideTypeFile: str=False # Flag for showing SPDX:File type components in the graph
+    ) -> Network:           # Return a Network object representing the SBOMs relationship graph
+
+    """
+    Construct a Network object for representing the SBOMs components relationship graph.
+    The returned graph is ready to be visualized using `.show()`. 
+    """
+    
+    def get_node_title(elmName: str, elmType: str, elmVersion: str, elemPurpose: str) -> str:
+        """
+        Create a node title. 
+        The title will be the node hover text.
+        """
+        nodeTitle = f"{elmType}: {elmName}"
+        if elmVersion:
+            nodeTitle += f"\nVersion:{elmVersion}"
+        if elemPurpose:
+            nodeTitle += "\nPurpose: " + elemPurpose.split("purpose_")[1]
+        return nodeTitle
+
+    def get_node_label(elmName: str, elmVersion: str) -> str:
+        """
+        Create a node label. 
+        The label will be the text under the node.
+        """
+        nodeLabel = elmName
+        if elmVersion: nodeLabel += "==" + elmVersion
+        return nodeLabel
+    
+       
+    VIS_STYLE = { 
+        'SpdxDocument': {
+            "color": "#DE3163",
+            "size": 20,
+        },
+        'Package': {
+            "color": "#99ccff",
+            "size": 20,
+        },
+        'File': {
+            "color": "#FFBF00",
+            "size": 15,
+        },
+    }
+    
+    SPDX_NS = "http://spdx.org/rdf/terms#"
+    
+    QUERY = """
+    PREFIX spdx:<http://spdx.org/rdf/terms#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    
+    SELECT
+        ?element
+        ?elementName
+        ?elementType
+        ?elementVersionInfo
+        ?elementPrimaryPackagePurpose
+        ?relatedElement
+        ?relationshipType
+        ?relatedElementName
+        ?relatedElementType
+        ?relatedElementVersionInfo
+        ?relatedElementPrimaryPackagePurpose
+        
+    WHERE {
+        ?element spdx:relationship ?relationship .
+        ?element rdf:type ?elementType .
+        ?relationship spdx:relatedSpdxElement ?relatedElement .
+        ?relationship spdx:relationshipType ?relationshipType .
+        ?relatedElement rdf:type ?relatedElementType .
+        
+        OPTIONAL { ?element spdx:name ?elementName . }
+        OPTIONAL { ?element spdx:fileName ?elementName . }
+        OPTIONAL { ?element spdx:primaryPackagePurpose ?elementPrimaryPackagePurpose . }
+        OPTIONAL { ?relatedElement spdx:name ?relatedElementName . }
+        OPTIONAL { ?relatedElement spdx:fileName ?relatedElementName . }
+        OPTIONAL { ?element spdx:versionInfo ?elementVersionInfo .}
+        OPTIONAL { ?relatedElement spdx:versionInfo ?relatedElementVersionInfo .}
+        OPTIONAL { ?relatedElement spdx:primaryPackagePurpose ?relatedElementPrimaryPackagePurpose . }
+    }
+    """
+    
+    # run query
+    query_result = kg.query(QUERY)
+
+    # hide from query_result the components of the spdx:File type     
+    if hideTypeFile:
+        query_result = [ row for row in query_result if str(row.relatedElementType).split(SPDX_NS)[-1] != "File"]
+        
+    # create a graph of the relationships using Network
+    relationship_graph = Network(notebook=True, directed=True, cdn_resources="remote")
+    
+    # update the graph of the relationships based on the query_result
+    for row in query_result:
+        
+        # element
+        elementName = str(row.elementName)
+        elementType = str(row.elementType).split(SPDX_NS)[-1]
+        elementVersionInfo = row.elementVersionInfo
+        elementPrimaryPackagePurpose= row.elementPrimaryPackagePurpose
+        
+        # relationship
+        relationshipTypeName = row.relationshipType.split("relationshipType_")[1]
+        
+        # relatedElement        
+        relatedElementName = str(row.relatedElementName)
+        relatedElementType = str(row.relatedElementType).split(SPDX_NS)[-1]
+        relatedElementVersionInfo = row.relatedElementVersionInfo
+        relatedElementPrimaryPackagePurpose = row.relatedElementPrimaryPackagePurpose
+
+        ## update graph
+        # element Node info
+        elementNodeId = row.element 
+        elementNodeLabel = get_node_label(elementName, elementVersionInfo)
+        elementNodeTitle = get_node_title(elementName, elementType, 
+                                          elementVersionInfo, elementPrimaryPackagePurpose)
+        elementNodeColor = VIS_STYLE[elementType]['color']
+        elementNodeSize = VIS_STYLE[elementType]['size']        
+        
+        # relatedElement Node info
+        relatedElementNodeId = row.relatedElement 
+        relatedElementNodeLabel = get_node_label(relatedElementName, relatedElementVersionInfo)
+        relatedElementNodeTitle = get_node_title(relatedElementName, relatedElementType, 
+                                                 relatedElementVersionInfo, relatedElementPrimaryPackagePurpose)
+        relatedElementNodeColor = VIS_STYLE[relatedElementType]['color']
+        relatedElementNodeSize = VIS_STYLE[relatedElementType]['size']            
+        
+        # add nodes (elementName, relatedElementName) to the graph
+        relationship_graph.add_node(elementNodeId,
+                                    label = elementNodeLabel,
+                                    title = elementNodeTitle,
+                                    color = elementNodeColor,
+                                    size = elementNodeSize
+                                   )
+        relationship_graph.add_node(relatedElementNodeId,
+                                    label = relatedElementNodeLabel,
+                                    title = relatedElementNodeTitle,
+                                    color = relatedElementNodeColor,
+                                    size = relatedElementNodeSize
+                                   )
+        # and edge(relatedElementName) to the graph
+        relationship_graph.add_edge(elementNodeId,
+                                    relatedElementNodeId,
+                                    title = relationshipTypeName,
+                                    label = relationshipTypeName # text over the edge
+                                   )
+    return relationship_graph
+
+# %% ../nbs/00_core.ipynb 37
+from pandas import DataFrame
+def display_relationship_graph_legend():    
+    """
+    Display the legend of the SBOMs components relationship graph that can be visualized by `visualize_relationship_graph()`.
+    """    
+    legend_df = DataFrame([['File', 'Yellow'], ['Package', 'Blue'], ['SPDXDocument', 'Red']], 
+                  columns=['SPDX Type', 'Node Color'])
+
+    display(legend_df)
+
