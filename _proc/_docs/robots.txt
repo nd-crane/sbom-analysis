@@ -1,1 +1,0 @@
-Sitemap: https://nd-crane.github.io/sbom-analysis/sitemap.xml

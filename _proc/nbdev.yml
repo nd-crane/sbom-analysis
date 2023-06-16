@@ -1,9 +1,0 @@
-project:
-  output-dir: _docs
-
-website:
-  title: "sbom-analysis"
-  site-url: "https://nd-crane.github.io/sbom-analysis"
-  description: "SBOM generation tool analysis with kglab in terms of accuracy and coverage"
-  repo-branch: main
-  repo-url: "https://github.com/nd-crane/sbom-analysis"

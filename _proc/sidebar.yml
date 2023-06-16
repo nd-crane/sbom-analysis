@@ -1,8 +1,0 @@
-website:
-  sidebar:
-    contents:
-      - index.ipynb
-      - 00_core.ipynb
-      - spdx_example.ipynb
-      - tmp.fig03.html
-      - tmp.fig06.html

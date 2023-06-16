@@ -3,6 +3,24 @@ website:
     contents:
       - index.ipynb
       - 00_core.ipynb
-      - spdx_example.ipynb
-      - tmp.fig03.html
-      - tmp.fig06.html
+      - 01_minimum_elements.ipynb
+      - 01_spdx_example.ipynb
+      - 02_frameworks_getting_started.ipynb
+      - 03_llama.cpp.ipynb
+      - 04_hugging_face.ipynb
+      - 05_numpy.ipynb
+      - 06_pytorch.ipynb
+      - 07_hugging_face_model_cards.ipynb
+      - 08_SPDX3_AIPackage.ipynb
+      - other_tools.ipynb
+      - sbom_tool_overview.ipynb
+      - section: figs
+        contents:
+          - figs/fig00.relationship_full.html
+          - figs/fig01.relationship_full.html
+          - figs/fig02.relationship.html
+          - figs/fig02.relationship_full.html
+          - figs/fig03.relationship_full.html
+          - figs/fig04.relationship.html
+          - figs/fig04.relationship_full.html
+          - figs/fig06.relationship_full.html
