@@ -14,7 +14,50 @@ website:
   navbar:
     background: primary
     search: true
-  sidebar:
-    style: floating
+    left:
+      - sidebar:sbom_analysis
+      - sidebar:other_investigations
+  
+  sidebar:    
+    - id: sbom_analysis
+      title: "SBOMs"
+      collapse-level: 1
+      border: true
+      style: "docked"
+      search: true
+      contents:
+        - sboms/00_core.ipynb
+        - sboms/01_spdx_example.ipynb
+        - sboms/minimum_elements.ipynb        
+        - section: "Microsoft SBOMTool"
+          contents:        
+          - text: "General Analysis"
+            file: sboms/microsoft_sbomtool_overview.ipynb
+          - section: "[Case Studies]"
+            contents:
+            - text: "•repo:ndcrane/frameworks-getting-started"
+              file: sboms/02_frameworks_getting_started.ipynb
+            - text: "•repo:ggerganov/llama.cpp"  
+              file: sboms/03_llama.cpp.ipynb
+            - text: "•repo:TheBloke/text-generation-webui"  
+              file: sboms/04_hugging_face.ipynb
+            - text: "•repo:numpy/numpy"  
+              file: sboms/05_numpy.ipynb
+            - text: "•repo:pytorch/pytorch"  
+              file: sboms/06_pytorch.ipynb
 
-metadata-files: [nbdev.yml, sidebar.yml]
+    - id: other_investigations
+      title: "AI Specifications"      
+      style: "docked"
+      search: true
+      contents:        
+        - text: "Hugging Face Model Cards"
+          file: ai_specifications/hugging_face_model_cards.ipynb
+        #- text: "Hugging Face Dataset Cards"
+        #  file: None
+        - text: "SPDX3 AIPackage"
+          file: ai_specifications/SPDX3_AIPackage.ipynb
+        #- text: "DVC Model Register"
+        #  file: None
+
+metadata-files: [nbdev.yml]

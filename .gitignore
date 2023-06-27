@@ -152,3 +152,5 @@ _proc/
 # PDM
 .pdm.toml
 pdm.lock
+
+/.luarc.json

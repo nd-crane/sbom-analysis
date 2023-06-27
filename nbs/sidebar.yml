@@ -2,18 +2,12 @@ website:
   sidebar:
     contents:
       - index.ipynb
-      - 00_core.ipynb
-      - 01_minimum_elements.ipynb
-      - 01_spdx_example.ipynb
-      - 02_frameworks_getting_started.ipynb
-      - 03_llama.cpp.ipynb
-      - 04_hugging_face.ipynb
-      - 05_numpy.ipynb
-      - 06_pytorch.ipynb
-      - 07_hugging_face_model_cards.ipynb
-      - 08_SPDX3_AIPackage.ipynb
       - other_tools.ipynb
-      - sbom_tool_overview.ipynb
+      - tmp.html
+      - section: ai_specifications
+        contents:
+          - ai_specifications/SPDX3_AIPackage.ipynb
+          - ai_specifications/hugging_face_model_cards.ipynb
       - section: figs
         contents:
           - figs/fig00.relationship_full.html
@@ -24,3 +18,14 @@ website:
           - figs/fig04.relationship.html
           - figs/fig04.relationship_full.html
           - figs/fig06.relationship_full.html
+      - section: sboms
+        contents:
+          - sboms/00_core.ipynb
+          - sboms/01_spdx_example.ipynb
+          - sboms/02_frameworks_getting_started.ipynb
+          - sboms/03_llama.cpp.ipynb
+          - sboms/04_hugging_face.ipynb
+          - sboms/05_numpy.ipynb
+          - sboms/06_pytorch.ipynb
+          - sboms/microsoft_sbomtool_overview.ipynb
+          - sboms/minimum_elements.ipynb
