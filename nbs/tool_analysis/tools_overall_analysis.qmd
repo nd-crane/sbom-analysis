@@ -1,0 +1,126 @@
+---
+title: "Tools overall analysis"
+format: 
+  html:
+    toc: true
+    code-fold: true
+jupyter: python3    
+execute:
+  echo: false
+  output: asis
+---
+
+
+## List of SBOMs generation tools
+
+::: {.border}
+- [Syft](#syft)
+- [Trivy](#trivy)
+- [Bom](#bom)
+- [Microsoft/sbom-tool](#microsoftsbom-tool)
+- [Sbom4python](#sbom4python)
+- [gh-sbom](#gh-sbom)
+- [CycloneDX Generator](#cdxgen)
+- [Tern](#tern)
+- [ScanCode toolkit](#scancode-toolkit)
+- [OSS Review Toolkit](#oss-review-toolkit)
+- [Cosign](#cosign)
+- [Augur](#augur)
+- [SPDX SBOM Generator](#spdx-sbom-generator)
+- [SwiftBOM](#swiftbom)
+:::
+
+| 
+|   Some of the features we used to analize the SBOM generation tools were based on the framework for Evaluating SBOM Tools in [fossa](https://fossa.com/blog/framework-evaluating-sbom-tools/), such as:
+|   
+|   1. What standards it supports (SPDX, Cyclone DX)
+|   2. Compliance with the Cyber Security Executive Order
+|   3. Data Field Coverage
+|   4. Automation Support
+|   5. Programming Language Support
+|   6. Dependency Recognition Depth
+|
+| We classified the tools following the [SBOM Tool Classification Taxonomy](https://www.ntia.gov/files/ntia/publications/ntia_sbom_tooling_taxonomy-2021mar30.pdf) document by the NTIA SBOM Formats & Tooling Working Group.
+
+
+```{python}
+import json
+from nbdev import qmd
+from IPython.core.display import HTML
+
+def im(fn, width, **kw): return qmd.img(f"../figs/logos/{fn}", width=f"{width}%", **kw)
+
+def read_data(fname):
+    with open(fname, 'r') as myfile:
+        data=myfile.read()
+    return json.loads(data)
+
+data = read_data('tools.json')
+file_description = data["creation_info"]["description"]
+tools = data["tools"]
+tool_names = [ tool['gen_tool_name'] for tool  in tools]
+
+for tool in tools:
+
+    # tool name
+    print(qmd.div(f"## {tool['gen_tool_name']}", style={"color": "#003366"}))
+
+    # table header
+    print(qmd.tbl_row(["Feature", "Description"]))
+    print(qmd.tbl_sep([1,1]))     
+    #print(qmd.tbl_row(["**Tool Name**", tool['gen_tool_name']]))
+    
+    # rows
+    # tool general info
+    print(qmd.tbl_row(["**Tool logo**", im(tool['logo'], 10)]))
+    print(qmd.tbl_row(["**Version**", tool['gen_tool_version']]))
+    print(qmd.tbl_row(["**License**", tool['license']]))
+    print(qmd.tbl_row(["**Language**", tool['language']]))
+
+    # classification 
+    classifications = ""
+    for classification in tool['classification']:
+        classifications += classification + ", "
+    print(qmd.tbl_row(["**Classification**", classifications[0:-2]]))
+    
+    # functionality
+    print(qmd.tbl_row(["**Functionality**", tool['functionality']]))
+
+    # locations
+    urls = ""
+    for url in tool['locations']:
+        urls += f"""[{url}]({url}), """
+    print(qmd.tbl_row(["**Locations**", urls[:-2]]))
+
+    # Fossa Framework
+    print(qmd.tbl_row(["**??Automation support**", tool['automation_support']]))
+    print(qmd.tbl_row(["**Data Fields**", tool['data_fields']]))
+    print(qmd.tbl_row(["**Package Depth**", tool['package_depth']]))
+    print(qmd.tbl_row(["**Relationships**", tool['relationships']]))
+  
+    # specifications 
+    specs_md = ""
+    for spec in tool['support_specs']:
+        file_formats = str(spec['file_formats']).replace("'", "")
+        spec_version = str(spec['spec_version']).replace("'", "")
+        specs_md += f"""*{spec['spec_name']}* `{spec_version}` *Formats* `{file_formats}`"""
+    print(qmd.tbl_row(["**support specificatiosn **", specs_md]))
+    
+    # functions
+    functions = ""
+    for f in tool['functions']:
+        functions += f"""`{f}`,"""
+    print(qmd.tbl_row(["**Functions**",functions[:-1] ]))
+
+    # howtouse
+    for howtouse in tool['How to use']:    
+        print(qmd.tbl_row([f"**How to use** from {howtouse['source']}", f"""`$ {howtouse['cmd']}`"""]))
+  
+    # installation
+    uri = tool['installation']['instructions']
+    print(qmd.tbl_row(["**Installation instructions**", f"""[{uri}]({uri})"""]))
+    print(qmd.tbl_row(["**It requires sudo**", tool['installation']['requires_sudo']]))
+    print(qmd.tbl_row(["**It was installed**", tool['installation']['was_installed']]))
+    print(qmd.tbl_row(["**It was tested**", tool['was_tested']]))
+
+```

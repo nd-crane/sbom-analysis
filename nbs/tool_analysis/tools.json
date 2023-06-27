@@ -1,0 +1,108 @@
+
+{    
+    "creation_info": {
+      "name": "summary-sbom-gen-tools",
+      "version": "v0.0.0",
+      "description": "This is derived from [A Framework for Evaluating SBOM Tools](https://fossa.com/blog/framework-evaluating-sbom-tools/). The following features were used to analyze sboms: 1) What standards it supports (SPDX, Cyclone DX);  2) Compliance with the Cyber Security Executive Order;  3) Data Field Coverage;  4) Automation Support; 5) Programming Language Support; and 6) Dependency Recognition Depth."
+    },
+    "tools": [
+        {                
+        "gen_tool_name": "bom",
+        "gen_tool_pname": "bom",
+        "gen_tool_version": "v0.5.1",
+        "license": "Apache-2.0 license",
+        "open_sourse": true,
+        "language": "Go",
+        "description": "Generate can create SBOMs from files, images, and docker archives.", 
+        "automation_support": "This tool geneartes SBOM files in the tag/value (.spdx) format.",
+        "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+        "package_depth": "This tools does not identify any project dependencies",
+        "relationships": "This tool only identifies relationships between the project and its files.",
+        "classification": [
+            "Author after Creation (Audit tool)"
+        ],
+        "functionality": "bom is a general-purpose tool that can generate SPDX packages from directories, container images, single files, and other sources. The utility has a built-in license classifier that recognizes the 400+ licenses in the SPDX catalog. Other features include Golang dependency analysis and full .gitignore support when scanning git repositories.",
+        "functions": [
+            "document", 
+            "generate"
+        ],
+        "support_specs": [
+            {
+                "spec_name":"spdx",
+                "spec_version": ["SPDX-2.3"],
+                "file_formats": [
+                    "json",
+                    "tag-value"
+                ]
+            }
+        ],        
+        "locations": ["https://github.com/kubernetes-sigs/bom", "https://kubernetes-sigs.github.io/bom/"],
+        "How to use": [
+            {
+            "source": "Container Images",
+            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -i {image}:{version}"
+            },
+            {
+            "source": "Directories",
+            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -d {package-dir}"
+            }
+        ],        
+        "was_tested": true,
+        "installation": {
+            "was_installed": true,
+            "requires_sudo": true,
+            "instructions": "https://github.com/kubernetes-sigs/bom#installation"
+        },
+        "logo": "bom.png"
+    },
+    {                
+        "gen_tool_name": "Syft",
+        "gen_tool_pname": "Syft",
+        "gen_tool_version": "v0.5.1",
+        "license": "Apache-2.0 license",
+        "open_sourse": true,
+        "language": "Go",
+        "description": "Generate can create SBOMs from files, images, and docker archives.", 
+        "automation_support": "This tool geneartes SBOM files in the tag/value (.spdx) format.",
+        "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+        "package_depth": "This tools does not identify any project dependencies",
+        "relationships": "This tool only identifies relationships between the project and its files.",
+        "classification": [
+            "Author after Creation (Audit tool)"
+        ],
+        "functionality": "bom is a general-purpose tool that can generate SPDX packages from directories, container images, single files, and other sources. The utility has a built-in license classifier that recognizes the 400+ licenses in the SPDX catalog. Other features include Golang dependency analysis and full .gitignore support when scanning git repositories.",
+        "functions": [
+            "document", 
+            "generate"
+        ],
+        "support_specs": [
+            {
+                "spec_name":"spdx",
+                "spec_version": ["SPDX-2.3"],
+                "file_formats": [
+                    "json",
+                    "tag-value"
+                ]
+            }
+        ],        
+        "locations": ["https://github.com/kubernetes-sigs/bom", "https://kubernetes-sigs.github.io/bom/"],
+        "How to use": [
+            {
+            "source": "Container Images",
+            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -i {image}:{version}"
+            },
+            {
+            "source": "Directories",
+            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -d {package-dir}"
+            }
+        ],        
+        "was_tested": true,
+        "installation": {
+            "was_installed": true,
+            "requires_sudo": true,
+            "instructions": "https://github.com/kubernetes-sigs/bom#installation"
+        },
+        "logo": "bom.png"
+    }    
+  ]
+}

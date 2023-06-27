@@ -16,14 +16,15 @@ website:
     search: true
     left:
       - sidebar:sbom_analysis
+      - sidebar:tool_analysis
       - sidebar:other_investigations
   
   sidebar:    
     - id: sbom_analysis
       title: "SBOMs"
-      collapse-level: 1
+      collapse-level: 2
       border: true
-      style: "docked"
+      style: "floating"      
       search: true
       contents:
         - sboms/00_core.ipynb
@@ -45,6 +46,29 @@ website:
               file: sboms/05_numpy.ipynb
             - text: "•repo:pytorch/pytorch"  
               file: sboms/06_pytorch.ipynb
+    - id: tool_analysis
+      title: "Tool Analysis"    
+      collapse-level: 4
+      border: true
+      style: "docked"
+      search: true      
+      contents:
+        - text: "Introduction"
+          file: tool_analysis/introduction.ipynb
+        - text: "Overall Analysis"
+          file: tool_analysis/tools_overall_analysis.qmd
+        - section: "[Case Studies]"
+          contents:
+            - section: "• repo:pytorch/pytorch"
+              contents:
+              - text: "Overall Analysis"
+                file: tool_analysis/cs1/overall_analysis.ipynb
+              - section: "Analysis by Tools" 
+                contents:
+                - text: "Tool 1"
+                  file: tool_analysis/cs1/tool1.ipynb
+                - text: "Tool 2"
+                  file: tool_analysis/cs1/tool2.ipynb                
 
     - id: other_investigations
       title: "AI Specifications"      

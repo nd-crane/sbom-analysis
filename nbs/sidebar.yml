@@ -29,3 +29,20 @@ website:
           - sboms/06_pytorch.ipynb
           - sboms/microsoft_sbomtool_overview.ipynb
           - sboms/minimum_elements.ipynb
+      - section: tool_analysis
+        contents:
+          - tool_analysis/introduction.ipynb
+          - tool_analysis/tools.qmd
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/overall_analysis.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/tool1.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/tool2.ipynb
