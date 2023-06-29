@@ -1,0 +1,3090 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "pytorch",
+  "documentNamespace": "http://aquasecurity.github.io/trivy/filesystem/pytorch-67a37ad8-47f1-467b-a97a-eab2e2632234",
+  "creationInfo": {
+    "licenseListVersion": "",
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.42.1"
+    ],
+    "created": "2023-06-20T21:14:55Z"
+  },
+  "packages": [
+    {
+      "name": "CFPropertyList",
+      "SPDXID": "SPDXRef-Package-c417df4e78e756c9",
+      "versionInfo": "3.0.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/CFPropertyList@3.0.5"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: CFPropertyList@3.0.5"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "IPython",
+      "SPDXID": "SPDXRef-Package-116014b693fbba94",
+      "versionInfo": "8.12.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/ipython@8.12.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "Jinja2",
+      "SPDXID": "SPDXRef-Package-cb8c27dd88c2d65",
+      "versionInfo": "3.0.*",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/jinja2@3.0.%2A"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "addressable",
+      "SPDXID": "SPDXRef-Package-5310be08d827b78a",
+      "versionInfo": "2.8.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/addressable@2.8.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: addressable@2.8.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "artifactory",
+      "SPDXID": "SPDXRef-Package-d72ff00f73c7793b",
+      "versionInfo": "3.0.15",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/artifactory@3.0.15"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: artifactory@3.0.15"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "atomos",
+      "SPDXID": "SPDXRef-Package-2f54731889dc277e",
+      "versionInfo": "0.1.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/atomos@0.1.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: atomos@0.1.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "aws-eventstream",
+      "SPDXID": "SPDXRef-Package-54f30c9900f0813d",
+      "versionInfo": "1.2.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/aws-eventstream@1.2.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: aws-eventstream@1.2.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "aws-partitions",
+      "SPDXID": "SPDXRef-Package-78f57118bbb81ca5",
+      "versionInfo": "1.601.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/aws-partitions@1.601.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: aws-partitions@1.601.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "aws-sdk-core",
+      "SPDXID": "SPDXRef-Package-48c5e0410ac8e300",
+      "versionInfo": "3.131.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/aws-sdk-core@3.131.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: aws-sdk-core@3.131.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "aws-sdk-kms",
+      "SPDXID": "SPDXRef-Package-1a2903180afde2b2",
+      "versionInfo": "1.57.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/aws-sdk-kms@1.57.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: aws-sdk-kms@1.57.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "aws-sdk-s3",
+      "SPDXID": "SPDXRef-Package-fc9bee65b0cfde57",
+      "versionInfo": "1.114.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/aws-sdk-s3@1.114.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: aws-sdk-s3@1.114.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "aws-sigv4",
+      "SPDXID": "SPDXRef-Package-3eabc9ef16e7dad0",
+      "versionInfo": "1.5.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/aws-sigv4@1.5.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: aws-sigv4@1.5.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "babosa",
+      "SPDXID": "SPDXRef-Package-dc3249076e8b18e5",
+      "versionInfo": "1.0.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/babosa@1.0.4"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: babosa@1.0.4"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "breathe",
+      "SPDXID": "SPDXRef-Package-ae16265f1b0b0ddd",
+      "versionInfo": "4.25.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/breathe@4.25.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "bundler",
+      "SPDXID": "SPDXRef-Application-78693afa971b5448",
+      "downloadLocation": "NONE",
+      "sourceInfo": "ios/TestApp/Gemfile.lock",
+      "copyrightText": "",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "certifi",
+      "SPDXID": "SPDXRef-Package-b87be7aeaed1e83a",
+      "versionInfo": "2023.5.7",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/certifi@2023.5.7"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "charset-normalizer",
+      "SPDXID": "SPDXRef-Package-add5229aee1f9a65",
+      "versionInfo": "3.1.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/charset-normalizer@3.1.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "claide",
+      "SPDXID": "SPDXRef-Package-efeeab72a47a5c09",
+      "versionInfo": "1.1.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/claide@1.1.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: claide@1.1.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "colored",
+      "SPDXID": "SPDXRef-Package-bcd70ca34a6fc2e8",
+      "versionInfo": "1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/colored@1.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: colored@1.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "colored2",
+      "SPDXID": "SPDXRef-Package-eeac4ea2c1009488",
+      "versionInfo": "3.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/colored2@3.1.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: colored2@3.1.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "commander",
+      "SPDXID": "SPDXRef-Package-241ab50719c217a5",
+      "versionInfo": "4.6.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/commander@4.6.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: commander@4.6.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "declarative",
+      "SPDXID": "SPDXRef-Package-a5a5dbfb51010dc9",
+      "versionInfo": "0.0.20",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/declarative@0.0.20"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: declarative@0.0.20"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "digest-crc",
+      "SPDXID": "SPDXRef-Package-e76cb115993307b9",
+      "versionInfo": "0.6.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/digest-crc@0.6.4"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: digest-crc@0.6.4"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "docutils",
+      "SPDXID": "SPDXRef-Package-339220feed1576b",
+      "versionInfo": "0.16",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/docutils@0.16"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "domain_name",
+      "SPDXID": "SPDXRef-Package-287a69865a1e4c75",
+      "versionInfo": "0.5.20190701",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/domain_name@0.5.20190701"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: domain_name@0.5.20190701"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "dotenv",
+      "SPDXID": "SPDXRef-Package-b1545cce5302ab76",
+      "versionInfo": "2.7.6",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/dotenv@2.7.6"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: dotenv@2.7.6"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "emoji_regex",
+      "SPDXID": "SPDXRef-Package-3f12a6f7ccac11c4",
+      "versionInfo": "3.2.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/emoji_regex@3.2.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: emoji_regex@3.2.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "excon",
+      "SPDXID": "SPDXRef-Package-b816584abe2437",
+      "versionInfo": "0.92.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/excon@0.92.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: excon@0.92.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "exhale",
+      "SPDXID": "SPDXRef-Package-ed3b409fbac6d2a5",
+      "versionInfo": "0.2.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/exhale@0.2.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday",
+      "SPDXID": "SPDXRef-Package-901c70e18e811086",
+      "versionInfo": "1.10.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday@1.10.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday@1.10.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-cookie_jar",
+      "SPDXID": "SPDXRef-Package-ee0398aeb28c59af",
+      "versionInfo": "0.0.7",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-cookie_jar@0.0.7"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-cookie_jar@0.0.7"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-em_http",
+      "SPDXID": "SPDXRef-Package-5f53a85f5f47e534",
+      "versionInfo": "1.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-em_http@1.0.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-em_http@1.0.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-em_synchrony",
+      "SPDXID": "SPDXRef-Package-9fb3765b28787cf6",
+      "versionInfo": "1.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-em_synchrony@1.0.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-em_synchrony@1.0.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-excon",
+      "SPDXID": "SPDXRef-Package-725001607380e160",
+      "versionInfo": "1.1.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-excon@1.1.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-excon@1.1.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-httpclient",
+      "SPDXID": "SPDXRef-Package-29b2232fee59961a",
+      "versionInfo": "1.0.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-httpclient@1.0.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-httpclient@1.0.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-multipart",
+      "SPDXID": "SPDXRef-Package-ca17f46c4da57b2a",
+      "versionInfo": "1.0.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-multipart@1.0.4"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-multipart@1.0.4"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-net_http",
+      "SPDXID": "SPDXRef-Package-ff0e5633c6bd4b2c",
+      "versionInfo": "1.0.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-net_http@1.0.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-net_http@1.0.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-net_http_persistent",
+      "SPDXID": "SPDXRef-Package-7e47b5814164462a",
+      "versionInfo": "1.2.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-net_http_persistent@1.2.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-net_http_persistent@1.2.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-patron",
+      "SPDXID": "SPDXRef-Package-92609dcc9ee5338d",
+      "versionInfo": "1.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-patron@1.0.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-patron@1.0.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-rack",
+      "SPDXID": "SPDXRef-Package-c5a8df28c1ad3e58",
+      "versionInfo": "1.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-rack@1.0.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-rack@1.0.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday-retry",
+      "SPDXID": "SPDXRef-Package-1bd748f2e7a4da04",
+      "versionInfo": "1.0.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday-retry@1.0.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday-retry@1.0.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "faraday_middleware",
+      "SPDXID": "SPDXRef-Package-f2ac09f7de43cd5e",
+      "versionInfo": "1.2.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/faraday_middleware@1.2.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: faraday_middleware@1.2.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "fastimage",
+      "SPDXID": "SPDXRef-Package-d0a5797fce6dbe4c",
+      "versionInfo": "2.2.6",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/fastimage@2.2.6"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: fastimage@2.2.6"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "fastlane",
+      "SPDXID": "SPDXRef-Package-830d992cd79f9a7c",
+      "versionInfo": "2.206.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/fastlane@2.206.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: fastlane@2.206.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "future",
+      "SPDXID": "SPDXRef-Package-dfa1427d368ec715",
+      "versionInfo": "0.18.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/future@0.18.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gh_inspector",
+      "SPDXID": "SPDXRef-Package-9ac593d7be742779",
+      "versionInfo": "1.1.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/gh_inspector@1.1.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: gh_inspector@1.1.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-apis-androidpublisher_v3",
+      "SPDXID": "SPDXRef-Package-fdaeb0817208eb05",
+      "versionInfo": "0.23.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-apis-androidpublisher_v3@0.23.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-apis-androidpublisher_v3@0.23.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-apis-core",
+      "SPDXID": "SPDXRef-Package-e9eae8e290252688",
+      "versionInfo": "0.6.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-apis-core@0.6.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-apis-core@0.6.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-apis-iamcredentials_v1",
+      "SPDXID": "SPDXRef-Package-f93d72144d8128d",
+      "versionInfo": "0.12.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-apis-iamcredentials_v1@0.12.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-apis-iamcredentials_v1@0.12.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-apis-playcustomapp_v1",
+      "SPDXID": "SPDXRef-Package-581c46d4877fdc20",
+      "versionInfo": "0.9.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-apis-playcustomapp_v1@0.9.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-apis-playcustomapp_v1@0.9.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-apis-storage_v1",
+      "SPDXID": "SPDXRef-Package-24a88f24094a1a3e",
+      "versionInfo": "0.16.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-apis-storage_v1@0.16.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-apis-storage_v1@0.16.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-cloud-core",
+      "SPDXID": "SPDXRef-Package-2ea0cebef7b4298b",
+      "versionInfo": "1.6.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-cloud-core@1.6.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-cloud-core@1.6.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-cloud-env",
+      "SPDXID": "SPDXRef-Package-d827873a8e8088c1",
+      "versionInfo": "1.6.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-cloud-env@1.6.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-cloud-env@1.6.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-cloud-errors",
+      "SPDXID": "SPDXRef-Package-8d0d905692474333",
+      "versionInfo": "1.2.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-cloud-errors@1.2.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-cloud-errors@1.2.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "google-cloud-storage",
+      "SPDXID": "SPDXRef-Package-a9f8284a832dd638",
+      "versionInfo": "1.36.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/google-cloud-storage@1.36.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: google-cloud-storage@1.36.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "googleauth",
+      "SPDXID": "SPDXRef-Package-68695fa5c577187e",
+      "versionInfo": "1.2.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/googleauth@1.2.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: googleauth@1.2.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "highline",
+      "SPDXID": "SPDXRef-Package-13564b9946a4b66e",
+      "versionInfo": "2.0.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/highline@2.0.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: highline@2.0.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "http-cookie",
+      "SPDXID": "SPDXRef-Package-9a8e2dab2a1b03e4",
+      "versionInfo": "1.0.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/http-cookie@1.0.5"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: http-cookie@1.0.5"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "httpclient",
+      "SPDXID": "SPDXRef-Package-754a7811651aa9fc",
+      "versionInfo": "2.8.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/httpclient@2.8.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: httpclient@2.8.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "idna",
+      "SPDXID": "SPDXRef-Package-5cec5a8a025f20ba",
+      "versionInfo": "3.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/idna@3.4"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "jmespath",
+      "SPDXID": "SPDXRef-Package-25078f5973c01e6",
+      "versionInfo": "1.6.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/jmespath@1.6.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: jmespath@1.6.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "json",
+      "SPDXID": "SPDXRef-Package-5706e719591e8598",
+      "versionInfo": "2.6.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/json@2.6.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: json@2.6.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "jwt",
+      "SPDXID": "SPDXRef-Package-db5d253a3bb3263e",
+      "versionInfo": "2.4.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/jwt@2.4.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: jwt@2.4.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "matplotlib",
+      "SPDXID": "SPDXRef-Package-4d34103a3e65267f",
+      "versionInfo": "3.6.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/matplotlib@3.6.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "memoist",
+      "SPDXID": "SPDXRef-Package-18204c96382ba51b",
+      "versionInfo": "0.16.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/memoist@0.16.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: memoist@0.16.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "mini_magick",
+      "SPDXID": "SPDXRef-Package-6c99c82ce2dd0f97",
+      "versionInfo": "4.11.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/mini_magick@4.11.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: mini_magick@4.11.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "mini_mime",
+      "SPDXID": "SPDXRef-Package-666aa32b15d485c6",
+      "versionInfo": "1.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/mini_mime@1.1.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: mini_mime@1.1.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "mpmath",
+      "SPDXID": "SPDXRef-Package-592edb74fc953559",
+      "versionInfo": "1.3.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/mpmath@1.3.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "multi_json",
+      "SPDXID": "SPDXRef-Package-4eddead7e6be89dd",
+      "versionInfo": "1.15.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/multi_json@1.15.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: multi_json@1.15.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "multipart-post",
+      "SPDXID": "SPDXRef-Package-1815976df6df8759",
+      "versionInfo": "2.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/multipart-post@2.0.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: multipart-post@2.0.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "myst-nb",
+      "SPDXID": "SPDXRef-Package-b2e01c435d37d3c3",
+      "versionInfo": "0.13.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/myst-nb@0.13.2"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "myst-parser",
+      "SPDXID": "SPDXRef-Package-13ae379a5ba47ed9",
+      "versionInfo": "0.18.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/myst-parser@0.18.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "nanaimo",
+      "SPDXID": "SPDXRef-Package-5f45afdfe944b62b",
+      "versionInfo": "0.3.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/nanaimo@0.3.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: nanaimo@0.3.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "naturally",
+      "SPDXID": "SPDXRef-Package-c12b84c2b4f75b2f",
+      "versionInfo": "2.2.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/naturally@2.2.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: naturally@2.2.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "numpy",
+      "SPDXID": "SPDXRef-Package-7b08f877ecd7d731",
+      "versionInfo": "1.24.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numpy@1.24.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "optparse",
+      "SPDXID": "SPDXRef-Package-eab9d92b926d07d7",
+      "versionInfo": "0.1.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/optparse@0.1.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: optparse@0.1.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "os",
+      "SPDXID": "SPDXRef-Package-c88a65ffa69227d2",
+      "versionInfo": "1.1.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/os@1.1.4"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: os@1.1.4"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pip",
+      "SPDXID": "SPDXRef-Application-530d40f8e0d7c5c3",
+      "downloadLocation": "NONE",
+      "sourceInfo": "docs/cpp/requirements.txt",
+      "copyrightText": "",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "pip",
+      "SPDXID": "SPDXRef-Application-547f4b32b4b380e9",
+      "downloadLocation": "NONE",
+      "sourceInfo": "docs/requirements.txt",
+      "copyrightText": "",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "pip",
+      "SPDXID": "SPDXRef-Application-61422b121c43e6c3",
+      "downloadLocation": "NONE",
+      "sourceInfo": "tools/build/bazel/requirements.txt",
+      "copyrightText": "",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "pip",
+      "SPDXID": "SPDXRef-Application-b800f9d75ff7358c",
+      "downloadLocation": "NONE",
+      "sourceInfo": "functorch/docs/requirements.txt",
+      "copyrightText": "",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "plist",
+      "SPDXID": "SPDXRef-Package-2035b86c82b46035",
+      "versionInfo": "3.6.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/plist@3.6.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: plist@3.6.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "public_suffix",
+      "SPDXID": "SPDXRef-Package-8f9ca7307aa2b3fe",
+      "versionInfo": "4.0.7",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/public_suffix@4.0.7"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: public_suffix@4.0.7"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "python-etcd",
+      "SPDXID": "SPDXRef-Package-ef112d6a2d1d6497",
+      "versionInfo": "0.4.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/python-etcd@0.4.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "pytorch",
+      "SPDXID": "SPDXRef-Filesystem-1f1ec8a40bbbf01a",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "attributionTexts": [
+        "SchemaVersion: 2"
+      ],
+      "primaryPackagePurpose": "SOURCE"
+    },
+    {
+      "name": "pyyaml",
+      "SPDXID": "SPDXRef-Package-d92ef59f7032ee89",
+      "versionInfo": "6.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pyyaml@6.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rake",
+      "SPDXID": "SPDXRef-Package-50c5d092ee5d0d2c",
+      "versionInfo": "13.0.6",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rake@13.0.6"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rake@13.0.6"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "representable",
+      "SPDXID": "SPDXRef-Package-1f25549e8fc480f0",
+      "versionInfo": "3.2.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/representable@3.2.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: representable@3.2.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "requests",
+      "SPDXID": "SPDXRef-Package-1a995b6a4914277e",
+      "versionInfo": "2.31.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/requests@2.31.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "retriable",
+      "SPDXID": "SPDXRef-Package-38f14f27c8584b69",
+      "versionInfo": "3.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/retriable@3.1.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: retriable@3.1.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rexml",
+      "SPDXID": "SPDXRef-Package-17560197cf40237d",
+      "versionInfo": "3.2.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rexml@3.2.5"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rexml@3.2.5"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rouge",
+      "SPDXID": "SPDXRef-Package-9d71210b31d885d",
+      "versionInfo": "2.0.7",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rouge@2.0.7"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rouge@2.0.7"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ruby2_keywords",
+      "SPDXID": "SPDXRef-Package-3145cbe7c877446e",
+      "versionInfo": "0.0.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/ruby2_keywords@0.0.5"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: ruby2_keywords@0.0.5"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "rubyzip",
+      "SPDXID": "SPDXRef-Package-e9dac22a0b14ec70",
+      "versionInfo": "2.3.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/rubyzip@2.3.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: rubyzip@2.3.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "security",
+      "SPDXID": "SPDXRef-Package-453614edbe57aea2",
+      "versionInfo": "0.1.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/security@0.1.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: security@0.1.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "setuptools",
+      "SPDXID": "SPDXRef-Package-4f2c33d77d7169de",
+      "versionInfo": "67.8.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/setuptools@67.8.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "signet",
+      "SPDXID": "SPDXRef-Package-2c3c962fe851a85",
+      "versionInfo": "0.17.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/signet@0.17.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: signet@0.17.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "simctl",
+      "SPDXID": "SPDXRef-Package-edb323a1d4d68a7f",
+      "versionInfo": "1.6.8",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/simctl@1.6.8"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: simctl@1.6.8"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "six",
+      "SPDXID": "SPDXRef-Package-128478b38165e360",
+      "versionInfo": "1.16.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/six@1.16.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sphinx",
+      "SPDXID": "SPDXRef-Package-6d914803a62e29af",
+      "versionInfo": "5.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx@5.0.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sphinx",
+      "SPDXID": "SPDXRef-Package-ad27bb74a2d22976",
+      "versionInfo": "3.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx@3.1.2"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sphinx",
+      "SPDXID": "SPDXRef-Package-d326343f5c73259f",
+      "versionInfo": "3.5.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx@3.5.4"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sphinx-copybutton",
+      "SPDXID": "SPDXRef-Package-283c86662fd5adb7",
+      "versionInfo": "0.5.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx-copybutton@0.5.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sphinx-panels",
+      "SPDXID": "SPDXRef-Package-fc70aa6b475c0698",
+      "versionInfo": "0.4.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx-panels@0.4.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sphinxcontrib.katex",
+      "SPDXID": "SPDXRef-Package-951de96e1510b95",
+      "versionInfo": "0.8.6",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinxcontrib.katex@0.8.6"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "sympy",
+      "SPDXID": "SPDXRef-Package-3a675bd9c4853049",
+      "versionInfo": "1.12",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sympy@1.12"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tensorboard",
+      "SPDXID": "SPDXRef-Package-e9a1cd95b5b5c33b",
+      "versionInfo": "2.10.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/tensorboard@2.10.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "terminal-notifier",
+      "SPDXID": "SPDXRef-Package-55333f5ab7b8aebd",
+      "versionInfo": "2.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/terminal-notifier@2.0.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: terminal-notifier@2.0.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "terminal-table",
+      "SPDXID": "SPDXRef-Package-292a1951d07d934",
+      "versionInfo": "1.8.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/terminal-table@1.8.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: terminal-table@1.8.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "trailblazer-option",
+      "SPDXID": "SPDXRef-Package-9e4bba84766e2b26",
+      "versionInfo": "0.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/trailblazer-option@0.1.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: trailblazer-option@0.1.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tty-cursor",
+      "SPDXID": "SPDXRef-Package-c5447cac093b1877",
+      "versionInfo": "0.7.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/tty-cursor@0.7.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tty-cursor@0.7.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tty-screen",
+      "SPDXID": "SPDXRef-Package-a6c6a01aa6d3b25a",
+      "versionInfo": "0.8.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/tty-screen@0.8.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tty-screen@0.8.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "tty-spinner",
+      "SPDXID": "SPDXRef-Package-c2b0748efe8c04c6",
+      "versionInfo": "0.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/tty-spinner@0.9.3"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: tty-spinner@0.9.3"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "typing-extensions",
+      "SPDXID": "SPDXRef-Package-108e037e54aa6dd4",
+      "versionInfo": "4.5.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/typing-extensions@4.5.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "uber",
+      "SPDXID": "SPDXRef-Package-ce7a10ef9f2eb983",
+      "versionInfo": "0.1.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/uber@0.1.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: uber@0.1.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "unf",
+      "SPDXID": "SPDXRef-Package-645b0bcafce8ebda",
+      "versionInfo": "0.1.4",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/unf@0.1.4"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: unf@0.1.4"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "unf_ext",
+      "SPDXID": "SPDXRef-Package-1a63b6206d4e46a8",
+      "versionInfo": "0.0.8.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/unf_ext@0.0.8.2"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: unf_ext@0.0.8.2"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "unicode-display_width",
+      "SPDXID": "SPDXRef-Package-be28db052fcff595",
+      "versionInfo": "1.8.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/unicode-display_width@1.8.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: unicode-display_width@1.8.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "urllib3",
+      "SPDXID": "SPDXRef-Package-f2caeb1180b1a7bf",
+      "versionInfo": "2.0.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/urllib3@2.0.2"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "webrick",
+      "SPDXID": "SPDXRef-Package-ad044889fbbcaeee",
+      "versionInfo": "1.7.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/webrick@1.7.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: webrick@1.7.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "word_wrap",
+      "SPDXID": "SPDXRef-Package-d5fafa68c1a24926",
+      "versionInfo": "1.0.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/word_wrap@1.0.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: word_wrap@1.0.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xcodeproj",
+      "SPDXID": "SPDXRef-Package-6f9dff942b042db2",
+      "versionInfo": "1.22.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/xcodeproj@1.22.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xcodeproj@1.22.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xcpretty",
+      "SPDXID": "SPDXRef-Package-76bd488af04e116",
+      "versionInfo": "0.3.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/xcpretty@0.3.0"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xcpretty@0.3.0"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "xcpretty-travis-formatter",
+      "SPDXID": "SPDXRef-Package-bc5881b2d40e70e",
+      "versionInfo": "1.0.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/xcpretty-travis-formatter@1.0.1"
+        }
+      ],
+      "attributionTexts": [
+        "PkgID: xcpretty-travis-formatter@1.0.1"
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Filesystem-1f1ec8a40bbbf01a",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-Filesystem-1f1ec8a40bbbf01a",
+      "relatedSpdxElement": "SPDXRef-Application-547f4b32b4b380e9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-4d34103a3e65267f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-13ae379a5ba47ed9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-ef112d6a2d1d6497",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-6d914803a62e29af",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-283c86662fd5adb7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-fc70aa6b475c0698",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-951de96e1510b95",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-547f4b32b4b380e9",
+      "relatedSpdxElement": "SPDXRef-Package-e9a1cd95b5b5c33b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Filesystem-1f1ec8a40bbbf01a",
+      "relatedSpdxElement": "SPDXRef-Application-530d40f8e0d7c5c3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-530d40f8e0d7c5c3",
+      "relatedSpdxElement": "SPDXRef-Package-cb8c27dd88c2d65",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-530d40f8e0d7c5c3",
+      "relatedSpdxElement": "SPDXRef-Package-ae16265f1b0b0ddd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-530d40f8e0d7c5c3",
+      "relatedSpdxElement": "SPDXRef-Package-339220feed1576b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-530d40f8e0d7c5c3",
+      "relatedSpdxElement": "SPDXRef-Package-ed3b409fbac6d2a5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-530d40f8e0d7c5c3",
+      "relatedSpdxElement": "SPDXRef-Package-ad27bb74a2d22976",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Filesystem-1f1ec8a40bbbf01a",
+      "relatedSpdxElement": "SPDXRef-Application-b800f9d75ff7358c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-b800f9d75ff7358c",
+      "relatedSpdxElement": "SPDXRef-Package-116014b693fbba94",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-b800f9d75ff7358c",
+      "relatedSpdxElement": "SPDXRef-Package-339220feed1576b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-b800f9d75ff7358c",
+      "relatedSpdxElement": "SPDXRef-Package-b2e01c435d37d3c3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-b800f9d75ff7358c",
+      "relatedSpdxElement": "SPDXRef-Package-d326343f5c73259f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-b800f9d75ff7358c",
+      "relatedSpdxElement": "SPDXRef-Package-951de96e1510b95",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Filesystem-1f1ec8a40bbbf01a",
+      "relatedSpdxElement": "SPDXRef-Application-78693afa971b5448",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-c417df4e78e756c9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-5310be08d827b78a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-d72ff00f73c7793b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-2f54731889dc277e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-54f30c9900f0813d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-78f57118bbb81ca5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-48c5e0410ac8e300",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-1a2903180afde2b2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-fc9bee65b0cfde57",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-3eabc9ef16e7dad0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-dc3249076e8b18e5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-efeeab72a47a5c09",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-bcd70ca34a6fc2e8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-eeac4ea2c1009488",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-241ab50719c217a5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-a5a5dbfb51010dc9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-e76cb115993307b9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-287a69865a1e4c75",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-b1545cce5302ab76",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-3f12a6f7ccac11c4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-b816584abe2437",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-901c70e18e811086",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-ee0398aeb28c59af",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-5f53a85f5f47e534",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-9fb3765b28787cf6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-725001607380e160",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-29b2232fee59961a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-ca17f46c4da57b2a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-ff0e5633c6bd4b2c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-7e47b5814164462a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-92609dcc9ee5338d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-c5a8df28c1ad3e58",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-1bd748f2e7a4da04",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-f2ac09f7de43cd5e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-d0a5797fce6dbe4c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-830d992cd79f9a7c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-9ac593d7be742779",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-fdaeb0817208eb05",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-e9eae8e290252688",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-f93d72144d8128d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-581c46d4877fdc20",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-24a88f24094a1a3e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-2ea0cebef7b4298b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-d827873a8e8088c1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-8d0d905692474333",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-a9f8284a832dd638",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-68695fa5c577187e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-13564b9946a4b66e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-9a8e2dab2a1b03e4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-754a7811651aa9fc",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-25078f5973c01e6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-5706e719591e8598",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-db5d253a3bb3263e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-18204c96382ba51b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-6c99c82ce2dd0f97",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-666aa32b15d485c6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-4eddead7e6be89dd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-1815976df6df8759",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-5f45afdfe944b62b",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-c12b84c2b4f75b2f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-eab9d92b926d07d7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-c88a65ffa69227d2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-2035b86c82b46035",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-8f9ca7307aa2b3fe",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-50c5d092ee5d0d2c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-1f25549e8fc480f0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-38f14f27c8584b69",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-17560197cf40237d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-9d71210b31d885d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-3145cbe7c877446e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-e9dac22a0b14ec70",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-453614edbe57aea2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-2c3c962fe851a85",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-edb323a1d4d68a7f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-55333f5ab7b8aebd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-292a1951d07d934",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-9e4bba84766e2b26",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-c5447cac093b1877",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-a6c6a01aa6d3b25a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-c2b0748efe8c04c6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-ce7a10ef9f2eb983",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-645b0bcafce8ebda",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-1a63b6206d4e46a8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-be28db052fcff595",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-ad044889fbbcaeee",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-d5fafa68c1a24926",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-6f9dff942b042db2",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-76bd488af04e116",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-78693afa971b5448",
+      "relatedSpdxElement": "SPDXRef-Package-bc5881b2d40e70e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Filesystem-1f1ec8a40bbbf01a",
+      "relatedSpdxElement": "SPDXRef-Application-61422b121c43e6c3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-b87be7aeaed1e83a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-add5229aee1f9a65",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-dfa1427d368ec715",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-5cec5a8a025f20ba",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-592edb74fc953559",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-7b08f877ecd7d731",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-d92ef59f7032ee89",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-1a995b6a4914277e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-4f2c33d77d7169de",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-128478b38165e360",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-3a675bd9c4853049",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-108e037e54aa6dd4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-61422b121c43e6c3",
+      "relatedSpdxElement": "SPDXRef-Package-f2caeb1180b1a7bf",
+      "relationshipType": "CONTAINS"
+    }
+  ]
+}

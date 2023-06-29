@@ -1,0 +1,17 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "comment": "This document has been automatically generated.",
+    "creators": [
+      "Tool: sbom4python-0.9.1"
+    ],
+    "created": "2023-06-20T16:58:33Z",
+    "licenseListVersion": "3.20"
+  },
+  "name": "Python-pytorch/",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-pytorch/-e10e04e7-7352-475c-8ba7-7b302fe06ee3",
+  "packages": [],
+  "relationships": []
+}

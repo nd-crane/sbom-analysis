@@ -1,0 +1,541 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.2",
+  "creationInfo": {
+    "comment": "This SPDX document has been converted from CycloneDX format.",
+    "created": "2023-06-20T23:06:12.405Z",
+    "creators": [
+      "Tool: cdxgen-8.5.3",
+      "Person: Prabhu Subramanian (prabhu@appthreat.com)"
+    ]
+  },
+  "name": "CycloneDX BOM",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "http://spdx.org/spdxdocs/CycloneDX BOM-bd732791-5c70-46e1-96dc-a8beecd657eb",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/flake8@3.8.2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ccaa799ef9893cebe69fdfefed76865aeaefbb94cb8545617b2298786a4de9a5"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "the modular source code checker: pep8 pyflakes and co",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "flake8",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.8.2"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/flake8-bugbear@20.1.4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a3ddc03ec28ba2296fc6f89444d1c946a6b76460f859795b35b77d4920a51b63"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A plugin for flake8 finding likely bugs and design problems in your program. Contains warnings that don\u0027t belong in pyflakes and pycodestyle.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "flake8-bugbear",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "20.1.4"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/flake8-comprehensions@3.3.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c1dd6d8a00e9722619a5c5e0e6c5747f5cf23c089032c86eaf614c14a2e40adb"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A flake8 plugin to help you write better list/set/dict comprehensions.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "flake8-comprehensions",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/flake8-executable@2.0.4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "150abd0b6ed289b64a4d59f16ae216a76f62b88ad88318d1e685a3d47bb7e89c"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A Flake8 plugin for checking executable permissions and shebangs.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "flake8-executable",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.0.4"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/flake8-logging-format@0.9.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e830cc49091e4b8ab9ea3da69a3da074bd631ce9a7db300e5c89fb48ba4a6986"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "flake8-logging-format",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.9.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/flake8-pyi@20.5.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f22cbadb5e51bd273906d5f94fafa94caefc80d7605a9cafe8f20f95496a7cfe"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A plugin for flake8 to enable linting .pyi stub files.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "flake8-pyi",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "20.5.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/mccabe@0.6.1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "McCabe checker, plugin for flake8",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "mccabe",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.6.1"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/pycodestyle@2.6.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2295e7b2f6b5bd100585ebcb1f616591b652db8a741695b3d8f5d28bdc934367"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Python style guide checker",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "pycodestyle",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/pyflakes@2.2.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0d94e0e05a19e57a99444b6ddcf9a6eb2e5c68d3ca1e98e90707af8152c90a92"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "passive checker of Python programs",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "pyflakes",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/astunparse@1.6.3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c2652417f2c8b5bb325c885ae329bdf3f86424075c4fd1a128674bc6fba4b8e8"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "An AST unparser for Python",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "0BSD",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "astunparse",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.6.3"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/expecttest@0.1.4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7a64de72d791b7970402a7cb9744d59fe841bf52b9045d65669dbba33210dcfd"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "expecttest",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.1.4"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/hypothesis@6.79.1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7a0b8ca178f16720e96f11e96b71b6139db0e30727e9cf8bd8e3059710393fc7"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A library for property-based testing",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MPL-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "hypothesis",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "6.79.1"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/numpy@1.25.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8aa130c3042052d656751df5e81f6d61edff3e289b5994edcf77f54118a8d9f4"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Fundamental package for array computing in Python",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "numpy",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.25.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/psutil@5.9.5",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "be8929ce4313f9f8146caad4272f6abb8bf99fc6cf59344a3167ecd74f4f203f"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Cross-platform lib for process and system monitoring in Python.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "psutil",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "5.9.5"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/pyyaml@6.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d4db7c7aef085872ef65a8fd7d6d09a14ae91f691dec3e87ee5ee0539d516f53"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "YAML parser and emitter for Python",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "pyyaml",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/requests@2.31.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Python HTTP for Humans.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "requests",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2.31.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/setuptools@68.0.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11e52c67415a381d10d6b462ced9cfb97066179f0e871399e006c4ab101fc85f"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Easily download, build, install, upgrade, and uninstall Python packages",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "setuptools",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "68.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/types-dataclasses@0.6.6",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a0a1ab5324ba30363a15c9daa0f053ae4fff914812a1ebd8ad84a08e5349574d"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Typing stubs for dataclasses",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "types-dataclasses",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "0.6.6"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/typing-extensions@4.6.3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "88a4153d8505aabbb4e13aacb7c486c2b4a33ca3b3f807914a9b4c844c471c26"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Backported and Experimental Type Hints for Python 3.7\u002B",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "typing-extensions",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "4.6.3"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/sympy@1.12",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c3588cd4295d0c0f603d0f2ae780587e64e2efeedb3521e46b9bb1d08d184fa5"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Computer algebra system (CAS) in Python",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "0BSD",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "sympy",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.12"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/filelock@3.12.2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cbb791cdea2a72f23da6ac5b5269ab0a0d161e9ef0100e653b69049a7706d1ec"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A platform independent file lock.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "filelock",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.12.2"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/networkx@3.1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4f33f68cb2afcf86f28a45f43efc27a9386b535d567d2127f8f61d51dec58d36"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "Python package for creating and manipulating graphs and networks",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "networkx",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/jinja2@3.1.2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "A very fast and expressive template engine.",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "jinja2",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "3.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-pkg:pypi/fsspec@2023.6.0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1cbad1faef3e391fba6dc005ae9b5bdcbf43005c9167ce78c915549c352c869a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "description": "File-system specification",
+      "downloadLocation": "NOASSERTION",
+      "homepage": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "0BSD",
+      "licenseInfoFromFiles": [
+        "NOASSERTION"
+      ],
+      "name": "fsspec",
+      "originator": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "versionInfo": "2023.6.0"
+    }
+  ]
+}

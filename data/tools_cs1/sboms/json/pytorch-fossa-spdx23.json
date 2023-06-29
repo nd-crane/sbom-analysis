@@ -1,0 +1,4980 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2023-06-21T05:55:32Z",
+    "creators": [
+      "Organization: NDCRC",
+      "Tool: FOSSA v0.12.0"
+    ],
+    "licenseListVersion": "3.18",
+    "documentDescribes": [
+      "SPDXRef-pip-astunparse-1.6.3",
+      "SPDXRef-pip-boto3-1.19.12",
+      "SPDXRef-pip-breathe-4.34.0",
+      "SPDXRef-pip-bs4-0.0.1",
+      "SPDXRef-pip-certifi-2023.5.7",
+      "SPDXRef-pip-charset-normalizer-3.1.0",
+      "SPDXRef-pip-click",
+      "SPDXRef-conda-cmake-3.26.4",
+      "SPDXRef-pip-coremltools-5.0b5",
+      "SPDXRef-pip-docutils-0.16",
+      "SPDXRef-pip-enum34-1.1.10",
+      "SPDXRef-pip-exhale-0.2.3",
+      "SPDXRef-pip-expecttest-0.1.4",
+      "SPDXRef-pip-expecttest-0.1.3",
+      "SPDXRef-gem-fastlane-2.206.2",
+      "SPDXRef-pip-filelock-3.6.0",
+      "SPDXRef-pip-filelock",
+      "SPDXRef-pip-flake8-3.8.2",
+      "SPDXRef-pip-flake8-bugbear-20.1.4",
+      "SPDXRef-pip-flake8-comprehensions-3.3.0",
+      "SPDXRef-pip-flake8-executable-2.0.4",
+      "SPDXRef-pip-flake8-logging-format-0.9.0",
+      "SPDXRef-pip-flake8-pyi-20.5.0",
+      "SPDXRef-pip-flatbuffers-2.0",
+      "SPDXRef-pip-fsspec",
+      "SPDXRef-pip-future-0.18.3",
+      "SPDXRef-pip-ghstack-0.7.1",
+      "SPDXRef-pip-hypothesis-6.79.1",
+      "SPDXRef-pip-hypothesis-5.35.1",
+      "SPDXRef-pip-hypothesis-6.56.4",
+      "SPDXRef-pip-idna-3.4",
+      "SPDXRef-pip-ipython-8.12.0",
+      "SPDXRef-pip-jinja2-3.1.2",
+      "SPDXRef-pip-jinja2",
+      "SPDXRef-pip-jinja2-3.0.1",
+      "SPDXRef-pip-junitparser-2.1.1",
+      "SPDXRef-conda-libopenblas-0.3.21",
+      "SPDXRef-pip-librosa-0.6.2",
+      "SPDXRef-pip-lintrunner-0.10.7",
+      "SPDXRef-pip-matplotlib-3.5.3",
+      "SPDXRef-pip-mccabe-0.6.1",
+      "SPDXRef-pip-mpmath-1.3.0",
+      "SPDXRef-pip-mypy-0.960",
+      "SPDXRef-pip-myst-nb-0.17.2",
+      "SPDXRef-pip-myst-parser-0.18.1",
+      "SPDXRef-pip-networkx-2.8.7",
+      "SPDXRef-pip-networkx",
+      "SPDXRef-pip-networkx-2.8.8",
+      "SPDXRef-pip-ninja-1.10.0.post1",
+      "SPDXRef-conda-ninja-1.10.2",
+      "SPDXRef-pip-numba-0.54.1",
+      "SPDXRef-pip-numba-0.49.0",
+      "SPDXRef-pip-numba-0.49.1",
+      "SPDXRef-pip-numba-0.55.2",
+      "SPDXRef-pip-numba-0.56.0",
+      "SPDXRef-pip-numpy",
+      "SPDXRef-pip-numpy-1.24.3",
+      "SPDXRef-pip-nvidia-ml-py-11.525.84",
+      "SPDXRef-pip-opt-einsum-3.3.0",
+      "SPDXRef-pip-protobuf-3.20.2",
+      "SPDXRef-pip-psutil",
+      "SPDXRef-pip-psutil-5.9.1",
+      "SPDXRef-pip-pycodestyle-2.6.0",
+      "SPDXRef-pip-pyflakes-2.2.0",
+      "SPDXRef-pip-PyGithub",
+      "SPDXRef-pip-Pygments-2.12.0",
+      "SPDXRef-pip-pytest",
+      "SPDXRef-pip-pytest-7.2.0",
+      "SPDXRef-pip-pytest-cpp-2.3.0",
+      "SPDXRef-pip-pytest-flakefinder-1.1.0",
+      "SPDXRef-pip-pytest-rerunfailures-10.3",
+      "SPDXRef-pip-pytest-shard-0.1.2",
+      "SPDXRef-pip-pytest-xdist",
+      "SPDXRef-pip-pytest-xdist-3.0.2",
+      "SPDXRef-pip-python-etcd-0.4.5",
+      "SPDXRef-pip-pyyaml",
+      "SPDXRef-pip-pyyaml-6.0",
+      "SPDXRef-pip-requests",
+      "SPDXRef-pip-requests-2.31.0",
+      "SPDXRef-pip-rich-10.9.0",
+      "SPDXRef-pip-rockset-1.0.3",
+      "SPDXRef-pip-scikit-image-0.19.3",
+      "SPDXRef-pip-scikit-image-0.20.0",
+      "SPDXRef-pip-scipy-1.6.3",
+      "SPDXRef-pip-scipy-1.8.1",
+      "SPDXRef-pip-scipy-1.9.0",
+      "SPDXRef-pip-scipy-1.9.3",
+      "SPDXRef-pip-setuptools",
+      "SPDXRef-pip-setuptools-67.8.0",
+      "SPDXRef-pip-six-1.16.0",
+      "SPDXRef-pip-Sphinx-5.3.0",
+      "SPDXRef-pip-sphinxcontrib-katex-0.8.6",
+      "SPDXRef-pip-sphinx-copybutton-0.5.0",
+      "SPDXRef-pip-sphinx-panels-0.4.1",
+      "SPDXRef-pip-sympy-1.11.1",
+      "SPDXRef-pip-sympy-1.12",
+      "SPDXRef-pip-tb-nightly-2.13.0a20230426",
+      "SPDXRef-pip-tensorboard-2.13.0",
+      "SPDXRef-pip-tqdm",
+      "SPDXRef-pip-types-dataclasses-0.6.6",
+      "SPDXRef-pip-typing-extensions",
+      "SPDXRef-pip-typing-extensions-4.5.0",
+      "SPDXRef-pip-unittest-xml-reporting-3.2.0",
+      "SPDXRef-pip-urllib3-2.0.2",
+      "SPDXRef-pip-xdoctest-1.1.0"
+    ]
+  },
+  "name": "38450/git@github.com:pytorch/pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+  "documentNamespace": "https://s3.us-east-1.amazonaws.com/blob.fossa.io/FOSSA_BOMS/custom%2B38450%2Fgit%40github.com%3Apytorch%2Fpytorch.git%24fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+  "dataLicense": "CC0-1.0",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "name": "git@github.com:pytorch/pytorch.git",
+      "versionInfo": "fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Custom (provided build)",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cc2bf5feaee8dab1831c509a9c7236541ae33d88"
+        }
+      ],
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-pip-astunparse-1.6.3",
+      "name": "astunparse",
+      "versionInfo": "1.6.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/2b/03/13dde6512ad7b4557eb792fbcf0c653af6076b81e5941d36ec61f7ce6028/astunparse-1.6.3-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2014 Simon Percivall\n\t2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 ",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4100bc36fbd3f8f43c25c8f1e83890362dc107dc"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/astunparse@1.6.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-boto3-1.19.12",
+      "name": "boto3",
+      "versionInfo": "1.19.12",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/5e/e1/156846b09fca21b9b164c54200011e3bd17f29187cbfc6903a8e0281a304/boto3-1.19.12-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "873f96b86b9b8b999e8084e12f1591524f6b0480"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/boto3@1.19.12"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-breathe-4.34.0",
+      "name": "breathe",
+      "versionInfo": "4.34.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/e8/6b/1385608a27653b6f02047d23f365f5dde7a54a266a0b3358b578c9a747b9/breathe-4.34.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2009 Michael Jones",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "05b6cd0c935d5555bb82c68d3134eb00878bbddc"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/breathe@4.34.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-bs4-0.0.1",
+      "name": "bs4",
+      "versionInfo": "0.0.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/10/ed/7e8b97591f6f456174139ec089c769f89a94a1a4025fe967691de971f314/bs4-0.0.1.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2007-2010 by Baptiste Lepilleur and\n\tThis document has been placed in the public domain.\n\t2004-2021 Holger Krekel and others\n\t2013 Marek Majkowski <marek@popcount.org>\n\t2010-2015 Benjamin Peterson\n\t2014 Mathjax Consortium\n\tCopyright 2006-2022 by the Pygments team, see AUTHORS.\n\t2013 The IPython Development Team\n\t2009-2022 the scikit-image team\n\t1987 A. Volgenant/Amsterdam School of Economics,\n\t1987-, A\n\t2011-2019 The Bootstrap Authors\n\t2006-2022 SymPy Development Team\n\t2006-2023 SymPy Development Team",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cb7eeca557338c2e6f83ded115730edb0358b5c5"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/bs4@0.0.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-certifi-2023.5.7",
+      "name": "certifi",
+      "versionInfo": "2023.5.7",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/93/71/752f7a4dd4c20d6b12341ed1732368546bc0ca9866139fe812f6009d9ac7/certifi-2023.5.7.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2db00c5a1881d95ff9b3001e001b6ea0fd15f486"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/certifi@2023.5.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-charset-normalizer-3.1.0",
+      "name": "charset-normalizer",
+      "versionInfo": "3.1.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2019 TAHRI Ahmed R.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b5c597e5f914856199f03d08b8c43fce1274fd91"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/charset-normalizer@3.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-click",
+      "name": "click",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/76/0a/b6c5f311e32aeb3b406e03c079ade51e905ea630fc19d1262a46249c1c86/click-8.0.1-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2014 Pallets",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "ISC"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3856623ee6e3e3bcfe6d13ea3bf8857381e13ff1"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/click"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-conda-cmake-3.26.4",
+      "name": "cmake",
+      "versionInfo": "3.26.4",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://repo.anaconda.com/pkgs/main/linux-64/cmake-3.26.4-h96355d8_0.conda",
+      "originator": "Organization: undefined",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2000-2023 Kitware, Inc. and Contributors\n\t2010 Günter Milde,\n\t2011-2014, The OpenBLAS Project\n\t2008 Google Inc.\n\tof cfuhash:\n\t2011-2023 NVIDIA Corporation.  All rights reserved.\n\t2008 Google Inc.  All rights reserved.\n\t2005-2007 Terence Parr\n\t2003-2009 Massachusetts Institute of Technology\n\tmessage",
+      "licenseInfoFromFiles": [
+        "openssl-ssleay",
+        "CC0-1.0",
+        "bsd-unchanged",
+        "Apache-2.0",
+        "public-domain",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5335e077ca6469c8fdc57e921f008c09f2de4f8f"
+        }
+      ],
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-pip-coremltools-5.0b5",
+      "name": "coremltools",
+      "versionInfo": "5.0b5",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/51/ce/2c815044161a2c0900e726f7af2bde7d455bc4e8af04dec66f64d1c0e4a1/coremltools-5.0b5.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2020 Apple Inc. All rights reserved.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1ca39851affb853173ef71b0dd53d23f186b24a4"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/coremltools@5.0b5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-docutils-0.16",
+      "name": "docutils",
+      "versionInfo": "0.16",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/81/44/8a15e45ffa96e6cf82956dd8d7af9e666357e16b0d93b253903475ee947f/docutils-0.16-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseInfoFromFiles": [
+        "BSD-2-Clause",
+        "GPL-3.0-or-later",
+        "public-domain",
+        "BSD-2-Clause",
+        "BSD-2-Clause",
+        "FSFAP",
+        "BSD-2-Clause",
+        "MIT",
+        "BSD-2-Clause",
+        "BSD-3-Clause",
+        "FSFAP",
+        "GPL-3.0-or-later",
+        "GPL-3.0-only",
+        "Python-2.0",
+        "ZPL-1.1"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "037b0d7269bbe8d40e94ee8f5105c647c3d2eb10"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/docutils@0.16"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-enum34-1.1.10",
+      "name": "enum34",
+      "versionInfo": "1.1.10",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/11/c4/2da1f4952ba476677a42f25cd32ab8aaf0e1c0d0e00b89822b835c7e654c/enum34-1.1.10.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2013 Ethan Furman.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da0cd566b95fa96345c2b714a12484e37438264b"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/enum34@1.1.10"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-exhale-0.2.3",
+      "name": "exhale",
+      "versionInfo": "0.2.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/14/7e/e05fa60e009a9d457f916132296bb702324f773ad41296b77199149439be/exhale-0.2.3-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseInfoFromFiles": [
+        "CC0-1.0",
+        "Apache-2.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "249c87452b721146b7dcc3a8eb9591f58f7d5447"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/exhale@0.2.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-expecttest-0.1.4",
+      "name": "expecttest",
+      "versionInfo": "0.1.4",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/10/71/4ee70a15dc3235ec01e0083f95a9989b4b6d5dd2083282cc8748a8a07b78/expecttest-0.1.4.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Edward Z. Yang <ezyang@mit.edu>\n\t Edward Z. Yang <ezyang@mit.edu>",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b7dff56eece99ea2142f1e99a7b7b222f7734db9"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/expecttest@0.1.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-expecttest-0.1.3",
+      "name": "expecttest",
+      "versionInfo": "0.1.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/8e/e6/584ea2be6cf46a7f86991353c8c7de8321327a50c9a3e6cd120abc904c3f/expecttest-0.1.3.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": " Edward Z. Yang <ezyang@mit.edu>",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "246e9f4a37765e2dbee75e5f4f5eb4f2451f1a9c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/expecttest@0.1.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-gem-fastlane-2.206.2",
+      "name": "fastlane",
+      "versionInfo": "2.206.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://rubygems.org/gems/fastlane-2.206.2.gem",
+      "originator": "Organization: RubyGem",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2015-2022 The Fastlane Authors",
+      "licenseInfoFromFiles": [
+        "IPA"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a4174c6d3e06c410537257ee4c82389b8d620cbe"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:gem/fastlane@2.206.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-filelock-3.6.0",
+      "name": "filelock",
+      "versionInfo": "3.6.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/cd/f1/ba7dee3de0e9d3b8634d6fbaa5d0d407a7da64620305d147298b683e5c36/filelock-3.6.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": "interest in the",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cff9b66d21416f40545fb945918c003667505b17"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/filelock@3.6.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-filelock",
+      "name": "filelock",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/cd/f1/ba7dee3de0e9d3b8634d6fbaa5d0d407a7da64620305d147298b683e5c36/filelock-3.6.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Unlicense",
+      "copyrightText": " interest in the",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "edae88e06a0409cd4111c84e5621b8f5c3042bf7"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/filelock"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-3.8.2",
+      "name": "flake8",
+      "versionInfo": "3.8.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/fc/80/35a0716e5d5101e643404dabd20f07f5528a21f3ef4032d31a49c913237b/flake8-3.9.2-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2011-2013 Tarek Ziade <tarek@ziade.org>\n\t2012-2016 Ian Cordasco <graffatcolmingov@gmail.com>",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "81b903bf0aec7730da88391269addf20658bdb06"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flake8@3.8.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-bugbear-20.1.4",
+      "name": "flake8-bugbear",
+      "versionInfo": "20.1.4",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/4d/e4/180dac4cd20c20b94fea1f5ea05814dab0ae50593c6e8791f02086db5d86/flake8_bugbear-21.4.3-py36.py37.py38-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2016 Łukasz Langa",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9bbbe1fbd901e341187a02962c9143a5e9980561"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flake8-bugbear@20.1.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-comprehensions-3.3.0",
+      "name": "flake8-comprehensions",
+      "versionInfo": "3.3.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/3c/91/9d309c22b5b2a163c801cd40f2e6e25ef374a6b3fa214bf8263c9ca4cfe1/flake8_comprehensions-3.7.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2017-2020 Adam Johnson",
+      "licenseInfoFromFiles": [
+        "ISC",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "318d99d428ae903beba5d59af0df8300f70634ad"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flake8-comprehensions@3.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-executable-2.0.4",
+      "name": "flake8-executable",
+      "versionInfo": "2.0.4",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/01/68/8d598233c46863568ef67d99fbdd065cc5b74ba953917310149eb764fb8c/flake8-executable-2.0.4.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "GPL-3.0-or-later OR LGPL-3.0-only",
+      "copyrightText": "2019 Hong Xu <hong@topbug.net>\n\t2007 Free Software Foundation, Inc. <https://fsf.org/>",
+      "licenseInfoFromFiles": [
+        "GPL-3.0-only",
+        "LGPL-3.0-or-later"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c4e33d3f5730ac573faa2d3962e5fe991bc4884c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flake8-executable@2.0.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-logging-format-0.9.0",
+      "name": "flake8-logging-format",
+      "versionInfo": "0.9.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/b2/ef/29872deec77dcab8101b4d4571d1e637d173814af5eb73655f669747c6eb/flake8-logging-format-0.9.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "40cff9867391563921e8095b18622a87adbd250f"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flake8-logging-format@0.9.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-pyi-20.5.0",
+      "name": "flake8-pyi",
+      "versionInfo": "20.5.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/58/06/59b8d6875b3ca097e4946f3453db5ceddbce44400a220ad74a8b83f13981/flake8_pyi-20.10.0-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2016 Łukasz Langa",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "93945f9f0dfd569ba7197c7218868527a32f6144"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flake8-pyi@20.5.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flatbuffers-2.0",
+      "name": "flatbuffers",
+      "versionInfo": "2.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/3d/d0/26033c70d642fbc1e35d3619cf3210986fb953c173b1226709f75056c149/flatbuffers-2.0-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "2014 Google Inc. All rights reserved.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9c6cdd0b129b7610defd77f897a239c49a45dd7c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/flatbuffers@2.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-fsspec",
+      "name": "fsspec",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/b4/80/cd21f093faef23c03b9fc1274be7a3bfd63b809d2f06a1cff92e00cacfcc/fsspec-2022.2.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2018 Martin Durant",
+      "licenseInfoFromFiles": [
+        "CC0-1.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7eb6f6aa62487b38fd834622458870bf02090b57"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/fsspec"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-future-0.18.3",
+      "name": "future",
+      "versionInfo": "0.18.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/8f/2e/cf6accf7415237d6faeeebdc7832023c90e0282aa16fd3263db0eb4715ec/future-0.18.3.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2013-2019 Python Charmers Pty Ltd, Australia",
+      "licenseInfoFromFiles": [
+        "Python-2.0",
+        "GPL-2.0-only",
+        "HPND",
+        "public-domain",
+        "PIL"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c62a7d9346a693fa99075e6b6fdbe00576e32c53"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/future@0.18.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-ghstack-0.7.1",
+      "name": "ghstack",
+      "versionInfo": "0.7.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/8b/fb/0af6a996552e1e8fe9a3cd810f4c44e94c50f68d5b12caa7471d0833b63f/ghstack-0.7.1.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": " Edward Z. Yang <ezyang@mit.edu>",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "66e3559ba57e3262f4df18bd9d0f0374527d3e16"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/ghstack@0.7.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-hypothesis-6.79.1",
+      "name": "hypothesis",
+      "versionInfo": "6.79.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/46/44/c628534744e1cfe7da6c48b99339c0757f4caabb3afc61a84b1d438e5c5a/hypothesis-6.79.1.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "2013 David R. MacIver",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "50fea3805749daf170394514092e7802721d93af"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/hypothesis@6.79.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-hypothesis-5.35.1",
+      "name": "hypothesis",
+      "versionInfo": "5.35.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ec/6d/11d9261ba9720c5d07507012fe2248a5b84e0d6efb9048de8292aa50cbaf/hypothesis-5.35.1.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "2013 David R. MacIver",
+      "licenseInfoFromFiles": [
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "78562a56ed23de96849b1d8f6070aa9c6f1bce16"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/hypothesis@5.35.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-hypothesis-6.56.4",
+      "name": "hypothesis",
+      "versionInfo": "6.56.4",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ca/e1/2ba1de06963fe0ce8532d30c53c4c8baae6ae0bebeba1a1689e63818548e/hypothesis-6.56.4.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "2013 David R. MacIver",
+      "licenseInfoFromFiles": [
+        "libgd-2018",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e1ec40cc6e3172671a5defe7a930d2306d256642"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/hypothesis@6.56.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-idna-3.4",
+      "name": "idna",
+      "versionInfo": "3.4",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2013-2021 Kim Davies",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d08337467c2d59ce8c6397d4c5105f932f417a74"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/idna@3.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-ipython-8.12.0",
+      "name": "ipython",
+      "versionInfo": "8.12.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/32/38/123155a40a0837c7627114995bf5f7a0d0b469cb903b9a27051198fad222/ipython-8.12.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "Policy\n\t2008 Present, IPython Development Team\n\t2001-2007 Fernando Perez <fernando.perez@colorado.edu>\n\t2001 Janko Hauser <jhauser@zscout.de>\n\t2001 Nathaniel Gray <n8gray@caltech.edu>\n\t Policy\n\t model. Each contributor maintains copyright\n\t of any single person or\n\t of the entire IPython\n\t on, they should indicate\n\t IPython Development Team.\n\t2011 IPython Development Team\n\t and Similar\n\t and Similar Rights held by the\n\t and Similar Rights means copyright and/or similar rights\n\t and/or similar rights\n\t and Similar Rights\n\t and Similar Rights that apply to Your use of the\n\t and Similar Rights.\n\t and\n\t of any\n\t of the\n\t on, they",
+      "licenseInfoFromFiles": [
+        "MIT",
+        "CC-BY-4.0",
+        "BSD-2-Clause",
+        "Python-2.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "86f0592246a52983029d22515a6ab1ee5d4ff04d"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/ipython@8.12.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-jinja2-3.1.2",
+      "name": "jinja2",
+      "versionInfo": "3.1.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2007 Pallets",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "ISC"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b64b712159011859ae4f283af28ff533566c89e6"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/jinja2@3.1.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-jinja2",
+      "name": "jinja2",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2007 Pallets",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "ISC"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2cd2794653a291cfead995c9816bd45af25409e3"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/jinja2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-jinja2-3.0.1",
+      "name": "jinja2",
+      "versionInfo": "3.0.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/20/9a/e5d9ec41927401e41aea8af6d16e78b5e612bca4699d417f646a9610a076/Jinja2-3.0.3-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2007 Pallets",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "ISC"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7efff26757068e55dae8a5e7735cce4e058a9dd0"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/jinja2@3.0.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-junitparser-2.1.1",
+      "name": "junitparser",
+      "versionInfo": "2.1.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ca/7a/7c2f398ab8dd143903c82a51174fa28665f1d136c81ee6f854319d200c0e/junitparser-2.1.1.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "2020 Joel Wang",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0b540eb971c8444ed0414077097bbb8605b55d23"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/junitparser@2.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-conda-libopenblas-0.3.21",
+      "name": "libopenblas",
+      "versionInfo": "0.3.21",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://conda.anaconda.org/conda-forge/linux-64/libopenblas-0.3.21-pthreads_h78a6416_3.tar.bz2",
+      "originator": "Organization: undefined",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2011-2014, The OpenBLAS Project",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b47d54666975a624dc51efad0c1b742b385700e1"
+        }
+      ],
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-pip-librosa-0.6.2",
+      "name": "librosa",
+      "versionInfo": "0.6.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/09/b4/5b411f19de48f8fc1a0ff615555aa9124952e4156e94d4803377e50cfa4c/librosa-0.6.2.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "ISC",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f8a2dd147c429366dcc7ad2f6a1c1c6071778526"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/librosa@0.6.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-lintrunner-0.10.7",
+      "name": "lintrunner",
+      "versionInfo": "0.10.7",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/0b/c4/6d731deb4560e6270d2c584af73f978f28e0ad2bb4e9b0b01eb6245694f8/lintrunner-0.10.7-py3-none-macosx_10_9_x86_64.macosx_11_0_arm64.macosx_10_9_universal2.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0f858180ecc505338c8d7d0f7bfde0f557d8372c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/lintrunner@0.10.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-matplotlib-3.5.3",
+      "name": "matplotlib",
+      "versionInfo": "3.5.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/60/f6/81c99d3413c18b4810256ac5bca0401c0804e69ea98b448e2c644b745bbb/matplotlib-3.5.3-cp310-cp310-macosx_10_9_universal2.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT OR OFL-1.1 OR MatPlotLib OR CC0-1.0",
+      "copyrightText": "2009 Pierre Raybaut\n\t1997, 2009 American Mathematical Society (http://www.ams.org).\n\ti.e., \"Copyright (c)\n\tand\n\t2011 Ethan Schoonover\n\t2010-2013 by tyPoland Lukasz Dziedzic with Reserved Font Name \"Carlito\".\n\t2001-2010 by the STI Pub Companies, consisting of the American\n\t1998-2003 by MicroPress, Inc. (www.micropress-inc.com),\n\t1990 by Elsevier, Inc.\n\t i.e., \"Copyright (c)\n\t \n\t and",
+      "licenseInfoFromFiles": [
+        "Apache-2.0",
+        "MIT",
+        "bsl-original",
+        "Apache-2.0",
+        "FTL",
+        "APAFML",
+        "BitstreamVera",
+        "cc-pd",
+        "Python-2.0",
+        "PIL",
+        "TCL"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3a038295f7be8234f432c58fc751e9b1a3da6f34"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/matplotlib@3.5.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-mccabe-0.6.1",
+      "name": "mccabe",
+      "versionInfo": "0.6.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/06/18/fa675aa501e11d6d6ca0ae73a101b2f3571a565e0f7d38e062eec18a91ee/mccabe-0.6.1.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2011-2013 Tarek Ziade <tarek@ziade.org>\n\t2013 Florent Xicluna <florent.xicluna@gmail.com>",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "93c98c06ca76bfad658fe91f5948ad51289773cf"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/mccabe@0.6.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-mpmath-1.3.0",
+      "name": "mpmath",
+      "versionInfo": "1.3.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/e0/47/dd32fa426cc72114383ac549964eecb20ecfd886d1e5ccf5340b55b02f57/mpmath-1.3.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2005-2021 Fredrik Johansson and mpmath contributors",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "734a28fbfdc1da1573d7a3622aee8e81949bc52c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/mpmath@1.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-mypy-0.960",
+      "name": "mypy",
+      "versionInfo": "0.960",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/a7/1c/ac13b5d83aa025adc9d7e525b8eea180f3600ac40d47b6ad7746cf796a9a/mypy-0.960-cp310-cp310-macosx_10_9_universal2.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT OR Python-2.0",
+      "copyrightText": "2012-2022 Jukka Lehtosalo and contributors\n\t2015-2022 Dropbox, Inc.\n\t2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 \n\t i.e., \"Copyright (c)\n\t \n\t1991 - 1995 Stichting Mathematisch Centrum Amsterdam,",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "MIT",
+        "Apache-2.0",
+        "MIT",
+        "TCL",
+        "0BSD"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "054a61fd9a559a78aa2dd110227072989b9821a9"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/mypy@0.960"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-myst-nb-0.17.2",
+      "name": "myst-nb",
+      "versionInfo": "0.17.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/72/84/38b6468146945cf0466a149763d62bd0264cb221eaa74c979498ea215f22/myst_nb-0.17.2-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2020 ExecutableBookProject",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "0fd79aa8cd8715965905bab38ecbc1aaeda48931"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/myst-nb@0.17.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-myst-parser-0.18.1",
+      "name": "myst-parser",
+      "versionInfo": "0.18.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/72/fd/594c936c65e707deda5670e8fff5ca2c948a12e922813eab5d316694e9ca/myst_parser-0.18.1-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2020 ExecutableBookProject",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "96235ab488b1c8430b10eeed815fd9f160306d16"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/myst-parser@0.18.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-networkx-2.8.7",
+      "name": "networkx",
+      "versionInfo": "2.8.7",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/9e/89/90846e0da5c412cbffb66d1f976b056cd46c6f2aa7f2f1eb271573b5fefb/networkx-2.8.7.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2004-2022 NetworkX Developers",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause-Clear"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "301e626a049d73559b1c45a4226e0c89d36f9ceb"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/networkx@2.8.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-networkx",
+      "name": "networkx",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2004-2022 NetworkX Developers",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause-Clear",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "5979e9b91919fc25acbee8d5634a452116ee354d"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/networkx"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-networkx-2.8.8",
+      "name": "networkx",
+      "versionInfo": "2.8.8",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/cd/16/c44e8550012735b8f21b3df7f39e8ba5a987fb764ac017ad5f3589735889/networkx-2.8.8.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2004-2022 NetworkX Developers",
+      "licenseInfoFromFiles": [
+        "public-domain",
+        "CC-BY-SA-4.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c2aed2ec7fc4595eb40d5cf1c1af399d82545503"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/networkx@2.8.8"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-ninja-1.10.0.post1",
+      "name": "ninja",
+      "versionInfo": "1.10.0.post1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/33/26/57c5890aa21a895af90f3234957572c6539b10fb20a97981ea55ded9e2ee/ninja-1.10.0.post1-py2-none-macosx_10_6_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NONE",
+      "licenseInfoFromFiles": [
+        "CC0-1.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f714679c44c7c8b00a1c32d6799041bfc3f57c3a"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/ninja@1.10.0.post1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-conda-ninja-1.10.2",
+      "name": "ninja",
+      "versionInfo": "1.10.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://repo.anaconda.com/pkgs/main/linux-64/ninja-1.10.2-py39hd09550d_3.conda",
+      "originator": "Organization: undefined",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "db8f094fb823f9739d1bbda9d41b8fdbb46fa2f1"
+        }
+      ],
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.54.1",
+      "name": "numba",
+      "versionInfo": "0.54.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/4a/37/a5abd4836daf439e7eb99958671ab8a9187f8293e019c23c684c1502fb7f/numba-0.54.1-cp37-cp37m-macosx_10_14_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "2012 Anaconda, Inc.",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1b5402ecb9f939f146f4130b908d035ff8d2d7b4"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numba@0.54.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.49.0",
+      "name": "numba",
+      "versionInfo": "0.49.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/5f/8e/cb7bb3e872aa4c6a6603c15b37964521d16a46dcb2e40171d6bdaafff62a/numba-0.49.0-cp36-cp36m-macosx_10_14_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "2012 Anaconda, Inc.",
+      "licenseInfoFromFiles": [
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "41141129a1832a470e3f898b157a1366c8dc6131"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numba@0.49.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.49.1",
+      "name": "numba",
+      "versionInfo": "0.49.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ac/7d/e01bcbf4a35cbb07ce04aaa545030bde231331aaabe7c44726b099f8fd86/numba-0.49.1-cp36-cp36m-macosx_10_14_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "2012 Anaconda, Inc.",
+      "licenseInfoFromFiles": [
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "22c6dcf73683f6c78cff7b6b8a5b3b4473af3841"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numba@0.49.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.55.2",
+      "name": "numba",
+      "versionInfo": "0.55.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/32/5d/a3dfb8bb0c14c82eb97365efe7d7b1709643b22355859757f4810aa8dc20/numba-0.55.2-cp310-cp310-macosx_10_14_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "2012 Anaconda, Inc.",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e02a4624084110c352c86a1de37c28a234b056fd"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numba@0.55.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.56.0",
+      "name": "numba",
+      "versionInfo": "0.56.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/b8/79/e867e49151ae6adbd23f5566a722feb0b7cc65b60b1556b63ad55be37857/numba-0.56.0-cp310-cp310-macosx_10_14_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "2012 Anaconda, Inc.",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "551d92fc56dae7cdbe6dce770c35afac9ea27d69"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numba@0.56.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numpy",
+      "name": "numpy",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2005-2022 NumPy Developers.\n\t2011-2014 The OpenBLAS Project\n\t1992-2013 The University of Tennessee and The University\n\t2000-2013 The University of California Berkeley. All\n\t2006-2013 The University of Colorado Denver.  All rights\n\t or any other\n\t2002-2017 Free Software Foundation, Inc.\n\t2009 Free Software Foundation, Inc. <http://fsf.org/>\n\t2007 Free Software Foundation, Inc. <http://fsf.org/>",
+      "licenseInfoFromFiles": [
+        "Apache-2.0",
+        "Zlib",
+        "MIT",
+        "BSL-1.0",
+        "bsd-2-clause-views",
+        "bsd-3-clause-open-mpi",
+        "GPL-3.0-with-GCC-exception",
+        "GPL-3.0-or-later",
+        "GPL-3.0-only",
+        "GPL-1.0-or-later",
+        "NCSA",
+        "BSD-2-Clause",
+        "CC0-1.0",
+        "openpub",
+        "SunPro"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "19e4eec2fffe5c534efd5afbdea0b07a13f62167"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numpy"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numpy-1.24.3",
+      "name": "numpy",
+      "versionInfo": "1.24.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/2c/d4/590ae7df5044465cc9fa2db152ae12468694d62d952b1528ecff328ef7fc/numpy-1.24.3.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2005-2022 NumPy Developers.\n\t2019 Kevin Sheppard. All rights reserved.**\n\t2003-2005 Jean-Sebastien Roy (js@jeannot.org)\n\t1997 - 2002 Makoto Matsumoto and Takuji Nishimura,\n\t2005-2021 NumPy Developers.\n\t2006 University of Georgia and Pierre G.F. Gerard-Marchant\n\t2005-2017 NumPy Developers.\n\t2009-2019 Jeff Bezanson, Stefan Karpinski, Viral B. Shah,\n\t2010-2012 D. E. Shaw Research.\n\t2011-2014 The OpenBLAS Project\n\t1992-2013 The University of Tennessee and The University\n\t2000-2013 The University of California Berkeley. All\n\t2006-2013 The University of Colorado Denver.  All rights\n\t or any other\n\t2002-2017 Free Software Foundation, Inc.\n\t2009 Free Software Foundation, Inc. <http://fsf.org/>\n\t2007 Free Software Foundation, Inc. <http://fsf.org/>",
+      "licenseInfoFromFiles": [
+        "Apache-2.0",
+        "MIT",
+        "Zlib",
+        "BSL-1.0",
+        "bsd-2-clause-views",
+        "bsd-3-clause-open-mpi",
+        "GPL-3.0-with-GCC-exception",
+        "GPL-3.0-or-later",
+        "GPL-3.0-only",
+        "GPL-1.0-or-later",
+        "NCSA",
+        "BSD-2-Clause",
+        "CC0-1.0",
+        "openpub",
+        "SunPro"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "258da29149d1d9f858875243e6718049427d4e0b"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/numpy@1.24.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-nvidia-ml-py-11.525.84",
+      "name": "nvidia-ml-py",
+      "versionInfo": "11.525.84",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/78/1b/05185a8dbe1598bf047f1d571c2d1673fa16afd6a30947301569dca498cd/nvidia-ml-py-11.525.84.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2011-2023 NVIDIA Corporation.  All rights reserved.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "91a6ba6aaadb967b9f45b991ec1239a85869aa64"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/nvidia-ml-py@11.525.84"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-opt-einsum-3.3.0",
+      "name": "opt-einsum",
+      "versionInfo": "3.3.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/bc/19/404708a7e54ad2798907210462fd950c3442ea51acc8790f3da48d2bee8b/opt_einsum-3.3.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2014 Daniel Smith",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "292952c467b9fd4c6344799b58916f68d11a9edd"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/opt-einsum@3.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-protobuf-3.20.2",
+      "name": "protobuf",
+      "versionInfo": "3.20.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/83/54/e7666d3f67c069498f707440eee80980f3823b4c6f60ee108bcb973eed32/protobuf-3.20.2-cp310-cp310-macosx_10_9_universal2.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause OR Protobuf OR Protobuf",
+      "copyrightText": "2008 Google Inc.  All rights reserved.",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d0d50c5d099570f20ea7bb6e36e6017626607b3f"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/protobuf@3.20.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-psutil",
+      "name": "psutil",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2009 Jay Loden, Dave Daeschler, Giampaolo Rodola'",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ce6a1859a43a2c04de5b78a391bf1e42451cc06c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/psutil"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-psutil-5.9.1",
+      "name": "psutil",
+      "versionInfo": "5.9.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/d6/de/0999ea2562b96d7165812606b18f7169307b60cd378bc29cf3673322c7e9/psutil-5.9.1.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "2009 Jay Loden, Dave Daeschler, Giampaolo Rodola'",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "76cc38e264a51f1eb62e5646c85f29a1b2345fad"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/psutil@5.9.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pycodestyle-2.6.0",
+      "name": "pycodestyle",
+      "versionInfo": "2.6.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/10/5b/88879fb861ab79aef45c7e199cae3ef7af487b5603dcb363517a50602dd7/pycodestyle-2.6.0-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2006-2009 Johann C. Rocholl <johann@rocholl.net>\n\t2009-2014 Florent Xicluna <florent.xicluna@gmail.com>\n\t2014-2020 Ian Lee <IanLee1521@gmail.com>",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "4dbc69991433ef740931da3b64b0555add9ac3bd"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pycodestyle@2.6.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pyflakes-2.2.0",
+      "name": "pyflakes",
+      "versionInfo": "2.2.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/69/5b/fd01b0c696f2f9a6d2c839883b642493b431f28fa32b29abc465ef675473/pyflakes-2.2.0-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2005-2011 Divmod, Inc.\n\t2013-2014 Florent Xicluna",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cbe97324ccd7995f8c6710849cf84529cba8c4d6"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pyflakes@2.2.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-PyGithub",
+      "name": "PyGithub",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "copyrightText": "2019 Rigas Papathanasopoulos <rigaspapas@gmail.com>\n\t2018 Wan Liuyang <tsfdye@gmail.com>",
+      "licenseInfoFromFiles": [
+        "GPL-3.0-only",
+        "LGPL-3.0-only"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "ee17317ae788bb2f506fd6cea9568b1175bda395"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pygithub"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-Pygments-2.12.0",
+      "name": "Pygments",
+      "versionInfo": "2.12.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/5c/8e/1d9017950034297fffa336c72e693a5b51bbf85141b24a763882cf1977b5/Pygments-2.12.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "2006-2022 by the respective authors (see AUTHORS file).",
+      "licenseInfoFromFiles": [
+        "MIT",
+        "MIT",
+        "X11",
+        "GPL-2.0-or-later",
+        "GPL-2.0-or-later",
+        "LGPL-2.1-or-later",
+        "MPL-1.1",
+        "Apache-2.0",
+        "BSD-3-Clause",
+        "LGPL-2.1-or-later",
+        "GPL-3.0-or-later",
+        "LGPL-3.0-only",
+        "GPL-3.0-only",
+        "MPL-2.0",
+        "proprietary-license",
+        "NCSA",
+        "GPL-2.0-with-autoconf-exception",
+        "CPL-1.0",
+        "LGPL-2.1-only",
+        "PostgreSQL",
+        "public-domain",
+        "TCL"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "56113c559faf2aeb984a8f32d4f679a7ac2abda9"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pygments@2.12.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest",
+      "name": "pytest",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/a1/59/6821e900592fbe261f19d67e4def0cb27e52ef8ed16d9922c144961cc1ee/pytest-6.2.4-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2004 Holger Krekel and others",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c05be5c90e1790ef7aaac7a20bba9b6b5989db68"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-7.2.0",
+      "name": "pytest",
+      "versionInfo": "7.2.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/0b/21/055f39bf8861580b43f845f9e8270c7786fe629b2f8562ff09007132e2e7/pytest-7.2.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2004 Holger Krekel and others\n\t Holger Krekel and others, 2004.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "593d58a98e654317e7f4df55ee8b891190800e1e"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest@7.2.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-cpp-2.3.0",
+      "name": "pytest-cpp",
+      "versionInfo": "2.3.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/3b/81/3e31c23ac39483c5084fa833718f68fb8fc23d98290a408d1d93cc15b07b/pytest-cpp-2.3.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2014 Bruno Oliveira",
+      "licenseInfoFromFiles": [
+        "BSL-1.0",
+        "BSD-3-Clause"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8726561963e1dee8e262159c5a585fd9c960fd44"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest-cpp@2.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-flakefinder-1.1.0",
+      "name": "pytest-flakefinder",
+      "versionInfo": "1.1.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ec/53/69c56a93ea057895b5761c5318455804873a6cd9d796d7c55d41c2358125/pytest-flakefinder-1.1.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "2015 Dropbox, Inc.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d5b68240e6c61951e4169eac365e234c5def9db8"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest-flakefinder@1.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-rerunfailures-10.3",
+      "name": "pytest-rerunfailures",
+      "versionInfo": "10.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/92/98/83a8dcb062980664db7decc787265091b5b3010f49ddb083cea3b7ea3d68/pytest-rerunfailures-10.3.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c38bfa8be59a45223165a4d7e3d93537378d3663"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest-rerunfailures@10.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-shard-0.1.2",
+      "name": "pytest-shard",
+      "versionInfo": "0.1.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/65/7a/dbeb4c54e9fc3b59622f410091365f354a69cda1af10c3b83ac0ca6e6f4f/pytest_shard-0.1.2-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a375ba2681e2d4c2f5a676f16f16489686301814"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest-shard@0.1.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-xdist",
+      "name": "pytest-xdist",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "a094394e45debd161a7a9476677d0f9f24927a06"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest-xdist"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-xdist-3.0.2",
+      "name": "pytest-xdist",
+      "versionInfo": "3.0.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/0b/74/3ba11ebecb6f3f69a472a3c19be65c46a1dd3efaa580d973118455c74c34/pytest-xdist-3.0.2.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e3c4736ece63d9f790776c076a1a33e488c37db6"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest-xdist@3.0.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-python-etcd-0.4.5",
+      "name": "python-etcd",
+      "versionInfo": "0.4.5",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/a1/da/616a4d073642da5dd432e5289b7c1cb0963cc5dde23d1ecb8d726821ab41/python-etcd-0.4.5.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1367e4948c9643d6e47d8d6728794ff9ad8ff25c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/python-etcd@0.4.5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pyyaml",
+      "name": "PyYAML",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/55/3e/5e5514b8a5a146fda33f04b86b2a92ad0d663d6341cb1977060353d8aa33/PyYAML-6.0b1-cp310-cp310-macosx_10_9_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2017-2021 Ingy döt Net\n\t2006-2016 Kirill Simonov",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "2761e700ca0e2cdf4cd72dcbf6470d180b86a0a9"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pyyaml"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pyyaml-6.0",
+      "name": "PyYAML",
+      "versionInfo": "6.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/44/e5/4fea13230bcebf24b28c0efd774a2dd65a0937a2d39e94a4503438b078ed/PyYAML-6.0-cp310-cp310-macosx_10_9_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2017-2021 Ingy döt Net\n\t2006-2016 Kirill Simonov",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "867cb88bc1218a0e55daeff1d7f0f72462ce7d64"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pyyaml@6.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-requests",
+      "name": "requests",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cec545809171b5ec8438615c5078c7854139e31d"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/requests"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-requests-2.31.0",
+      "name": "requests",
+      "versionInfo": "2.31.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/9d/be/10918a2eac4ae9f02f6cfe6414b7a155ccd8f7f9d4380d62fd5b955065c3/requests-2.31.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d998dd8d152e7eaad0a0e6a7e983fa7c0426a559"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/requests@2.31.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-rich-10.9.0",
+      "name": "rich",
+      "versionInfo": "10.9.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/e9/c4/ea9a6e34dd5c4c3049b0a86c49feb7f38c9f5e901ffb6eeb832e89dfa540/rich-10.9.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2020 Will McGugan",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6019aed643f9ba570906b9652b870d4239802ebd"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/rich@10.9.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-rockset-1.0.3",
+      "name": "rockset",
+      "versionInfo": "1.0.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/96/0a/6aba20829fe8682046ce3feafe20e4229e7d37857ca24e91ba4643839d73/rockset-1.0.3.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "proprietary-license",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "32e38fff3dfbd55e79652054e1e84b18e7c81516"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/rockset@1.0.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scikit-image-0.19.3",
+      "name": "scikit-image",
+      "versionInfo": "0.19.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/d7/ed/f311a9cee61a5c55979f51e85d52e62981b4b920bb14cb8d315a67e997d8/scikit_image-0.19.3-cp310-cp310-macosx_10_13_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseInfoFromFiles": [
+        "BSD-2-Clause",
+        "BSD-3-Clause",
+        "MIT",
+        "public-domain"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cb630c65ff52622cd713b0c0eee1b76cd702aab2"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/scikit-image@0.19.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scikit-image-0.20.0",
+      "name": "scikit-image",
+      "versionInfo": "0.20.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/03/55/0ff6e41c39c64d9ad18bf31c953c28f525533609c7371fa2790558ca8197/scikit_image-0.20.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT OR BSD-3-Clause OR BSD-2-Clause",
+      "copyrightText": "2009-2022 the scikit-image team\n\t2007-2010 the Sphinx team\n\t2003-2009 Massachusetts Institute of Technology\n\t2009-2015 Board of Regents of the University of\n\t2020 Broad Institute\n\t2013 The IPython Development Team\n\t2009-2011 Pierre Raybaut\n\t protected. In other words, you cannot\n\t2011 the scikit-image team",
+      "licenseInfoFromFiles": [
+        "Apache-2.0",
+        "MPL-2.0",
+        "public-domain",
+        "Python-2.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6f86ae9516c56456434718cbcaee593bce41702b"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/scikit-image@0.20.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.6.3",
+      "name": "scipy",
+      "versionInfo": "1.6.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/5a/5d/1cb64ed7e616f05f21679934fd47e2e655961cc6de665aeb28479842c69d/scipy-1.7.1-cp37-cp37m-macosx_10_9_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "GPL-1.0-or-later",
+        "GPL-3.0-only",
+        "GPL-3.0-or-later",
+        "GPL-3.0-with-GCC-exception",
+        "BSD-3-Clause",
+        "BSD-3-Clause-LBNL",
+        "MIT",
+        "Qhull",
+        "BSD-3-Clause",
+        "MIT",
+        "Qhull",
+        "BSD-2-Clause",
+        "BSL-1.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c7c7471efe3f361d94ff92e6e9f00af8d438d892"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/scipy@1.6.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.8.1",
+      "name": "scipy",
+      "versionInfo": "1.8.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/7c/f3/47b882f8b7a4dbc38e8bc5d7befe3ad2da582ae2229745e1eac77217f3e4/scipy-1.8.1-cp310-cp310-macosx_10_9_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "GPL-1.0-or-later",
+        "GPL-3.0-only",
+        "GPL-3.0-or-later",
+        "GPL-3.0-with-GCC-exception",
+        "BSD-3-Clause",
+        "BSD-3-Clause-LBNL",
+        "MIT",
+        "Qhull",
+        "BSD-2-Clause",
+        "BSD-3-Clause",
+        "MIT",
+        "Qhull",
+        "BSL-1.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c587ea5cc52ba2e45cc1bf5cc1eed70e76b5fe2c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/scipy@1.8.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.9.0",
+      "name": "scipy",
+      "versionInfo": "1.9.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/7e/ab/2fbc7e004d64ef509184f81ba81637470977d54d157d1a289b04d1e28ec0/scipy-1.9.0-cp310-cp310-macosx_10_9_x86_64.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "NONE",
+      "copyrightText": "NONE",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "GPL-1.0-or-later",
+        "GPL-3.0-only",
+        "GPL-3.0-or-later",
+        "GPL-3.0-with-GCC-exception",
+        "BSD-3-Clause",
+        "BSD-3-Clause-LBNL",
+        "MIT",
+        "Qhull",
+        "MIT",
+        "BSD-3-Clause",
+        "BSD-2-Clause",
+        "Qhull",
+        "BSL-1.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "3232094e5670534f01b153c5f4f0e6f2b8a2e6ae"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/scipy@1.9.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.9.3",
+      "name": "scipy",
+      "versionInfo": "1.9.3",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/0a/2e/44795c6398e24e45fa0bb61c3e98de1cfea567b1b51efd3751e2f7ff9720/scipy-1.9.3.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause OR BSL-1.0 OR MIT OR BSD-3-Clause",
+      "copyrightText": "2000-2022 Wolfgang Hoermann and Josef Leydold             \n\t1987-, A",
+      "licenseInfoFromFiles": [
+        "BSL-1.0",
+        "BSD-3-Clause",
+        "MIT",
+        "MIT",
+        "BSD-3-Clause",
+        "MIT",
+        "Python-2.0",
+        "MIT",
+        "public-domain",
+        "BSD-3-Clause",
+        "GPL-3.0-only",
+        "BSD-3-Clause",
+        "EFL-2.0",
+        "BSD-3-Clause",
+        "GPL-3.0-only",
+        "GPL-3.0-with-GCC-exception",
+        "BSD-3-Clause",
+        "Python-2.0",
+        "Apache-2.0",
+        "MPL-2.0",
+        "public-domain",
+        "BSD-2-Clause",
+        "Python-2.0",
+        "GPL-3.0-only",
+        "GPL-3.0-with-GCC-exception",
+        "BSD-2-Clause",
+        "LPPL-1.3a",
+        "X11",
+        "Zlib",
+        "GPL-3.0-only"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1791c4d1aaaa97b09b04f8b7428782a7d287dfc5"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/scipy@1.9.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-setuptools",
+      "name": "setuptools",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/4e/78/56aa1b5f4d8ac548755ae767d84f0be54fdd9d404197a3d9e4659d272348/setuptools-57.0.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Jason R. Coombs\n\t Jason R. Coombs",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "Apache-2.0",
+        "Python-2.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "dc0a4f0e7a5a1a8a0f812f6b617a5b1d176b6ab2"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/setuptools"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-setuptools-67.8.0",
+      "name": "setuptools",
+      "versionInfo": "67.8.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/03/20/630783571e76e5fa5f3e9f29398ca3ace377207b8196b54e0ffdf09f12c1/setuptools-67.8.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Anderson Bravalheri",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "Apache-2.0",
+        "Python-2.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "86434ff8e9bf17dc553c738edcecaa4a7e9ab8d9"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/setuptools@67.8.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-six-1.16.0",
+      "name": "six",
+      "versionInfo": "1.16.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2010-2020 Benjamin Peterson",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "9c194768c177f0d22dc091d6a31c21728bdd6b5a"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/six@1.16.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-Sphinx-5.3.0",
+      "name": "Sphinx",
+      "versionInfo": "5.3.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/af/b2/02a43597980903483fe5eb081ee8e0ba2bb62ea43a70499484343795f3bf/Sphinx-5.3.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause OR MIT",
+      "copyrightText": "message\n\t2007-2022 by the Sphinx team\n\t2007-2022 by the Sphinx team ",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "MIT",
+        "GPL-3.0-only",
+        "public-domain"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "827b2162945c9eb076584cef9bea3eea6f028694"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx@5.3.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sphinxcontrib-katex-0.8.6",
+      "name": "sphinxcontrib-katex",
+      "versionInfo": "0.8.6",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/66/39/6398797ccef2f9eaf348cfb75497c265b58ba715ad001b3cca447c3cfe47/sphinxcontrib_katex-0.8.6-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2017 Hagen Wierstorf",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "8f3c0e178d26402a316d8cf618825f5b9bcf5738"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinxcontrib-katex@0.8.6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sphinx-copybutton-0.5.0",
+      "name": "sphinx-copybutton",
+      "versionInfo": "0.5.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/bb/67/2e45820994078b7d760f2c5ada5fd9c19bc352c010d3fd2aee799fdeffa4/sphinx_copybutton-0.5.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2018 Chris Holdgraf",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b00d16e823c698a1d4636f7df98516597b506a38"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx-copybutton@0.5.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sphinx-panels-0.4.1",
+      "name": "sphinx-panels",
+      "versionInfo": "0.4.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/74/27/7f145fcbdd6d53990df2d4d22a9766bd47fca2ddf58a77c6476a9b9d4653/sphinx_panels-0.4.1-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2011-2019 The Bootstrap Authors",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6cec827a9da0cebb3cfd794c4e416dfb6aa7f81e"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sphinx-panels@0.4.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sympy-1.11.1",
+      "name": "sympy",
+      "versionInfo": "1.11.1",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/2d/49/a2d03101e2d28ad528968144831d506344418ef1cc04839acdbe185889c2/sympy-1.11.1-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-3-Clause OR MIT",
+      "copyrightText": "2006-2022 SymPy Development Team\n\t2006-2018 SymPy Development Team,\n\t2014 Matthew Rocklin\n\t2009-2022 PyDy Authors\n\t2016 latex2sympy",
+      "licenseInfoFromFiles": [
+        "BSD-3-Clause",
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "baf7426321a5c810deb9f7b9a82c76207b4ea303"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sympy@1.11.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sympy-1.12",
+      "name": "sympy",
+      "versionInfo": "1.12",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/e5/57/3485a1a3dff51bfd691962768b14310dae452431754bfc091250be50dd29/sympy-1.12.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT OR BSD-3-Clause",
+      "copyrightText": "2006-2023 SymPy Development Team\n\t2006-2018 SymPy Development Team,\n\t2014 Matthew Rocklin\n\t2009-2023 PyDy Authors\n\t2016 latex2sympy\n\t2006-2014 SymPy developers",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6092125b011959ddd4c391936597da24a9090954"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/sympy@1.12"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-tb-nightly-2.13.0a20230426",
+      "name": "tb-nightly",
+      "versionInfo": "2.13.0a20230426",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ce/0f/09199c8d264683b6097a713c5c01c86798214d7de327f35ff2ae70f9ad4a/tb_nightly-2.13.0a20230504-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "2017 The TensorFlow Authors. All Rights Reserved.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "1c961717a2003768a02ca4cbc0b4d7df1133f49c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/tb-nightly@2.13.0a20230426"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-tensorboard-2.13.0",
+      "name": "tensorboard",
+      "versionInfo": "2.13.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/67/f2/e8be5599634ff063fa2c59b7b51636815909d5140a26df9f02ce5d99b81a/tensorboard-2.13.0-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "2017 The TensorFlow Authors. All Rights Reserved.",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "15988cba1745dbe6f104d963cd95ec035872baf2"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/tensorboard@2.13.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-tqdm",
+      "name": "tqdm",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT OR MPL-2.0",
+      "copyrightText": "2013 noamraph",
+      "licenseInfoFromFiles": [
+        "MIT"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "d78856e9c60daebb054bc38b97e59467ae4c490c"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/tqdm"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-types-dataclasses-0.6.6",
+      "name": "types-dataclasses",
+      "versionInfo": "0.6.6",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/31/85/23ab2bbc280266af5bf22ded4e070946d1694d1721ced90666b649eaa795/types_dataclasses-0.6.6-py3-none-any.whl",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "66ff111ad1d9b7e5b56a387131167e0b5b5f2bf1"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/types-dataclasses@0.6.6"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-typing-extensions",
+      "name": "typing-extensions",
+      "versionInfo": null,
+      "filesAnalyzed": true,
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Python-2.0",
+      "copyrightText": "2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 \n\t i.e., \"Copyright (c)\n\t \n\t1991 - 1995 Stichting Mathematisch Centrum Amsterdam,",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "cc862c74261b109dbe2836a44383c3dd4c0b1ce2"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/typing-extensions"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-typing-extensions-4.5.0",
+      "name": "typing-extensions",
+      "versionInfo": "4.5.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/d3/20/06270dac7316220643c32ae61694e451c98f8caf4c8eab3aa80a2bedf0df/typing_extensions-4.5.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Python-2.0",
+      "copyrightText": "2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 \n\t i.e., \"Copyright (c)\n\t \n\t1991 - 1995 Stichting Mathematisch Centrum Amsterdam,",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "6bf4691bac36b691a30a350d26cc1c5f99c5446a"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/typing-extensions@4.5.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-unittest-xml-reporting-3.2.0",
+      "name": "unittest-xml-reporting",
+      "versionInfo": "3.2.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/ed/40/3bf1afc96e93c7322520981ac4593cbb29daa21b48d32746f05ab5563dca/unittest-xml-reporting-3.2.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "2008-2013 Daniel Fernandes Martins",
+      "licenseInfoFromFiles": [
+        "mit-old-style-no-advert"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "41a70c4fda2f28557e1197691a2139ad8ec09d0d"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/unittest-xml-reporting@3.2.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-urllib3-2.0.2",
+      "name": "urllib3",
+      "versionInfo": "2.0.2",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/fb/c0/1abba1a1233b81cf2e36f56e05194f5e8a0cec8c03c244cab56cc9dfb5bd/urllib3-2.0.2.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "MIT",
+      "copyrightText": "2008-2020 Andrey Petrov and contributors (see CONTRIBUTORS.txt)",
+      "licenseInfoFromFiles": [
+        "Python-2.0"
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "11c9bf0b2629a07b344840aa30f7910d63f496e4"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/urllib3@2.0.2"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-pip-xdoctest-1.1.0",
+      "name": "xdoctest",
+      "versionInfo": "1.1.0",
+      "filesAnalyzed": true,
+      "downloadLocation": "https://files.pythonhosted.org/packages/26/a5/7808a938c692c700e2a5b78a25c19a70a483e64c3938d24b46647c83f40d/xdoctest-1.1.0.tar.gz",
+      "originator": "Organization: Pip",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "b813a7ef85447f5b4526e3e28a2727854fc9eaee"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/xdoctest@1.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "name": "38450/git@github.com:pytorch/pytorch.git",
+      "versionInfo": "fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Custom (provided build)",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-astunparse-1.6.3",
+      "name": "astunparse",
+      "versionInfo": "1.6.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-boto3-1.19.12",
+      "name": "boto3",
+      "versionInfo": "1.19.12",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-breathe-4.34.0",
+      "name": "breathe",
+      "versionInfo": "4.34.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-bs4-0.0.1",
+      "name": "bs4",
+      "versionInfo": "0.0.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-certifi-2023.5.7",
+      "name": "certifi",
+      "versionInfo": "2023.5.7",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-charset-normalizer-3.1.0",
+      "name": "charset-normalizer",
+      "versionInfo": "3.1.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-click",
+      "name": "click",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-conda-cmake-3.26.4",
+      "name": "cmake",
+      "versionInfo": "3.26.4",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Unknown",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-coremltools-5.0b5",
+      "name": "coremltools",
+      "versionInfo": "5.0b5",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-docutils-0.16",
+      "name": "docutils",
+      "versionInfo": "0.16",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-enum34-1.1.10",
+      "name": "enum34",
+      "versionInfo": "1.1.10",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-exhale-0.2.3",
+      "name": "exhale",
+      "versionInfo": "0.2.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-expecttest-0.1.4",
+      "name": "expecttest",
+      "versionInfo": "0.1.4",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-expecttest-0.1.3",
+      "name": "expecttest",
+      "versionInfo": "0.1.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-gem-fastlane-2.206.2",
+      "name": "fastlane",
+      "versionInfo": "2.206.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: RubyGem",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-filelock-3.6.0",
+      "name": "filelock",
+      "versionInfo": "3.6.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-filelock",
+      "name": "filelock",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-3.8.2",
+      "name": "flake8",
+      "versionInfo": "3.8.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-bugbear-20.1.4",
+      "name": "flake8-bugbear",
+      "versionInfo": "20.1.4",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-comprehensions-3.3.0",
+      "name": "flake8-comprehensions",
+      "versionInfo": "3.3.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-executable-2.0.4",
+      "name": "flake8-executable",
+      "versionInfo": "2.0.4",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-logging-format-0.9.0",
+      "name": "flake8-logging-format",
+      "versionInfo": "0.9.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flake8-pyi-20.5.0",
+      "name": "flake8-pyi",
+      "versionInfo": "20.5.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-flatbuffers-2.0",
+      "name": "flatbuffers",
+      "versionInfo": "2.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-fsspec",
+      "name": "fsspec",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-future-0.18.3",
+      "name": "future",
+      "versionInfo": "0.18.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-ghstack-0.7.1",
+      "name": "ghstack",
+      "versionInfo": "0.7.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-hypothesis-6.79.1",
+      "name": "hypothesis",
+      "versionInfo": "6.79.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-hypothesis-5.35.1",
+      "name": "hypothesis",
+      "versionInfo": "5.35.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-hypothesis-6.56.4",
+      "name": "hypothesis",
+      "versionInfo": "6.56.4",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-idna-3.4",
+      "name": "idna",
+      "versionInfo": "3.4",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-ipython-8.12.0",
+      "name": "ipython",
+      "versionInfo": "8.12.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-jinja2-3.1.2",
+      "name": "jinja2",
+      "versionInfo": "3.1.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-jinja2",
+      "name": "jinja2",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-jinja2-3.0.1",
+      "name": "jinja2",
+      "versionInfo": "3.0.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-junitparser-2.1.1",
+      "name": "junitparser",
+      "versionInfo": "2.1.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-conda-libopenblas-0.3.21",
+      "name": "libopenblas",
+      "versionInfo": "0.3.21",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Unknown",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-librosa-0.6.2",
+      "name": "librosa",
+      "versionInfo": "0.6.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-lintrunner-0.10.7",
+      "name": "lintrunner",
+      "versionInfo": "0.10.7",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-matplotlib-3.5.3",
+      "name": "matplotlib",
+      "versionInfo": "3.5.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-mccabe-0.6.1",
+      "name": "mccabe",
+      "versionInfo": "0.6.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-mpmath-1.3.0",
+      "name": "mpmath",
+      "versionInfo": "1.3.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-mypy-0.960",
+      "name": "mypy",
+      "versionInfo": "0.960",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-myst-nb-0.17.2",
+      "name": "myst-nb",
+      "versionInfo": "0.17.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-myst-parser-0.18.1",
+      "name": "myst-parser",
+      "versionInfo": "0.18.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-networkx-2.8.7",
+      "name": "networkx",
+      "versionInfo": "2.8.7",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-networkx",
+      "name": "networkx",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-networkx-2.8.8",
+      "name": "networkx",
+      "versionInfo": "2.8.8",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-ninja-1.10.0.post1",
+      "name": "ninja",
+      "versionInfo": "1.10.0.post1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-conda-ninja-1.10.2",
+      "name": "ninja",
+      "versionInfo": "1.10.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Unknown",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.54.1",
+      "name": "numba",
+      "versionInfo": "0.54.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.49.0",
+      "name": "numba",
+      "versionInfo": "0.49.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.49.1",
+      "name": "numba",
+      "versionInfo": "0.49.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.55.2",
+      "name": "numba",
+      "versionInfo": "0.55.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numba-0.56.0",
+      "name": "numba",
+      "versionInfo": "0.56.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numpy",
+      "name": "numpy",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-numpy-1.24.3",
+      "name": "numpy",
+      "versionInfo": "1.24.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-nvidia-ml-py-11.525.84",
+      "name": "nvidia-ml-py",
+      "versionInfo": "11.525.84",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-opt-einsum-3.3.0",
+      "name": "opt-einsum",
+      "versionInfo": "3.3.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-protobuf-3.20.2",
+      "name": "protobuf",
+      "versionInfo": "3.20.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-psutil",
+      "name": "psutil",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-psutil-5.9.1",
+      "name": "psutil",
+      "versionInfo": "5.9.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pycodestyle-2.6.0",
+      "name": "pycodestyle",
+      "versionInfo": "2.6.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pyflakes-2.2.0",
+      "name": "pyflakes",
+      "versionInfo": "2.2.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-PyGithub",
+      "name": "PyGithub",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-Pygments-2.12.0",
+      "name": "Pygments",
+      "versionInfo": "2.12.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest",
+      "name": "pytest",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-7.2.0",
+      "name": "pytest",
+      "versionInfo": "7.2.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-cpp-2.3.0",
+      "name": "pytest-cpp",
+      "versionInfo": "2.3.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-flakefinder-1.1.0",
+      "name": "pytest-flakefinder",
+      "versionInfo": "1.1.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-rerunfailures-10.3",
+      "name": "pytest-rerunfailures",
+      "versionInfo": "10.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-shard-0.1.2",
+      "name": "pytest-shard",
+      "versionInfo": "0.1.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-xdist",
+      "name": "pytest-xdist",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pytest-xdist-3.0.2",
+      "name": "pytest-xdist",
+      "versionInfo": "3.0.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-python-etcd-0.4.5",
+      "name": "python-etcd",
+      "versionInfo": "0.4.5",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pyyaml",
+      "name": "pyyaml",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-pyyaml-6.0",
+      "name": "pyyaml",
+      "versionInfo": "6.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-requests",
+      "name": "requests",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-requests-2.31.0",
+      "name": "requests",
+      "versionInfo": "2.31.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-rich-10.9.0",
+      "name": "rich",
+      "versionInfo": "10.9.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-rockset-1.0.3",
+      "name": "rockset",
+      "versionInfo": "1.0.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scikit-image-0.19.3",
+      "name": "scikit-image",
+      "versionInfo": "0.19.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scikit-image-0.20.0",
+      "name": "scikit-image",
+      "versionInfo": "0.20.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.6.3",
+      "name": "scipy",
+      "versionInfo": "1.6.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.8.1",
+      "name": "scipy",
+      "versionInfo": "1.8.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.9.0",
+      "name": "scipy",
+      "versionInfo": "1.9.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-scipy-1.9.3",
+      "name": "scipy",
+      "versionInfo": "1.9.3",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-setuptools",
+      "name": "setuptools",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-setuptools-67.8.0",
+      "name": "setuptools",
+      "versionInfo": "67.8.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-six-1.16.0",
+      "name": "six",
+      "versionInfo": "1.16.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-Sphinx-5.3.0",
+      "name": "Sphinx",
+      "versionInfo": "5.3.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sphinxcontrib-katex-0.8.6",
+      "name": "sphinxcontrib-katex",
+      "versionInfo": "0.8.6",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sphinx-copybutton-0.5.0",
+      "name": "sphinx-copybutton",
+      "versionInfo": "0.5.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sphinx-panels-0.4.1",
+      "name": "sphinx-panels",
+      "versionInfo": "0.4.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sympy-1.11.1",
+      "name": "sympy",
+      "versionInfo": "1.11.1",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-sympy-1.12",
+      "name": "sympy",
+      "versionInfo": "1.12",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-tb-nightly-2.13.0a20230426",
+      "name": "tb-nightly",
+      "versionInfo": "2.13.0a20230426",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-tensorboard-2.13.0",
+      "name": "tensorboard",
+      "versionInfo": "2.13.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-tqdm",
+      "name": "tqdm",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-types-dataclasses-0.6.6",
+      "name": "types-dataclasses",
+      "versionInfo": "0.6.6",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-typing-extensions",
+      "name": "typing-extensions",
+      "versionInfo": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-typing-extensions-4.5.0",
+      "name": "typing-extensions",
+      "versionInfo": "4.5.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-unittest-xml-reporting-3.2.0",
+      "name": "unittest-xml-reporting",
+      "versionInfo": "3.2.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-urllib3-2.0.2",
+      "name": "urllib3",
+      "versionInfo": "2.0.2",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-pip-xdoctest-1.1.0",
+      "name": "xdoctest",
+      "versionInfo": "1.1.0",
+      "downloadLocation": "NOASSERTION",
+      "comment": "Incomplete dependency",
+      "supplier": "Organization: Pip",
+      "filesAnalyzed": false
+    }
+  ],
+  "hasExtractedLicensingInfos": [],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-astunparse-1.6.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-astunparse-1.6.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-boto3-1.19.12"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-boto3-1.19.12",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-breathe-4.34.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-breathe-4.34.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-bs4-0.0.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-bs4-0.0.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-certifi-2023.5.7"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-certifi-2023.5.7",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-charset-normalizer-3.1.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-charset-normalizer-3.1.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-click"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-click",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-conda-cmake-3.26.4"
+    },
+    {
+      "spdxElementId": "SPDXRef-conda-cmake-3.26.4",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-coremltools-5.0b5"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-coremltools-5.0b5",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-docutils-0.16"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-docutils-0.16",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-enum34-1.1.10"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-enum34-1.1.10",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-exhale-0.2.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-exhale-0.2.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-expecttest-0.1.4"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-expecttest-0.1.4",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-expecttest-0.1.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-expecttest-0.1.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-gem-fastlane-2.206.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-gem-fastlane-2.206.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-filelock-3.6.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-filelock-3.6.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-filelock"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-filelock",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-flake8-3.8.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-flake8-3.8.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-flake8-bugbear-20.1.4"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-flake8-bugbear-20.1.4",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-flake8-comprehensions-3.3.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-flake8-comprehensions-3.3.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-flake8-executable-2.0.4"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-flake8-executable-2.0.4",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-flake8-logging-format-0.9.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-flake8-logging-format-0.9.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-flake8-pyi-20.5.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-flake8-pyi-20.5.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-flatbuffers-2.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-flatbuffers-2.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-fsspec"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-fsspec",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-future-0.18.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-future-0.18.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-ghstack-0.7.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-ghstack-0.7.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-hypothesis-6.79.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-hypothesis-6.79.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-hypothesis-5.35.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-hypothesis-5.35.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-hypothesis-6.56.4"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-hypothesis-6.56.4",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-idna-3.4"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-idna-3.4",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-ipython-8.12.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-ipython-8.12.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-jinja2-3.1.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-jinja2-3.1.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-jinja2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-jinja2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-jinja2-3.0.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-jinja2-3.0.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-junitparser-2.1.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-junitparser-2.1.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-conda-libopenblas-0.3.21"
+    },
+    {
+      "spdxElementId": "SPDXRef-conda-libopenblas-0.3.21",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-librosa-0.6.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-librosa-0.6.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-lintrunner-0.10.7"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-lintrunner-0.10.7",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-matplotlib-3.5.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-matplotlib-3.5.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-mccabe-0.6.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-mccabe-0.6.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-mpmath-1.3.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-mpmath-1.3.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-mypy-0.960"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-mypy-0.960",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-myst-nb-0.17.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-myst-nb-0.17.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-myst-parser-0.18.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-myst-parser-0.18.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-networkx-2.8.7"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-networkx-2.8.7",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-networkx"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-networkx",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-networkx-2.8.8"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-networkx-2.8.8",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-ninja-1.10.0.post1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-ninja-1.10.0.post1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-conda-ninja-1.10.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-conda-ninja-1.10.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-numba-0.54.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-numba-0.54.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-numba-0.49.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-numba-0.49.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-numba-0.49.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-numba-0.49.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-numba-0.55.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-numba-0.55.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-numba-0.56.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-numba-0.56.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-numpy"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-numpy",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-numpy-1.24.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-numpy-1.24.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-nvidia-ml-py-11.525.84"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-nvidia-ml-py-11.525.84",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-opt-einsum-3.3.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-opt-einsum-3.3.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-protobuf-3.20.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-protobuf-3.20.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-psutil"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-psutil",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-psutil-5.9.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-psutil-5.9.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pycodestyle-2.6.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pycodestyle-2.6.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pyflakes-2.2.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pyflakes-2.2.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-PyGithub"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-PyGithub",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-Pygments-2.12.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-Pygments-2.12.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest-7.2.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest-7.2.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest-cpp-2.3.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest-cpp-2.3.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest-flakefinder-1.1.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest-flakefinder-1.1.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest-rerunfailures-10.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest-rerunfailures-10.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest-shard-0.1.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest-shard-0.1.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest-xdist"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest-xdist",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pytest-xdist-3.0.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pytest-xdist-3.0.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-python-etcd-0.4.5"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-python-etcd-0.4.5",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pyyaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pyyaml",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-pyyaml-6.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-pyyaml-6.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-requests"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-requests",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-requests-2.31.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-requests-2.31.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-rich-10.9.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-rich-10.9.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-rockset-1.0.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-rockset-1.0.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-scikit-image-0.19.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-scikit-image-0.19.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-scikit-image-0.20.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-scikit-image-0.20.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-scipy-1.6.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-scipy-1.6.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-scipy-1.8.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-scipy-1.8.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-scipy-1.9.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-scipy-1.9.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-scipy-1.9.3"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-scipy-1.9.3",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-setuptools"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-setuptools",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-setuptools-67.8.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-setuptools-67.8.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-six-1.16.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-six-1.16.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-Sphinx-5.3.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-Sphinx-5.3.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-sphinxcontrib-katex-0.8.6"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-sphinxcontrib-katex-0.8.6",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-sphinx-copybutton-0.5.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-sphinx-copybutton-0.5.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-sphinx-panels-0.4.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-sphinx-panels-0.4.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-sympy-1.11.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-sympy-1.11.1",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-sympy-1.12"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-sympy-1.12",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-tb-nightly-2.13.0a20230426"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-tb-nightly-2.13.0a20230426",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-tensorboard-2.13.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-tensorboard-2.13.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-tqdm"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-tqdm",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-types-dataclasses-0.6.6"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-types-dataclasses-0.6.6",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-typing-extensions"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-typing-extensions",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-typing-extensions-4.5.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-typing-extensions-4.5.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-unittest-xml-reporting-3.2.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-unittest-xml-reporting-3.2.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-urllib3-2.0.2"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-urllib3-2.0.2",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    },
+    {
+      "spdxElementId": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-pip-xdoctest-1.1.0"
+    },
+    {
+      "spdxElementId": "SPDXRef-pip-xdoctest-1.1.0",
+      "relationshipType": "DEPENDENCY_OF",
+      "relatedSpdxElement": "SPDXRef-custom-38450-git-github.com-pytorch-pytorch.git-fbbde8df69577fa52a6e354b930a2fe4e921ae92"
+    }
+  ]
+}
