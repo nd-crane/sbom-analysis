@@ -18,6 +18,7 @@ website:
           - figs/fig04.relationship.html
           - figs/fig04.relationship_full.html
           - figs/fig06.relationship_full.html
+          - figs/tmp.html
       - section: sboms
         contents:
           - sboms/00_core.ipynb
@@ -32,7 +33,7 @@ website:
       - section: tool_analysis
         contents:
           - tool_analysis/introduction.ipynb
-          - tool_analysis/tools.qmd
+          - tool_analysis/tools_overall_analysis.qmd
           - section: cs1
             contents:
               - tool_analysis/cs1/overall_analysis.ipynb

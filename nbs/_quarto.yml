@@ -24,7 +24,7 @@ website:
       title: "SBOMs"
       collapse-level: 2
       border: true
-      style: "floating"      
+      style: "docked"      
       search: true
       contents:
         - sboms/00_core.ipynb
