@@ -65,10 +65,12 @@ website:
                 file: tool_analysis/cs1/overall_analysis.ipynb
               - section: "Analysis by Tools" 
                 contents:
-                - text: "Tool 1"
-                  file: tool_analysis/cs1/tool1.ipynb
-                - text: "Tool 2"
-                  file: tool_analysis/cs1/tool2.ipynb                
+                - text: "Syft"
+                  file: tool_analysis/cs1/syft.ipynb
+                - text: "Tern"
+                  file: tool_analysis/cs1/tern.ipynb  
+                - text: "Fossa"
+                  file: tool_analysis/cs1/fossa.ipynb                                  
 
     - id: other_investigations
       title: "AI Specifications"      

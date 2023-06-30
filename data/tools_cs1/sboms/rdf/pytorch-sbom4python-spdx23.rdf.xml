@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document>
+  <SPDXID>SPDXRef-DOCUMENT</SPDXID>
+  <spdxVersion>SPDX-2.3</spdxVersion>
+  <creationInfo>
+    <comment>This document has been automatically generated.</comment>
+    <created>2023-06-20T16:58:33Z</created>
+    <creators>Tool: sbom4python-0.9.1</creators>
+    <licenseListVersion>3.20</licenseListVersion>
+  </creationInfo>
+  <name>Python-pytorch/</name>
+  <dataLicense>CC0-1.0</dataLicense>
+  <documentNamespace>http://spdx.org/spdxdocs/Python-pytorch/-e10e04e7-7352-475c-8ba7-7b302fe06ee3</documentNamespace>
+</Document>

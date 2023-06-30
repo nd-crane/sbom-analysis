@@ -10,6 +10,9 @@ website:
           - ai_specifications/hugging_face_model_cards.ipynb
       - section: figs
         contents:
+          - figs/cs1-fossa.relationship_full.html
+          - figs/cs1-syft.relationship_full.html
+          - figs/cs1-tern.relationship_full.html
           - figs/fig00.relationship_full.html
           - figs/fig01.relationship_full.html
           - figs/fig02.relationship.html
@@ -36,14 +39,24 @@ website:
           - tool_analysis/tools_overall_analysis.qmd
           - section: cs1
             contents:
+              - tool_analysis/cs1/fossa.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
               - tool_analysis/cs1/overall_analysis.ipynb
       - section: tool_analysis
         contents:
           - section: cs1
             contents:
-              - tool_analysis/cs1/tool1.ipynb
+              - tool_analysis/cs1/syft.ipynb
       - section: tool_analysis
         contents:
           - section: cs1
             contents:
-              - tool_analysis/cs1/tool2.ipynb
+              - tool_analysis/cs1/tern.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/toolX.ipynb

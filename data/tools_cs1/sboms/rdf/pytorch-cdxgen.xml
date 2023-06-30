@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:bd732791-5c70-46e1-96dc-a8beecd657eb" version="1" xmlns="http://cyclonedx.org/schema/bom/1.4">
+  <metadata>
+    <timestamp>2023-06-20T23:06:12.405Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>cyclonedx</vendor>
+        <name>cdxgen</name>
+        <version>8.5.3</version>
+      </tool>
+    </tools>
+    <authors>
+      <author>
+        <name>Prabhu Subramanian</name>
+        <email>prabhu@appthreat.com</email>
+      </author>
+    </authors>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:pypi/flake8@3.8.2">
+      <publisher />
+      <group />
+      <name>flake8</name>
+      <version>3.8.2</version>
+      <description>the modular source code checker: pep8 pyflakes and co</description>
+      <hashes>
+        <hash alg="SHA-256">ccaa799ef9893cebe69fdfefed76865aeaefbb94cb8545617b2298786a4de9a5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flake8@3.8.2</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/pycqa/flake8</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flake8-bugbear@20.1.4">
+      <publisher />
+      <group />
+      <name>flake8-bugbear</name>
+      <version>20.1.4</version>
+      <description>A plugin for flake8 finding likely bugs and design problems in your program. Contains warnings that don't belong in pyflakes and pycodestyle.</description>
+      <hashes>
+        <hash alg="SHA-256">a3ddc03ec28ba2296fc6f89444d1c946a6b76460f859795b35b77d4920a51b63</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flake8-bugbear@20.1.4</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flake8-comprehensions@3.3.0">
+      <publisher />
+      <group />
+      <name>flake8-comprehensions</name>
+      <version>3.3.0</version>
+      <description>A flake8 plugin to help you write better list/set/dict comprehensions.</description>
+      <hashes>
+        <hash alg="SHA-256">c1dd6d8a00e9722619a5c5e0e6c5747f5cf23c089032c86eaf614c14a2e40adb</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flake8-comprehensions@3.3.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/adamchainz/flake8-comprehensions</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flake8-executable@2.0.4">
+      <publisher />
+      <group />
+      <name>flake8-executable</name>
+      <version>2.0.4</version>
+      <description>A Flake8 plugin for checking executable permissions and shebangs.</description>
+      <hashes>
+        <hash alg="SHA-256">150abd0b6ed289b64a4d59f16ae216a76f62b88ad88318d1e685a3d47bb7e89c</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>LGPL v3+</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flake8-executable@2.0.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/xuhdev/flake8-executable</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flake8-logging-format@0.9.0">
+      <publisher />
+      <group />
+      <name>flake8-logging-format</name>
+      <version>0.9.0</version>
+      <description />
+      <hashes>
+        <hash alg="SHA-256">e830cc49091e4b8ab9ea3da69a3da074bd631ce9a7db300e5c89fb48ba4a6986</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flake8-logging-format@0.9.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/globality-corp/flake8-logging-format</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/flake8-pyi@20.5.0">
+      <publisher />
+      <group />
+      <name>flake8-pyi</name>
+      <version>20.5.0</version>
+      <description>A plugin for flake8 to enable linting .pyi stub files.</description>
+      <hashes>
+        <hash alg="SHA-256">f22cbadb5e51bd273906d5f94fafa94caefc80d7605a9cafe8f20f95496a7cfe</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/flake8-pyi@20.5.0</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/mccabe@0.6.1">
+      <publisher />
+      <group />
+      <name>mccabe</name>
+      <version>0.6.1</version>
+      <description>McCabe checker, plugin for flake8</description>
+      <hashes>
+        <hash alg="SHA-256">ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Expat license</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/mccabe@0.6.1</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/pycqa/mccabe</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pycodestyle@2.6.0">
+      <publisher />
+      <group />
+      <name>pycodestyle</name>
+      <version>2.6.0</version>
+      <description>Python style guide checker</description>
+      <hashes>
+        <hash alg="SHA-256">2295e7b2f6b5bd100585ebcb1f616591b652db8a741695b3d8f5d28bdc934367</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Expat license</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/pycodestyle@2.6.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://pycodestyle.pycqa.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyflakes@2.2.0">
+      <publisher />
+      <group />
+      <name>pyflakes</name>
+      <version>2.2.0</version>
+      <description>passive checker of Python programs</description>
+      <hashes>
+        <hash alg="SHA-256">0d94e0e05a19e57a99444b6ddcf9a6eb2e5c68d3ca1e98e90707af8152c90a92</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/pyflakes@2.2.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/PyCQA/pyflakes</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/astunparse@1.6.3">
+      <publisher />
+      <group />
+      <name>astunparse</name>
+      <version>1.6.3</version>
+      <description>An AST unparser for Python</description>
+      <hashes>
+        <hash alg="SHA-256">c2652417f2c8b5bb325c885ae329bdf3f86424075c4fd1a128674bc6fba4b8e8</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>0BSD</id>
+          <url>https://opensource.org/licenses/0BSD</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/astunparse@1.6.3</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/simonpercivall/astunparse</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/expecttest@0.1.4">
+      <publisher />
+      <group />
+      <name>expecttest</name>
+      <version>0.1.4</version>
+      <description />
+      <hashes>
+        <hash alg="SHA-256">7a64de72d791b7970402a7cb9744d59fe841bf52b9045d65669dbba33210dcfd</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/expecttest@0.1.4</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/ezyang/expecttest</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/hypothesis@6.79.1">
+      <publisher />
+      <group />
+      <name>hypothesis</name>
+      <version>6.79.1</version>
+      <description>A library for property-based testing</description>
+      <hashes>
+        <hash alg="SHA-256">7a0b8ca178f16720e96f11e96b71b6139db0e30727e9cf8bd8e3059710393fc7</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MPL-2.0</id>
+          <url>https://opensource.org/licenses/MPL-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/hypothesis@6.79.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://hypothesis.works</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/numpy@1.25.0">
+      <publisher />
+      <group />
+      <name>numpy</name>
+      <version>1.25.0</version>
+      <description>Fundamental package for array computing in Python</description>
+      <hashes>
+        <hash alg="SHA-256">8aa130c3042052d656751df5e81f6d61edff3e289b5994edcf77f54118a8d9f4</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/numpy@1.25.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://www.numpy.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/psutil@5.9.5">
+      <publisher />
+      <group />
+      <name>psutil</name>
+      <version>5.9.5</version>
+      <description>Cross-platform lib for process and system monitoring in Python.</description>
+      <hashes>
+        <hash alg="SHA-256">be8929ce4313f9f8146caad4272f6abb8bf99fc6cf59344a3167ecd74f4f203f</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/psutil@5.9.5</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/giampaolo/psutil</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/pyyaml@6.0">
+      <publisher />
+      <group />
+      <name>pyyaml</name>
+      <version>6.0</version>
+      <description>YAML parser and emitter for Python</description>
+      <hashes>
+        <hash alg="SHA-256">d4db7c7aef085872ef65a8fd7d6d09a14ae91f691dec3e87ee5ee0539d516f53</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://opensource.org/licenses/MIT</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/pyyaml@6.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://pyyaml.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/requests@2.31.0">
+      <publisher />
+      <group />
+      <name>requests</name>
+      <version>2.31.0</version>
+      <description>Python HTTP for Humans.</description>
+      <hashes>
+        <hash alg="SHA-256">58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+          <url>https://opensource.org/licenses/Apache-2.0</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/requests@2.31.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://requests.readthedocs.io</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/setuptools@68.0.0">
+      <publisher />
+      <group />
+      <name>setuptools</name>
+      <version>68.0.0</version>
+      <description>Easily download, build, install, upgrade, and uninstall Python packages</description>
+      <hashes>
+        <hash alg="SHA-256">11e52c67415a381d10d6b462ced9cfb97066179f0e871399e006c4ab101fc85f</hash>
+      </hashes>
+      <purl>pkg:pypi/setuptools@68.0.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/pypa/setuptools</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/types-dataclasses@0.6.6">
+      <publisher />
+      <group />
+      <name>types-dataclasses</name>
+      <version>0.6.6</version>
+      <description>Typing stubs for dataclasses</description>
+      <hashes>
+        <hash alg="SHA-256">a0a1ab5324ba30363a15c9daa0f053ae4fff914812a1ebd8ad84a08e5349574d</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Apache-2.0 license</name>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/types-dataclasses@0.6.6</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>https://github.com/python/typeshed</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/typing-extensions@4.6.3">
+      <publisher />
+      <group />
+      <name>typing-extensions</name>
+      <version>4.6.3</version>
+      <description>Backported and Experimental Type Hints for Python 3.7+</description>
+      <hashes>
+        <hash alg="SHA-256">88a4153d8505aabbb4e13aacb7c486c2b4a33ca3b3f807914a9b4c844c471c26</hash>
+      </hashes>
+      <purl>pkg:pypi/typing-extensions@4.6.3</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/sympy@1.12">
+      <publisher />
+      <group />
+      <name>sympy</name>
+      <version>1.12</version>
+      <description>Computer algebra system (CAS) in Python</description>
+      <hashes>
+        <hash alg="SHA-256">c3588cd4295d0c0f603d0f2ae780587e64e2efeedb3521e46b9bb1d08d184fa5</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>0BSD</id>
+          <url>https://opensource.org/licenses/0BSD</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/sympy@1.12</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://sympy.org</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/filelock@3.12.2">
+      <publisher />
+      <group />
+      <name>filelock</name>
+      <version>3.12.2</version>
+      <description>A platform independent file lock.</description>
+      <hashes>
+        <hash alg="SHA-256">cbb791cdea2a72f23da6ac5b5269ab0a0d161e9ef0100e653b69049a7706d1ec</hash>
+      </hashes>
+      <purl>pkg:pypi/filelock@3.12.2</purl>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/networkx@3.1">
+      <publisher />
+      <group />
+      <name>networkx</name>
+      <version>3.1</version>
+      <description>Python package for creating and manipulating graphs and networks</description>
+      <hashes>
+        <hash alg="SHA-256">4f33f68cb2afcf86f28a45f43efc27a9386b535d567d2127f8f61d51dec58d36</hash>
+      </hashes>
+      <purl>pkg:pypi/networkx@3.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://networkx.org/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/jinja2@3.1.2">
+      <publisher />
+      <group />
+      <name>jinja2</name>
+      <version>3.1.2</version>
+      <description>A very fast and expressive template engine.</description>
+      <hashes>
+        <hash alg="SHA-256">6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+          <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/jinja2@3.1.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://palletsprojects.com/p/jinja/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:pypi/fsspec@2023.6.0">
+      <publisher />
+      <group />
+      <name>fsspec</name>
+      <version>2023.6.0</version>
+      <description>File-system specification</description>
+      <hashes>
+        <hash alg="SHA-256">1cbad1faef3e391fba6dc005ae9b5bdcbf43005c9167ce78c915549c352c869a</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>0BSD</id>
+          <url>https://opensource.org/licenses/0BSD</url>
+        </license>
+      </licenses>
+      <purl>pkg:pypi/fsspec@2023.6.0</purl>
+      <externalReferences>
+        <reference type="vcs">
+          <url>http://github.com/fsspec/filesystem_spec</url>
+        </reference>
+      </externalReferences>
+    </component>
+  </components>
+  <externalReferences>
+    <reference type="other">
+      <url>./pytorch</url>
+      <comment>Base path</comment>
+    </reference>
+    <reference type="other">
+      <url>pytorch/Users/pmoreira/data/sbom/pytorch/requirements-flake8.txt, /Users/pmoreira/data/sbom/pytorch/requirements.txt</url>
+      <comment>Package file</comment>
+    </reference>
+  </externalReferences>
+</bom>
