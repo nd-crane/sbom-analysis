@@ -1,108 +1,380 @@
+{
+  "creation_info": {
+    "name": "summary-sbom-gen-tools",
+    "version": "v0.0.0",
+    "description": "This is derived from [A Framework for Evaluating SBOM Tools](https://fossa.com/blog/framework-evaluating-sbom-tools/). The following features were used to analyze sboms: 1) What standards it supports (SPDX, Cyclone DX);  2) Compliance with the Cyber Security Executive Order;  3) Data Field Coverage;  4) Automation Support; 5) Programming Language Support; and 6) Dependency Recognition Depth."
+  },
+  "tools": [
+    {
+      "gen_tool_name": "Syft",
+      "gen_tool_pname": "Syft",
+      "gen_tool_version": "0.83.1",
+      "license": "Apache License 2.0",
+      "open_sourse": true,
+      "language": "Go",
+      "description": "A CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems. Exceptional for vulnerability detection when used with a scanner like Grype.",
+      "automation_support": "Yes",
+      "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+      "package_depth": "This tool identifies dependencies between packages at the top level.",
+      "relationships": "The tool could identify relationships between the packages and their metadata files. Still, it could not assign the correct relationship type for the dependencies and instead assiged the type `other` between all packages and files.",
+      "classification": [
+        "Author after Creation (Audit tool)"
+      ],
+      "functionality": "Generates SBOMs for container images, filesystems, archives, and more to discover packages and librariesSupports OCI, Docker and Singularity image formatsLinux distribution identificationWorks seamlessly with Grype (a fast, modern vulnerability scanner)Able to create signed SBOM attestations using the in-toto specificationConvert between SBOM formats, such as CycloneDX, SPDX, and Syft's own format.",
+      "support_specs": [
+        {
+          "spec_name": "SPDX",
+          "spec_version": [
+            "2.2",
+            "2.3"
+          ],
+          "file_formats": [
+            "JSON",
+            "tag-value"
+          ]
+        },
+        {
+          "spec_name": "CycloneDX",
+          "spec_version": [
+            1.4
+          ],
+          "file_formats": [
+            "JSON",
+            "XML"
+          ]
+        }
+      ],
+      "locations": [
+        "https://github.com/anchore/syft"
+      ],
+      "How to use": [
+        {
+          "source": "Container Images",
+          "cmd": "syft {image} -o {format}={output-file}"
+        },
+        {
+          "source": "Directories",
+          "cmd": "syft {package-dir} -o {format}={output-file}"
+        }
+      ],
+      "installation": {
+        "was_installed": "Yes",
+        "requires_sudo": "No",
+        "instructions": "https://github.com/anchore/syft#installation"
+      },
+      "testing": {
+        "was_tested": "Yes",
+        "comments": ""
+      },
+      "logo": "syft.png"
+    },
+    {
+      "gen_tool_name": "Tern",
+      "gen_tool_pname": "Tern",
+      "gen_tool_version": "2.12.0",
+      "license": "BSD-2-Clause license",
+      "open_sourse": true,
+      "language": "Python3 with a smattering of shell scripts",
+      "description": "Tern is an inspection tool to find the metadata of the packages installed in a container image. Tern also has the ability to integrate and extend the functionality of other inspection tools like Scancode to find file level metadata information. Tern gives you a deeper understanding of your container's bill of materials so you can make better decisions about your container based infrastructure, integration and deployment strategies. It's also a good tool if you are curious about the contents of the container images you have built.",
+      "automation_support": "Yes",
+      "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+      "package_depth": "This tool also identifies dependencies between packages below the top level.",
+      "relationships": "In addition to contains and describes, there are two relationship types generatedFrom and hasPrerequisite.",
+      "classification": [
+        "Author after Creation (Audit tool)"
+      ],
+      "functionality": "Tern is an inspection tool to find the metadata of the packages installed in a container image. The overall operation looks like this: <br>- 1) It analyzes the first layer of the container image to collect information like distro type, package format, and package managers;  <br>- 2) It then executes scripts from the \"command library\" in a chroot environment to collect information about packages installed in that layer;  <br>- 3) With that information as a starting point, it continues to analyze the subsequent layers in the container image; <br>- 4) Once done, it generates a report of packages with their metadata. Several formats are available. The report, in its default format, provides a layer by layer, explanation of the various software components imported. If a Dockerfile is provided, the report indicates the Dockerfile lines corresponding to each of the file system layers.",
+      "functions": [
+        "report",
+        "lock"
+      ],
+      "support_specs": [
+        {
+          "spec_name": "SPDX",
+          "spec_version": [
+            "2.1",
+            "2.2"
+          ],
+          "file_formats": [
+            "JSON",
+            "tag-value"
+          ]
+        },
+        {
+          "spec_name": "CycloneDX",
+          "spec_version": [
+            "1.4"
+          ],
+          "file_formats": [
+            "JSON"
+          ]
+        }
+      ],
+      "locations": [
+        "https://github.com/tern-tools/tern"
+      ],
+      "How to use": [
+        {
+          "source": "Container Images",
+          "cmd": "tern report -f {sbom-format} -i {image}:{version} -o {output-file}"
+        },
+        {
+          "source": "Docker Files",
+          "cmd": " tern report -d {path_to_dockerfile}"
+        }
+      ],
+      "installation": {
+        "instructions": "https://github.com/tern-tools/tern#getting-started",
+        "requires_sudo": "Yes",
+        "was_installed": "No",
+        "comments": "I couldn't install it due to problems related to the skopeo library."
+      },
+      "testing": {
+        "was_tested": "Yes",
+        "comments": "I could run Tern by building a container with the Dockerfile provided."
+      },
+      "logo": "tern.png"
+    },
+    {
+      "gen_tool_name": "Trivy",
+      "gen_tool_pname": "Trivy",
+      "gen_tool_version": "0.42.1",
+      "license": "Apache-2.0 license",
+      "open_sourse": "Yes",
+      "language": "Go",
+      "description": "Trivy is a comprehensive and versatile security scanner. Trivy has scanners that look for security issues, and targets where it can find those issues.",
+      "automation_support": "Yes",
+      "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+      "package_depth": "",
+      "relationships": "",
+      "classification": [
+        "Author during Build, Author after Creation (Audit tool)",
+        "Consume(Analyze)"
+      ],
+      "functionality": "Scan the target for vulnerabilities, misconfigurations, secrets, and licenses. Targets can be `Container Image`, `Filesystem`, `Rootfs`, `Git Repository`, `Virtual Machine Image`, `Kubernetes`, `AWS`, and `SBOM`.<br>Trivy can take a CycloneDX(JSON) or SPDX(tag-value or JSON) SBOM as an input and scan for vulnerabilities.  <br>The Trivy AWS CLI allows you to scan your AWS account for misconfigurations. You can either run the CLI locally or integrate it into your CI/CD pipeline.",
+      "support_specs": [
+        {
+          "spec_name": "SPDX",
+          "spec_version": [
+            "2.3"
+          ],
+          "file_formats": [
+            "JSON",
+            "tag-value"
+          ]
+        },
+        {
+          "spec_name": "CycloneDX",
+          "spec_version": [
 
-{    
-    "creation_info": {
-      "name": "summary-sbom-gen-tools",
-      "version": "v0.0.0",
-      "description": "This is derived from [A Framework for Evaluating SBOM Tools](https://fossa.com/blog/framework-evaluating-sbom-tools/). The following features were used to analyze sboms: 1) What standards it supports (SPDX, Cyclone DX);  2) Compliance with the Cyber Security Executive Order;  3) Data Field Coverage;  4) Automation Support; 5) Programming Language Support; and 6) Dependency Recognition Depth."
-    },
-    "tools": [
-        {                
-        "gen_tool_name": "bom",
-        "gen_tool_pname": "bom",
-        "gen_tool_version": "v0.5.1",
-        "license": "Apache-2.0 license",
-        "open_sourse": true,
-        "language": "Go",
-        "description": "Generate can create SBOMs from files, images, and docker archives.", 
-        "automation_support": "This tool geneartes SBOM files in the tag/value (.spdx) format.",
-        "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
-        "package_depth": "This tools does not identify any project dependencies",
-        "relationships": "This tool only identifies relationships between the project and its files.",
-        "classification": [
-            "Author after Creation (Audit tool)"
-        ],
-        "functionality": "bom is a general-purpose tool that can generate SPDX packages from directories, container images, single files, and other sources. The utility has a built-in license classifier that recognizes the 400+ licenses in the SPDX catalog. Other features include Golang dependency analysis and full .gitignore support when scanning git repositories.",
-        "functions": [
-            "document", 
-            "generate"
-        ],
-        "support_specs": [
-            {
-                "spec_name":"spdx",
-                "spec_version": ["SPDX-2.3"],
-                "file_formats": [
-                    "json",
-                    "tag-value"
-                ]
-            }
-        ],        
-        "locations": ["https://github.com/kubernetes-sigs/bom", "https://kubernetes-sigs.github.io/bom/"],
-        "How to use": [
-            {
-            "source": "Container Images",
-            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -i {image}:{version}"
-            },
-            {
-            "source": "Directories",
-            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -d {package-dir}"
-            }
-        ],        
-        "was_tested": true,
-        "installation": {
-            "was_installed": true,
-            "requires_sudo": true,
-            "instructions": "https://github.com/kubernetes-sigs/bom#installation"
+            1.4
+          ],
+          "file_formats": [
+            "JSON"
+          ]
+        }
+      ],
+      "locations": [
+        "https://github.com/aquasecurity/trivy",
+        "https://aquasecurity.github.io/trivy/v0.43",
+        "https://aquasecurity.github.io/trivy/v0.43/docs/target/aws/"
+      ],
+      "How to use": [
+        {
+          "source": "Directories",
+          "cmd": "trivy fs --list-all-pkgs  --format {sbom-format} --output {output-file} {package-dir}"
         },
-        "logo": "bom.png"
-    },
-    {                
-        "gen_tool_name": "Syft",
-        "gen_tool_pname": "Syft",
-        "gen_tool_version": "v0.5.1",
-        "license": "Apache-2.0 license",
-        "open_sourse": true,
-        "language": "Go",
-        "description": "Generate can create SBOMs from files, images, and docker archives.", 
-        "automation_support": "This tool geneartes SBOM files in the tag/value (.spdx) format.",
-        "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
-        "package_depth": "This tools does not identify any project dependencies",
-        "relationships": "This tool only identifies relationships between the project and its files.",
-        "classification": [
-            "Author after Creation (Audit tool)"
-        ],
-        "functionality": "bom is a general-purpose tool that can generate SPDX packages from directories, container images, single files, and other sources. The utility has a built-in license classifier that recognizes the 400+ licenses in the SPDX catalog. Other features include Golang dependency analysis and full .gitignore support when scanning git repositories.",
-        "functions": [
-            "document", 
-            "generate"
-        ],
-        "support_specs": [
-            {
-                "spec_name":"spdx",
-                "spec_version": ["SPDX-2.3"],
-                "file_formats": [
-                    "json",
-                    "tag-value"
-                ]
-            }
-        ],        
-        "locations": ["https://github.com/kubernetes-sigs/bom", "https://kubernetes-sigs.github.io/bom/"],
-        "How to use": [
-            {
-            "source": "Container Images",
-            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -i {image}:{version}"
-            },
-            {
-            "source": "Directories",
-            "cmd": "bom generate -a --format {sbom-format} --output {output-file} -d {package-dir}"
-            }
-        ],        
-        "was_tested": true,
-        "installation": {
-            "was_installed": true,
-            "requires_sudo": true,
-            "instructions": "https://github.com/kubernetes-sigs/bom#installation"
+        {
+          "source": "Container Images",
+          "cmd": "trivy image --list-all-pkgs --format {sbom-format} --output {output-file} {image}:{version}"
         },
-        "logo": "bom.png"
+        {
+          "source": "Repository",
+          "cmd": "trivy repo --list-all-pkgs --format {sbom-format} --output {output-file} {repository}"
+        }
+      ],
+      "installation": {
+        "was_installed": "Yes",
+        "requires_sudo": "No",
+        "instructions": "https://aquasecurity.github.io/trivy/v0.43/getting-started/installation/"
+      },
+      "testing": {
+        "was_tested": "Yes"
+      },
+      "logo": "trivy.png"
+    },    
+    {
+      "gen_tool_name": "Fossa",
+      "gen_tool_pname": "Fossa",
+      "gen_tool_version": "3.8.2",
+      "license": "MPL-2.0 license",
+      "open_sourse": "No",
+      "language": "Java",
+      "description": "FOSSA helps manage your open-source components.",       
+      "automation_support": "Yes",
+      "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+      "package_depth": "5 dependency depth levels",
+      "relationships": "In addition to contains and describes, there are two relationship types dependsOn and dependsOf.",
+      "classification": [
+        "Author during Build, Author after Creation (Audit tool)",
+        "Consume(View, Analyze)",
+        "Transform(Translate, Tool Integration)"
+      ],
+      "functionality": "It heps to track, manage, and remediate issues with open source to:<br>1. Stay compliant with software licenses and generate required attribution documents;<br>2. Enforce usage and licensing policies throughout your CI/CD workflow;<br>3. Monitor and remediate security vulnerabilities;<br>4. Flag code quality issues and outdated components proactively.",
+      "support_specs": [
+        {
+          "spec_name": "SPDX",
+          "spec_version": [
+            "2.3"
+          ],
+          "file_formats": [
+            "JSON",
+            "tag-value"
+          ]
+        },
+        {
+          "spec_name": "CycloneDX",
+          "spec_version": [
+            1.2,
+            1.3,
+            1.4
+          ],
+          "file_formats": [
+            "JSON",
+            "XML"
+          ]
+        }
+      ],
+      "locations": [
+        "https://app.fossa.com/",
+        "https://app.fossa.io",
+        "https://docs.fossa.com/docs/getting-started"
+      ],
+      "How to use": [
+        {
+          "source": "Online Application",
+          "comment": "You need to create an account at https://app.fossa.io/account/register than you can navigate to Projects > Add Project to import the project you want to analyze and export the SBOM file. Its possible to analyze code locally with FOSSA CLI, but you still need to connect it to your account and the report is a link to their FOSSA web application, which will load the project and reports to be visualized and exported in .<br>For more details see https://docs.fossa.com/docs/getting-started"          
+        }
+      ],
+      "installation": {
+        "was_installed": "Yes",
+        "requires_sudo": "No",
+        "instructions": "https://github.com/fossas/fossa-cli",
+        "comments": "Once an analysis has been uploaded, you can view your results in the FOSSA web application."
+      },
+      "testing": {
+        "was_tested": "Yes",
+        "comments": "It was tested using FOSSA CLI their online application to export the SBOM file."
+      },
+      "logo": "fossa.png"
+    },
+    {
+      "gen_tool_name": "bom",
+      "gen_tool_pname": "bom",
+      "gen_tool_version": "v0.5.1",
+      "license": "Apache-2.0 license",
+      "open_sourse": true,
+      "language": "Go",
+      "description": "Generate can create SBOMs from files, images, and docker archives.",
+      "automation_support": "Yes",
+      "data_fields": "This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+      "package_depth": "This tools does not identify any project dependencies",
+      "relationships": "This tool only identifies relationships between the project and its files.",
+      "classification": [
+        "Author after Creation (Audit tool)"
+      ],
+      "functionality": "bom is a general-purpose tool that can generate SPDX packages from directories, container images, single files, and other sources. The utility has a built-in license classifier that recognizes the 400+ licenses in the SPDX catalog. Other features include Golang dependency analysis and full .gitignore support when scanning git repositories.",
+      "functions": [
+        "document",
+        "generate"
+      ],
+      "support_specs": [
+        {
+          "spec_name": "SPDX",
+          "spec_version": [
+            "2.3"
+          ],
+          "file_formats": [
+            "JSON",
+            "tag-value"
+          ]
+        }
+      ],
+      "locations": [
+        "https://github.com/kubernetes-sigs/bom",
+        "https://kubernetes-sigs.github.io/bom/"
+      ],
+      "How to use": [
+        {
+          "source": "Container Images",
+          "cmd": "bom generate -a --format {sbom-format} --output {output-file} -i {image}:{version}"
+        },
+        {
+          "source": "Directories",
+          "cmd": "bom generate -a --format {sbom-format} --output {output-file} -d {package-dir}"
+        }
+      ],
+      "installation": {
+        "was_installed": "Yes",
+        "requires_sudo": "Yes",
+        "instructions": "https://github.com/kubernetes-sigs/bom#installation"
+      },
+      "testing": {
+        "was_tested": "Yes",
+        "comments": ""
+      },
+      "logo": "bom.png"
+    },
+    {
+      "gen_tool_name": "microsoft-sbom-tool",
+      "gen_tool_pname": "Microsoft SBOM Tool",
+      "gen_tool_version": "1.1.6",
+      "license": "MIT license",
+      "open_sourse": "Yes",
+      "language": "C#",
+      "description": "The SBOM tool creates SPDX 2.2 compatible SBOMs for any variety of artifacts.",
+      "automation_support": "Yes",
+      "data_fields": "This tool assumes project metadata from the repo including name and license.<br/>It does identify find project version.<br>No files were detected.",
+      "package_depth": "All packages detected by this tool are directly related to the main package.",
+      "relationships": "All relationships between the project and its packages are of the type `dependsOn`",
+      "classification": [
+        "Author after Creation (Audit tool)"
+      ],
+      "functionality": "`Validate` a build artifact using the manifest, and `generate` a SBOM for all the files in the given build drop folder, and the packages in the components path.",
+      "functions": [
+        "validate",
+        "generate"
+      ],
+      "support_specs": [
+        {
+          "spec_name": "SPDX",
+          "spec_version": [
+            "2.2"
+          ],
+          "file_formats": [
+            "json"            
+          ]
+        }
+      ],
+      "locations": [
+        "https://github.com/microsoft/sbom-tool"
+      ],
+      "How to use": [
+        {
+          "source": "Directories",
+          "cmd": "sbom-tool generate -b {output-dir} -bc {package-dir} -pn {package-name} -pv {package-version}"
+        }
+      ],
+      "installation": {
+        "was_installed": "Yes",
+        "requires_sudo": "No",
+        "instructions": "https://github.com/microsoft/sbom-tool#download-and-installation",
+        "comments": ""
+      },
+      "testing": {
+        "was_tested": "Yes",
+        "comments": ""
+      }
     }    
   ]
 }

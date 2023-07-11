@@ -27,25 +27,25 @@ website:
       style: "docked"      
       search: true
       contents:
-        - sboms/00_core.ipynb
-        - sboms/01_spdx_example.ipynb
-        - sboms/minimum_elements.ipynb        
+        - sbom-basic/00_core.ipynb
+        - sbom-basic/01_spdx_example.ipynb
+        - sbom-basic/minimum_elements.ipynb        
         - section: "Microsoft SBOMTool"
           contents:        
           - text: "General Analysis"
-            file: sboms/microsoft_sbomtool_overview.ipynb
+            file: sbom-basic/microsoft_sbomtool_overview.ipynb
           - section: "[Case Studies]"
             contents:
             - text: "•repo:ndcrane/frameworks-getting-started"
-              file: sboms/02_frameworks_getting_started.ipynb
+              file: sbom-basic/02_frameworks_getting_started.ipynb
             - text: "•repo:ggerganov/llama.cpp"  
-              file: sboms/03_llama.cpp.ipynb
+              file: sbom-basic/03_llama.cpp.ipynb
             - text: "•repo:TheBloke/text-generation-webui"  
-              file: sboms/04_hugging_face.ipynb
+              file: sbom-basic/04_hugging_face.ipynb
             - text: "•repo:numpy/numpy"  
-              file: sboms/05_numpy.ipynb
+              file: sbom-basic/05_numpy.ipynb
             - text: "•repo:pytorch/pytorch"  
-              file: sboms/06_pytorch.ipynb
+              file: sbom-basic/06_pytorch.ipynb
     - id: tool_analysis
       title: "Tool Analysis"    
       collapse-level: 4
@@ -53,7 +53,7 @@ website:
       style: "docked"
       search: true      
       contents:
-        - text: "Introduction"
+        - text: "Getting Started"
           file: tool_analysis/introduction.ipynb
         - text: "Overall Analysis"
           file: tool_analysis/tools_overall_analysis.qmd
@@ -67,10 +67,23 @@ website:
                 contents:
                 - text: "Syft"
                   file: tool_analysis/cs1/syft.ipynb
+                - text: "Trivy"
+                  file: tool_analysis/cs1/trivy.ipynb
                 - text: "Tern"
                   file: tool_analysis/cs1/tern.ipynb  
+                - text: "Microsoft SBOM Tool"
+                  file: tool_analysis/cs1/sbomtool.ipynb  
+                - text: "GitHub Dependency Graph"
+                  file: tool_analysis/cs1/gssbom.ipynb  
+                - text: "sbom4python"
+                  file: tool_analysis/cs1/sbom4python.ipynb  
                 - text: "Fossa"
                   file: tool_analysis/cs1/fossa.ipynb                                  
+                - text: "bom"
+                  file: tool_analysis/cs1/bom.ipynb
+                - text: "sbom4python"
+                  file: tool_analysis/cs1/sbom4python.ipynb
+                  
 
     - id: other_investigations
       title: "AI Specifications"      

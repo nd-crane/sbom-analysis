@@ -1,0 +1,57 @@
+{
+    "gen_tool_name": "X",
+    "gen_tool_pname": "X",
+    "gen_tool_version": "X-version",
+    "license": "X-license",
+    "open_sourse": "-",
+    "language": "X-language",
+    "description": "X-description",
+    "automation_support": "-",
+    "data_fields": "X - This tool assumes project metadata from the repo including name and license. It does identify find project version.",
+    "package_depth": "X - This tools does not identify any project dependencies",
+    "relationships": "X - This tool only identifies relationships between the project and its files.",
+    "classification": [
+      "X - Author after Creation (Audit tool)"
+    ],
+    "functionality": "X-functionality",
+    "functions": [
+      "X-document",
+      "X-generate"
+    ],
+    "support_specs": [
+      {
+        "spec_name": "spdx",
+        "spec_version": [
+          "SPDX-2.3"
+        ],
+        "file_formats": [
+          "json",
+          "tag-value"
+        ]
+      }
+    ],
+    "locations": [
+      "X-https://github.com/kubernetes-sigs/bom"
+    ],
+    "How to use": [
+      {
+        "source": "Container Images",
+        "cmd": "bom generate -a --format {sbom-format} --output {output-file} -i {image}:{version}"
+      },
+      {
+        "source": "Directories",
+        "cmd": "bom generate -a --format {sbom-format} --output {output-file} -d {package-dir}"
+      }
+    ],
+    "installation": {
+      "was_installed": "Yes",
+      "requires_sudo": "Yes",
+      "instructions": "https://github.com/kubernetes-sigs/bom#installation",
+      "comments": ""
+    },
+    "testing": {
+      "was_tested": "Yes",
+      "comments": ""
+    },
+    "logo": "bom.png"
+  }    

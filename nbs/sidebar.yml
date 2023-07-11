@@ -10,9 +10,15 @@ website:
           - ai_specifications/hugging_face_model_cards.ipynb
       - section: figs
         contents:
+          - figs/cs1-Microsoft.SBOMTool.relationship_full.html
           - figs/cs1-fossa.relationship_full.html
+          - figs/cs1-gh-sbom.relationship_full.html
+          - figs/cs1-sbom4python.relationship_full.html
+          - figs/cs1-sbomtool.relationship_full.html
           - figs/cs1-syft.relationship_full.html
           - figs/cs1-tern.relationship_full.html
+          - figs/cs1-trivy.relationship_full.html
+          - figs/cs1-vai.relationship_full.html
           - figs/fig00.relationship_full.html
           - figs/fig01.relationship_full.html
           - figs/fig02.relationship.html
@@ -22,21 +28,26 @@ website:
           - figs/fig04.relationship_full.html
           - figs/fig06.relationship_full.html
           - figs/tmp.html
-      - section: sboms
+      - section: sbom-basic
         contents:
-          - sboms/00_core.ipynb
-          - sboms/01_spdx_example.ipynb
-          - sboms/02_frameworks_getting_started.ipynb
-          - sboms/03_llama.cpp.ipynb
-          - sboms/04_hugging_face.ipynb
-          - sboms/05_numpy.ipynb
-          - sboms/06_pytorch.ipynb
-          - sboms/microsoft_sbomtool_overview.ipynb
-          - sboms/minimum_elements.ipynb
+          - sbom-basic/00_core.ipynb
+          - sbom-basic/01_spdx_example.ipynb
+          - sbom-basic/02_frameworks_getting_started.ipynb
+          - sbom-basic/03_llama.cpp.ipynb
+          - sbom-basic/04_hugging_face.ipynb
+          - sbom-basic/05_numpy.ipynb
+          - sbom-basic/06_pytorch.ipynb
+          - sbom-basic/microsoft_sbomtool_overview.ipynb
+          - sbom-basic/minimum_elements.ipynb
       - section: tool_analysis
         contents:
           - tool_analysis/introduction.ipynb
           - tool_analysis/tools_overall_analysis.qmd
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/bom.ipynb
+      - section: tool_analysis
+        contents:
           - section: cs1
             contents:
               - tool_analysis/cs1/fossa.ipynb
@@ -44,7 +55,22 @@ website:
         contents:
           - section: cs1
             contents:
+              - tool_analysis/cs1/gssbom.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
               - tool_analysis/cs1/overall_analysis.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/sbom4python.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/sbomtool.ipynb
       - section: tool_analysis
         contents:
           - section: cs1
@@ -60,3 +86,8 @@ website:
           - section: cs1
             contents:
               - tool_analysis/cs1/toolX.ipynb
+      - section: tool_analysis
+        contents:
+          - section: cs1
+            contents:
+              - tool_analysis/cs1/trivy.ipynb
