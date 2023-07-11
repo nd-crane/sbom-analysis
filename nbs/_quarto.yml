@@ -73,7 +73,7 @@ website:
                   file: tool_analysis/cs1/tern.ipynb  
                 - text: "Microsoft SBOM Tool"
                   file: tool_analysis/cs1/sbomtool.ipynb  
-                - text: "GitHub Dependency Graph"
+                - text: "gh-sbom"
                   file: tool_analysis/cs1/gssbom.ipynb  
                 - text: "sbom4python"
                   file: tool_analysis/cs1/sbom4python.ipynb  
@@ -81,8 +81,6 @@ website:
                   file: tool_analysis/cs1/fossa.ipynb                                  
                 - text: "bom"
                   file: tool_analysis/cs1/bom.ipynb
-                - text: "sbom4python"
-                  file: tool_analysis/cs1/sbom4python.ipynb
                   
 
     - id: other_investigations
