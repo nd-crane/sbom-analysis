@@ -1,6 +1,6 @@
 {
-  "run_id": "5383faae-51ac-4e68-bdb2-2b0529bd58c9",
-  "timestamp": "2023-06-24T20:52:28Z",
+  "run_id": "63c7cadb-1edf-42a5-bda9-d4e62bca1bd5",
+  "timestamp": "2023-07-11T16:20:34Z",
   "creation_info": {
     "name": "sbomqs",
     "version": "v0.0.17",
@@ -8,15 +8,15 @@
   },
   "files": [
     {
-      "file_name": "pytorch-sbomtool-spdx22.json",
+      "file_name": "manifest.spdx.json",
       "spec": "spdx",
       "spec_version": "SPDX-2.2",
       "file_format": "json",
       "avg_score": 6.363636363636363,
-      "num_components": 308,
-      "creation_time": "2023-06-20T22:10:53Z",
+      "num_components": 229,
+      "creation_time": "2023-07-11T16:09:43Z",
       "gen_tool_name": "Microsoft.SBOMTool",
-      "gen_tool_version": "1.1.2",
+      "gen_tool_version": "1.1.6",
       "scores": [
         {
           "category": "Structural",
@@ -53,9 +53,9 @@
         {
           "category": "NTIA-minimum-elements",
           "feature": "comp_with_supplier",
-          "score": 0.03246753246753247,
+          "score": 0.043668122270742356,
           "max_score": 10,
-          "description": "1/308 have supplier names",
+          "description": "1/229 have supplier names",
           "ignored": false
         },
         {
@@ -63,7 +63,7 @@
           "feature": "comp_with_name",
           "score": 10,
           "max_score": 10,
-          "description": "308/308 have names",
+          "description": "229/229 have names",
           "ignored": false
         },
         {
@@ -71,7 +71,7 @@
           "feature": "comp_with_version",
           "score": 10,
           "max_score": 10,
-          "description": "308/308 have versions",
+          "description": "229/229 have versions",
           "ignored": false
         },
         {
@@ -79,7 +79,7 @@
           "feature": "comp_with_uniq_ids",
           "score": 10,
           "max_score": 10,
-          "description": "308/308 have unique ID's",
+          "description": "229/229 have unique ID's",
           "ignored": false
         },
         {
@@ -87,7 +87,7 @@
           "feature": "sbom_dependencies",
           "score": 10,
           "max_score": 10,
-          "description": "doc has 308 relationships ",
+          "description": "doc has 229 relationships ",
           "ignored": false
         },
         {
@@ -119,7 +119,7 @@
           "feature": "comp_with_licenses",
           "score": 0,
           "max_score": 10,
-          "description": "0/308 have licenses",
+          "description": "0/229 have licenses",
           "ignored": false
         },
         {
@@ -127,7 +127,7 @@
           "feature": "comp_with_checksums",
           "score": 0,
           "max_score": 10,
-          "description": "0/308 have checksums",
+          "description": "0/229 have checksums",
           "ignored": false
         },
         {
@@ -135,7 +135,7 @@
           "feature": "comp_valid_licenses",
           "score": 0,
           "max_score": 10,
-          "description": "0/308 components with valid license ",
+          "description": "0/229 components with valid license ",
           "ignored": false
         },
         {
@@ -143,7 +143,7 @@
           "feature": "comp_with_primary_purpose",
           "score": 0,
           "max_score": 10,
-          "description": "0/308 components have primary purpose specified",
+          "description": "0/229 components have primary purpose specified",
           "ignored": false
         },
         {
@@ -165,9 +165,9 @@
         {
           "category": "Quality",
           "feature": "comp_with_any_vuln_lookup_id",
-          "score": 9.967532467532468,
+          "score": 9.956331877729257,
           "max_score": 10,
-          "description": "307/308 components have any lookup id",
+          "description": "228/229 components have any lookup id",
           "ignored": false
         },
         {
@@ -175,7 +175,7 @@
           "feature": "comp_with_multi_vuln_lookup_id",
           "score": 0,
           "max_score": 10,
-          "description": "0/308 components have multiple lookup id",
+          "description": "0/229 components have multiple lookup id",
           "ignored": false
         },
         {
