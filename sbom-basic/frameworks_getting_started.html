@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>sbom-analysis - Frameworks-Getting-Started SBOM</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="sbom-analysis - Frameworks-Getting-Started SBOM">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="sbom-analysis">
+<meta name="twitter:title" content="sbom-analysis - Frameworks-Getting-Started SBOM">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">sbom-analysis</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sboms" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">SBOMs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sboms">    
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/core.html" rel="" target="">
+ <span class="dropdown-text">Core Functions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/spdx_example.html" rel="" target="">
+ <span class="dropdown-text">Analyzing SPDX Example SBOM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/minimum_elements.html" rel="" target="">
+ <span class="dropdown-text">Minimum SBOM Elements</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Microsoft SBOMTool</li>
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/microsoft_sbomtool_overview.html" rel="" target="">
+ <span class="dropdown-text">General Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/frameworks_getting_started.html" rel="" target="">
+ <span class="dropdown-text">[Case Studies]</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tool-analysis" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tool Analysis</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tool-analysis">    
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/introduction.html" rel="" target="">
+ <span class="dropdown-text">Getting Started</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/tools_overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">Overall Analysis</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">[Case Studies]</li>
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/cs1/overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">• repo:pytorch/pytorch</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ai-specifications" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">AI Specifications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ai-specifications">    
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/hugging_face_model_cards.html" rel="" target="">
+ <span class="dropdown-text">Hugging Face Model Cards</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/spdx3_aipackage.html" rel="" target="">
+ <span class="dropdown-text">SPDX3 AIPackage</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sbom-basic/microsoft_sbomtool_overview.html">Microsoft SBOMTool</a></li><li class="breadcrumb-item"><a href="../sbom-basic/frameworks_getting_started.html">[Case Studies]</a></li><li class="breadcrumb-item"><a href="../sbom-basic/frameworks_getting_started.html">•repo:ndcrane/frameworks-getting-started</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/core.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Core Functions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/spdx_example.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyzing SPDX Example SBOM</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/minimum_elements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Minimum SBOM Elements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Microsoft SBOMTool</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/microsoft_sbomtool_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">General Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">[Case Studies]</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/frameworks_getting_started.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">•repo:ndcrane/frameworks-getting-started</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/llama.cpp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">•repo:ggerganov/llama.cpp</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/hugging_face.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">•repo:TheBloke/text-generation-webui</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/numpy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">•repo:numpy/numpy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sbom-basic/pytorch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">•repo:pytorch/pytorch</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#graph-overview" id="toc-graph-overview" class="nav-link active" data-scroll-target="#graph-overview">Graph Overview</a></li>
+  <li><a href="#files" id="toc-files" class="nav-link" data-scroll-target="#files">Files</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#relationships" id="toc-relationships" class="nav-link" data-scroll-target="#relationships">Relationships</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nd-crane/sbom-analysis/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Frameworks-Getting-Started SBOM</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<p>SBOM Source: <a href="https://github.com/nd-crane/frameworks-getting-started">ndcrane/frameworks-getting-started</a> generated using <a href="https://github.com/microsoft/sbom-tool">microsoft/sbom-tool</a></p>
+<p>RDF Source: Generated using <a href="https://github.com/spdx/tools-python">pyspdxtools</a></p>
+<p><strong>NOTICE:</strong> For ease of viewing some cell inputs are hidden. Please view inputs <a href="https://github.com/nd-crane/sbom-analysis/blob/main/nbs/spdx_example.ipynb">here</a> for further explinations.</p>
+<p>This SBOM was generated with <a href="https://github.com/microsoft/sbom-tool">microsoft/sbom-tool</a> from the <a href="https://github.com/nd-crane/frameworks-getting-started">ndcrane/frameworks-getting-started</a> repo. This page analyzes the performance of the sbom-tool from an extremely simple ML workflow.</p>
+<section id="importing-graph" class="level4">
+<h4 class="anchored" data-anchor-id="importing-graph">Importing Graph</h4>
+<p>Here we import the graph to be analyzed as an XML with kglab to the variable <code>kg</code>. This will be our main graph throughout the entirety of this notebook and will always be referred to as <code>kg</code>. From it we will query data and create subgraphs for analysis.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>kg <span class="op">=</span> kglab.KnowledgeGraph()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>kg.load_rdf(<span class="st">"../../sboms/rdf/frameworks-getting-started.rdf.xml"</span>, <span class="bu">format</span><span class="op">=</span><span class="st">"xml"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;kglab.kglab.KnowledgeGraph&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="graph-overview" class="level2">
+<h2 class="anchored" data-anchor-id="graph-overview">Graph Overview</h2>
+<p>First let’s get a general overview of the graph we are working with. Let’s visualize it as a whole and look at some metadata.</p>
+<p>Under default settings, orange represnets spdx: elements, red represents ptr: elements and blue represents all others. These can be changed as wished.</p>
+<p>Let’s also take a look at basic graph metadata:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>show_metadata(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Total Triples: 48835
+Distinct Entities: 11235
+Distinct Properties: 29</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>show_measures(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>edges 48835
+nodes 11252</code></pre>
+</div>
+</div>
+<p>Here’s some more advanced metadata:</p>
+<p>First let’s look at a count of each entity type to get a general idea of what our graph represents</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>show_entity_types(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>http://spdx.org/rdf/terms#Checksum : 5306
+http://spdx.org/rdf/terms#Relationship : 2860
+http://spdx.org/rdf/terms#File : 2653
+http://spdx.org/rdf/terms#Package : 207
+http://spdx.org/rdf/terms#ExternalRef : 206
+http://spdx.org/rdf/terms#SpdxDocument : 1
+http://spdx.org/rdf/terms#CreationInfo : 1
+http://spdx.org/rdf/terms#PackageVerificationCode : 1</code></pre>
+</div>
+</div>
+<p>We can also view the top 10 properties of all elements:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>show_top_n_props(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#type : 11235
+http://spdx.org/rdf/terms#checksumValue : 5306
+http://spdx.org/rdf/terms#checksum : 5306
+http://spdx.org/rdf/terms#algorithm : 5306
+http://spdx.org/rdf/terms#copyrightText : 2860
+http://spdx.org/rdf/terms#relationshipType : 2860
+http://spdx.org/rdf/terms#licenseConcluded : 2860
+http://spdx.org/rdf/terms#relatedSpdxElement : 2860
+http://spdx.org/rdf/terms#relationship : 2860
+http://spdx.org/rdf/terms#licenseInfoInFile : 2653</code></pre>
+</div>
+</div>
+<p>SPDX schemas generally represent three main items (in addition to project metadata)</p>
+<ol type="1">
+<li>Files in the project</li>
+<li>Dependencies (or packages) used in the project</li>
+<li>Relationships between everything</li>
+</ol>
+<p>Let’s start by examining how files are represented in this KG</p>
+</section>
+<section id="files" class="level2">
+<h2 class="anchored" data-anchor-id="files">Files</h2>
+<p>From the graph let’s look at all properties that are present for files</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>file_schema(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">property</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>spdx:checksum</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>spdx:copyrightText</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>spdx:fileName</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>spdx:licenseConcluded</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>spdx:licenseInfoInFile</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>rdf:type</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Already we see there is less information included from this generated file compared to the SPDX example sbom</p>
+<p>And also a dataframe of what is present for files</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>files <span class="op">=</span> get_files_data(kg)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>files.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">fileID</th>
+<th data-quarto-table-cell-role="th">fileName</th>
+<th data-quarto-table-cell-role="th">licenseInFile</th>
+<th data-quarto-table-cell-role="th">contributors</th>
+<th data-quarto-table-cell-role="th">licenseConcluded</th>
+<th data-quarto-table-cell-role="th">checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>./quarto/quarto-1.2.335/share/deno_std/cache/g...</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>http://spdx.org/rdf/terms#noassertion, http://...</td>
+<td>_:Nc63269a9d9f940f09e60dcb0962d9c1a</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>./.git/objects/cf/e2ee6b560afa0ca0a8866a64afa6...</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>http://spdx.org/rdf/terms#noassertion, http://...</td>
+<td>_:Ne386f3ee788f4538bbc99dfdc805636a</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>./quarto/quarto-1.2.335/share/formats/pdf/pdfj...</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>http://spdx.org/rdf/terms#noassertion, http://...</td>
+<td>_:N0f1bf711e52d4037a91b8624e939cce6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>./quarto/quarto-1.2.335/share/deno_std/cache/d...</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>http://spdx.org/rdf/terms#noassertion, http://...</td>
+<td>_:N8321128f77034949bdd12f89ebb12adf</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>./quarto/quarto-1.2.335/share/deno_std/cache/g...</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>http://spdx.org/rdf/terms#noassertion, http://...</td>
+<td>_:N8a5f86d58e344d63b6ddf23c067b4e05</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>files.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">fileID</th>
+<th data-quarto-table-cell-role="th">fileName</th>
+<th data-quarto-table-cell-role="th">licenseInFile</th>
+<th data-quarto-table-cell-role="th">contributors</th>
+<th data-quarto-table-cell-role="th">licenseConcluded</th>
+<th data-quarto-table-cell-role="th">checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>2653</td>
+<td>2653</td>
+<td>2653</td>
+<td>2653</td>
+<td>2653</td>
+<td>2653</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">unique</td>
+<td>2653</td>
+<td>2653</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2653</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">top</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>./quarto/quarto-1.2.335/share/deno_std/cache/g...</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>http://spdx.org/rdf/terms#noassertion, http://...</td>
+<td>_:Nc63269a9d9f940f09e60dcb0962d9c1a</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">freq</td>
+<td>1</td>
+<td>1</td>
+<td>2653</td>
+<td>2653</td>
+<td>2653</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Looking at a basic description of the files dataframe there are a few important items:</p>
+<ol type="1">
+<li>All fileIDs and names are unique (this is good)</li>
+<li>All checksum’s are unique (this is good)
+<ul>
+<li>The checksums point to another node in the KG</li>
+</ul></li>
+<li><strong>There is no file license information or contributor information</strong></li>
+</ol>
+<p>Here’s a representation of all files in a graph form:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>subgraph <span class="op">=</span> get_files_graph(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>show_measures(subgraph)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>edges 7959
+nodes 2655</code></pre>
+</div>
+</div>
+</section>
+<section id="packages" class="level2">
+<h2 class="anchored" data-anchor-id="packages">Packages</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>package_schema(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">property</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>spdx:copyrightText</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>spdx:downloadLocation</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>spdx:externalRef</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>spdx:filesAnalyzed</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>spdx:licenseConcluded</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>spdx:licenseDeclared</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>spdx:licenseInfoFromFiles</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>spdx:name</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>spdx:packageVerificationCode</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>spdx:relationship</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>spdx:supplier</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>spdx:versionInfo</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>rdf:type</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>packages <span class="op">=</span> get_package_data(kg)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>packages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">package</th>
+<th data-quarto-table-cell-role="th">annotations</th>
+<th data-quarto-table-cell-role="th">attributionTexts</th>
+<th data-quarto-table-cell-role="th">checksums</th>
+<th data-quarto-table-cell-role="th">copyrightText</th>
+<th data-quarto-table-cell-role="th">downloadLocation</th>
+<th data-quarto-table-cell-role="th">externalRefs</th>
+<th data-quarto-table-cell-role="th">hasFiles</th>
+<th data-quarto-table-cell-role="th">licenseConcluded</th>
+<th data-quarto-table-cell-role="th">licenseDeclared</th>
+<th data-quarto-table-cell-role="th">licenseInfoFromFiles</th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">packageVerificationCode</th>
+<th data-quarto-table-cell-role="th">supplier</th>
+<th data-quarto-table-cell-role="th">versionInfo</th>
+<th data-quarto-table-cell-role="th">relationships</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>test</td>
+<td>_:Nbdae0320e9a543f9abbcd2d0375575ed</td>
+<td>Organization: NDCRC</td>
+<td>1.0.0</td>
+<td>N16e091841fce4e519fd269480cb271f9, N8c855a366f...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N62856b0f717a48f992594b918de26914</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>argon2-cffi</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>21.3.0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>Nef311854f4214014a59074bd404d2d0b</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>click</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>8.1.3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N3936863eac864a87968cdd60a3311a20</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>jupyterlab-widgets</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>3.0.7</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N0f6420517f534c3486e00f9989ae6e19</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>mpmath</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>1.3.0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">202</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N88c7496d1ab34af5ae1fbb3c8cc73b1c</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>dvc-objects</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>0.22.0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">203</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N5fcb69ed42b644e8a52dbfc94eb6b08d</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>requests</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>2.30.0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">204</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>Ncd07f9a6fc6e43f292c36aea077a00b6</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>entrypoints</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>0.4</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">205</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N4d00915d97324d12846ed70e4860f304</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>tornado</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>6.3.2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">206</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N8dd4504ce3d64a5b8f7fb5b069006224</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>python-json-logger</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>2.0.7</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>207 rows × 16 columns</p>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>packages[packages[<span class="st">'name'</span>].<span class="bu">str</span>.contains(<span class="st">'python'</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">package</th>
+<th data-quarto-table-cell-role="th">annotations</th>
+<th data-quarto-table-cell-role="th">attributionTexts</th>
+<th data-quarto-table-cell-role="th">checksums</th>
+<th data-quarto-table-cell-role="th">copyrightText</th>
+<th data-quarto-table-cell-role="th">downloadLocation</th>
+<th data-quarto-table-cell-role="th">externalRefs</th>
+<th data-quarto-table-cell-role="th">hasFiles</th>
+<th data-quarto-table-cell-role="th">licenseConcluded</th>
+<th data-quarto-table-cell-role="th">licenseDeclared</th>
+<th data-quarto-table-cell-role="th">licenseInfoFromFiles</th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">packageVerificationCode</th>
+<th data-quarto-table-cell-role="th">supplier</th>
+<th data-quarto-table-cell-role="th">versionInfo</th>
+<th data-quarto-table-cell-role="th">relationships</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">28</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>Nb8b58c02aec8464e889e5d288274ceea</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>ipython</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>8.13.2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">42</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>Nbf6fef54fe684ecb816361be6f1db245</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>gitpython</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>3.1.31</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">58</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N0677aaed34ef45d6ac08b3dc62630642</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>python-dateutil</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>2.8.2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">99</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>Nfacdd7bb5da34df0b41c24fc32e16144</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>ipython-genutils</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>0.2.0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">179</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N8a33454ef54044eca6fa50dc0d527c59</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>antlr4-python3-runtime</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>4.9.3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">206</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td>N8dd4504ce3d64a5b8f7fb5b069006224</td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>python-json-logger</td>
+<td>NaN</td>
+<td>NOASSERTION</td>
+<td>2.0.7</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>packages.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">package</th>
+<th data-quarto-table-cell-role="th">annotations</th>
+<th data-quarto-table-cell-role="th">attributionTexts</th>
+<th data-quarto-table-cell-role="th">checksums</th>
+<th data-quarto-table-cell-role="th">copyrightText</th>
+<th data-quarto-table-cell-role="th">downloadLocation</th>
+<th data-quarto-table-cell-role="th">externalRefs</th>
+<th data-quarto-table-cell-role="th">hasFiles</th>
+<th data-quarto-table-cell-role="th">licenseConcluded</th>
+<th data-quarto-table-cell-role="th">licenseDeclared</th>
+<th data-quarto-table-cell-role="th">licenseInfoFromFiles</th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">packageVerificationCode</th>
+<th data-quarto-table-cell-role="th">supplier</th>
+<th data-quarto-table-cell-role="th">versionInfo</th>
+<th data-quarto-table-cell-role="th">relationships</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>1</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">unique</td>
+<td>207</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>207</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>207</td>
+<td>1</td>
+<td>2</td>
+<td>186</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">top</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td></td>
+<td></td>
+<td></td>
+<td>NOASSERTION</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td></td>
+<td>spdx:noassertion</td>
+<td>spdx:noassertion</td>
+<td></td>
+<td>test</td>
+<td>_:Nbdae0320e9a543f9abbcd2d0375575ed</td>
+<td>NOASSERTION</td>
+<td>1.0.0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">freq</td>
+<td>1</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>1</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>207</td>
+<td>1</td>
+<td>1</td>
+<td>206</td>
+<td>3</td>
+<td>206</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Here we see we are missing even more information then the files section.</p>
+</section>
+<section id="relationships" class="level2">
+<h2 class="anchored" data-anchor-id="relationships">Relationships</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>relationship_schema(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">property</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>rdf:type</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>spdx:relationshipType</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>spdx:relatedSpdxElement</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>rels <span class="op">=</span> get_relationship_data(kg)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>rels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">element</th>
+<th data-quarto-table-cell-role="th">elementType</th>
+<th data-quarto-table-cell-role="th">relationshipType</th>
+<th data-quarto-table-cell-role="th">relatedElement</th>
+<th data-quarto-table-cell-role="th">relatedElementType</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2855</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2856</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2857</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2858</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2859</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:SpdxDocument</td>
+<td>spdx:relationshipType_describes</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+</tr>
+</tbody>
+</table>
+
+<p>2860 rows × 5 columns</p>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>rels.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">element</th>
+<th data-quarto-table-cell-role="th">elementType</th>
+<th data-quarto-table-cell-role="th">relationshipType</th>
+<th data-quarto-table-cell-role="th">relatedElement</th>
+<th data-quarto-table-cell-role="th">relatedElementType</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>2860</td>
+<td>2860</td>
+<td>2860</td>
+<td>2860</td>
+<td>2860</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">unique</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>2860</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">top</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:Package</td>
+<td>spdx:relationshipType_contains</td>
+<td>&lt;https://spdx.org/spdxdocs/sbom-tool-1.1.1-098...</td>
+<td>spdx:File</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">freq</td>
+<td>2859</td>
+<td>2859</td>
+<td>2653</td>
+<td>1</td>
+<td>2653</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Lastly our relationshipsare only limited to 3 types and are mostly between Packages and Files</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>subgraph <span class="op">=</span> get_relationship_graph(kg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>show_measures(subgraph)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>edges 11441
+nodes 5727</code></pre>
+</div>
+</div>
+<p><strong>Relationship graph visualization</strong></p>
+<p>That relationship graph has a large number of nodes, making it difficult to load the visualization. To make the visualization possible, we can exclude nodes of the type <code>SPDX:File</code>. This can be achieved by passing the <code>hideTypeFile=True</code> flag to the <code>visualize_relationship_graph()</code> function, as shown below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the relationship graph to be visualized</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>graph <span class="op">=</span> visualize_relationship_graph(kg, hideTypeFile<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># optional: set the physics layout of the network</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>graph.force_atlas_2based()</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>graph.set_edge_smooth(<span class="st">'dynamic'</span>)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="co"># show graph</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>graph.show(<span class="st">"../figs/fig02.relationship.html"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>../figs/fig02.relationship.html</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+
+        <iframe width="100%" height="600px" src="../figs/fig02.relationship.html" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<p>The color of the nodes in the graph refer to the element type in the spdx specification:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>display_relationship_graph_legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">SPDX Type</th>
+<th data-quarto-table-cell-role="th">Node Color</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>File</td>
+<td>Yellow</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Package</td>
+<td>Blue</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>SPDXDocument</td>
+<td>Red</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

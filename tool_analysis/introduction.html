@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>sbom-analysis - Tool Analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="sbom-analysis - Tool Analysis">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="sbom-analysis">
+<meta name="twitter:title" content="sbom-analysis - Tool Analysis">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">sbom-analysis</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sboms" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">SBOMs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sboms">    
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/core.html" rel="" target="">
+ <span class="dropdown-text">Core Functions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/spdx_example.html" rel="" target="">
+ <span class="dropdown-text">Analyzing SPDX Example SBOM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/minimum_elements.html" rel="" target="">
+ <span class="dropdown-text">Minimum SBOM Elements</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Microsoft SBOMTool</li>
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/microsoft_sbomtool_overview.html" rel="" target="">
+ <span class="dropdown-text">General Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/frameworks_getting_started.html" rel="" target="">
+ <span class="dropdown-text">[Case Studies]</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tool-analysis" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tool Analysis</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tool-analysis">    
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/introduction.html" rel="" target="">
+ <span class="dropdown-text">Getting Started</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/tools_overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">Overall Analysis</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">[Case Studies]</li>
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/cs1/overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">• repo:pytorch/pytorch</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ai-specifications" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">AI Specifications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ai-specifications">    
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/hugging_face_model_cards.html" rel="" target="">
+ <span class="dropdown-text">Hugging Face Model Cards</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/spdx3_aipackage.html" rel="" target="">
+ <span class="dropdown-text">SPDX3 AIPackage</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tool_analysis/introduction.html">Getting Started</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/introduction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/tools_overall_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overall Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">[Case Studies]</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">• repo:pytorch/pytorch</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/overall_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overall Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Analysis by Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/syft.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syft</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/trivy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trivy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/tern.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tern</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/sbomtool.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Microsoft SBOM Tool</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/gssbom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gh-sbom</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/sbom4python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">sbom4python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/fossa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fossa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/bom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">bom</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#brief-overview" id="toc-brief-overview" class="nav-link active" data-scroll-target="#brief-overview">Brief overview</a></li>
+  <li><a href="#tools-overall-analysis" id="toc-tools-overall-analysis" class="nav-link" data-scroll-target="#tools-overall-analysis">Tools overall analysis</a></li>
+  <li><a href="#quality-metrics-to-assess-the-generated-sboms" id="toc-quality-metrics-to-assess-the-generated-sboms" class="nav-link" data-scroll-target="#quality-metrics-to-assess-the-generated-sboms">Quality metrics to assess the generated SBOMs</a>
+  <ul class="collapse">
+  <li><a href="#ntia-minimum-elements" id="toc-ntia-minimum-elements" class="nav-link" data-scroll-target="#ntia-minimum-elements">NTIA-minimum-elements</a></li>
+  <li><a href="#structural" id="toc-structural" class="nav-link" data-scroll-target="#structural">Structural</a></li>
+  <li><a href="#semantic" id="toc-semantic" class="nav-link" data-scroll-target="#semantic">Semantic</a></li>
+  <li><a href="#quality" id="toc-quality" class="nav-link" data-scroll-target="#quality">Quality</a></li>
+  <li><a href="#sharing" id="toc-sharing" class="nav-link" data-scroll-target="#sharing">Sharing</a></li>
+  </ul></li>
+  <li><a href="#other-tools-used-to-support-the-analysis" id="toc-other-tools-used-to-support-the-analysis" class="nav-link" data-scroll-target="#other-tools-used-to-support-the-analysis">Other tools used to support the analysis</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nd-crane/sbom-analysis/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tool Analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<section id="brief-overview" class="level2">
+<h2 class="anchored" data-anchor-id="brief-overview">Brief overview</h2>
+<p>This section analyses some SBOM generation tools available in the market. The study is based on the <a href="https://fossa.com/blog/framework-evaluating-sbom-tools/">fossa</a> framework for Evaluating SBOM Tools, on the <a href="https://www.ntia.doc.gov/files/ntia/publications/sbom_minimum_elements_report.pdf">NTIA minimum element guidelines</a>, and in some quality metrics for SBOMs available in the <a href="https://github.com/interlynk-io/sbomqs">sbomqs</a> tool. We also analyzed the SBOMs generated through knowledge graphs.</p>
+</section>
+<section id="tools-overall-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="tools-overall-analysis">Tools overall analysis</h2>
+<p>Some of the features we used to analyze the SBOM generation tools were based on the framework for Evaluating SBOM Tools in <a href="https://fossa.com/blog/framework-evaluating-sbom-tools/">fossa</a>, such as:</p>
+<ul>
+<li>What standards it supports (SPDX, Cyclone DX)</li>
+<li>Compliance with the Cyber Security Executive Order</li>
+<li>Data Field Coverage</li>
+<li>Automation Support</li>
+<li>Programming Language Support</li>
+<li>Dependency Recognition Depth</li>
+</ul>
+<p>We classified the tools following the <a href="https://www.ntia.gov/files/ntia/publications/ntia_sbom_tooling_taxonomy-2021mar30.pdf">SBOM Tool Classification Taxonomy</a> document by the NTIA SBOM Formats &amp; Tooling Working Group.</p>
+<p>The SBOM generation tools we analyzed are listed below, and their overall analysis can be found <a href="../tool_analysis/tools_overall_analysis.html">here</a>.</p>
+<ul>
+<li>Syft</li>
+<li>Trivy</li>
+<li>Bom</li>
+<li>Microsoft/sbom-tool</li>
+<li>Sbom4python</li>
+<li>gh-sbom</li>
+<li>CycloneDX Generator</li>
+<li>Tern</li>
+<li>ScanCode toolkit</li>
+<li>OSS Review Toolkit</li>
+<li>Cosign</li>
+<li>Augur</li>
+<li>SPDX SBOM Generator</li>
+<li>SwiftBOM</li>
+</ul>
+</section>
+<section id="quality-metrics-to-assess-the-generated-sboms" class="level2">
+<h2 class="anchored" data-anchor-id="quality-metrics-to-assess-the-generated-sboms">Quality metrics to assess the generated SBOMs</h2>
+<p>We evaluated the performance of the tools by examining the quality of the SBOMs they produced for some case studies projects:</p>
+<ul>
+<li><a href="../tool_analysis/cs1/overall_analysis.html">Case Study 1</a>: The target is the <a href="https://github.com/pytorch/pytorch">PyTorch repo</a></li>
+<li><a href="./cs2/overall_analysis.ipynb">Case Study 2</a>: The target is the <a href="https://github.com/TheBloke/text-generation-webui">TheBloke/text-generation-webui repo</a></li>
+</ul>
+<p>The SBOMs generated by the tools were analyzed using the <a href="https://github.com/interlynk-io/sbomqs">sbomqs</a> tool. The analysis results can be found on the pages dedicated to each case study.</p>
+<p>The evaluation of SBOMs involves five categories in the scoring system, <strong>NTIA-minimum-elements</strong>, <strong>Structural</strong>, <strong>Semantic</strong>, <strong>Quality</strong>, and <strong>Sharing</strong>. The score is calculated based on the number of elements in each category, and the higher the score, the more consumable the SBOMs should be. More details about the sbomqs SBOM quality check can be found <a href="https://github.com/interlynk-io/sbomqs/blob/main/Features.md">here</a>.</p>
+<p>The following table shows the features used to calculate each category’s score.</p>
+<section id="ntia-minimum-elements" class="level3">
+<h3 class="anchored" data-anchor-id="ntia-minimum-elements">NTIA-minimum-elements</h3>
+<p>Includes features that help you understand if your SBOM complies with NTIA minimum element guidelines.</p>
+<table class="table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>comp_with_name</td>
+<td>number of <strong>components that have names</strong> divided by the total components detected</td>
+</tr>
+<tr class="even">
+<td>comp_with_supplier</td>
+<td>number of <strong>components that have supplier</strong> divided by the total components detected</td>
+</tr>
+<tr class="odd">
+<td>comp_with_uniq_ids</td>
+<td>number of <strong>components that have unique ID’s</strong> divided by the total components detected</td>
+</tr>
+<tr class="even">
+<td>comp_with_version</td>
+<td>number of <strong>components that have versions</strong> divided by the total components detected</td>
+</tr>
+<tr class="odd">
+<td>sbom_authors</td>
+<td>doc has authors</td>
+</tr>
+<tr class="even">
+<td>sbom_creation_timestamp</td>
+<td>doc has creation timestamp</td>
+</tr>
+<tr class="odd">
+<td>sbom_dependencies</td>
+<td>doc has relationships</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="structural" class="level3">
+<h3 class="anchored" data-anchor-id="structural">Structural</h3>
+<p>It checks if the SBOM complies with the underlying specifications, be it SPDX or CycloneDX</p>
+<table class="table">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>sbom_parsable</td>
+<td>provided sbom is parsable</td>
+</tr>
+<tr class="even">
+<td>sbom_spec</td>
+<td>provided sbom is in a supported sbom format of spdx, cyclonedx</td>
+</tr>
+<tr class="odd">
+<td>sbom_spec_file_format</td>
+<td>provided sbom should be in supported file format for spec: json and version: json, yaml, rdf, tag-value</td>
+</tr>
+<tr class="even">
+<td>sbom_spec_version</td>
+<td>provided sbom should be in supported spec version for spec: SPDX-2.3 and versions: SPDX-2.1, SPDX-2.2, SPDX-2.3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="semantic" class="level3">
+<h3 class="anchored" data-anchor-id="semantic">Semantic</h3>
+<p>It checks the meaning of SBOM fields specific to their standard.</p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>comp_with_checksums</td>
+<td>number of <strong>components that have checksums</strong> divided by the total components detected</td>
+</tr>
+<tr class="even">
+<td>comp_with_licenses</td>
+<td>number of <strong>components that have licenses</strong> divided by the total components detected</td>
+</tr>
+<tr class="odd">
+<td>sbom_required_fields</td>
+<td><strong>Doc Fields</strong>:(true or false) <strong>Pkg Fields</strong>:(true or false)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quality" class="level3">
+<h3 class="anchored" data-anchor-id="quality">Quality</h3>
+<p>It helps determine the quality of the data present in the sbom.</p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>comp_valid_licenses</td>
+<td>number of <strong>components that have valid licenses</strong> divided by the total components detected</td>
+</tr>
+<tr class="even">
+<td>comp_with_any_vuln_lookup_id</td>
+<td>number of <strong>components that have any lookup id</strong> divided by the total components detected</td>
+</tr>
+<tr class="odd">
+<td>comp_with_deprecated_licenses</td>
+<td>number of <strong>components that have deprecated licenses</strong> divided by the total components detected</td>
+</tr>
+<tr class="even">
+<td>comp_with_multi_vuln_lookup_id</td>
+<td>number of <strong>components that have multiple lookup id</strong> divided by the total components detected</td>
+</tr>
+<tr class="odd">
+<td>comp_with_primary_purpose</td>
+<td>number of <strong>components that have primary purpose specified</strong> divided by the total components detected</td>
+</tr>
+<tr class="even">
+<td>comp_with_restrictive_licenses</td>
+<td>number of <strong>components that have restricted licenses</strong> divided by the total components detected</td>
+</tr>
+<tr class="odd">
+<td>sbom_with_creator_and_version</td>
+<td>number of <strong>components that have creator and version</strong> divided by the total components detected</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sharing" class="level3">
+<h3 class="anchored" data-anchor-id="sharing">Sharing</h3>
+<p>It helps determine if the SBOM can be shared.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>sbom_sharable</td>
+<td>doc has a sharable license</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="other-tools-used-to-support-the-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="other-tools-used-to-support-the-analysis">Other tools used to support the analysis</h2>
+<ul>
+<li>SBOM Validation tool: <a href="https://github.com/spdx/spdx-online-tools">SPDX Online Tools</a></li>
+<li>SBOM Conversion tool: <a href="https://github.com/spdx/tools-python">pyspdxtools</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

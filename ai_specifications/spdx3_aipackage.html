@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>sbom-analysis - SPDX 3.0 AI Package</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="sbom-analysis - SPDX 3.0 AI Package">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="sbom-analysis">
+<meta name="twitter:title" content="sbom-analysis - SPDX 3.0 AI Package">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">sbom-analysis</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sboms" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">SBOMs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sboms">    
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/core.html" rel="" target="">
+ <span class="dropdown-text">Core Functions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/spdx_example.html" rel="" target="">
+ <span class="dropdown-text">Analyzing SPDX Example SBOM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/minimum_elements.html" rel="" target="">
+ <span class="dropdown-text">Minimum SBOM Elements</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Microsoft SBOMTool</li>
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/microsoft_sbomtool_overview.html" rel="" target="">
+ <span class="dropdown-text">General Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/frameworks_getting_started.html" rel="" target="">
+ <span class="dropdown-text">[Case Studies]</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tool-analysis" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tool Analysis</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tool-analysis">    
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/introduction.html" rel="" target="">
+ <span class="dropdown-text">Getting Started</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/tools_overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">Overall Analysis</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">[Case Studies]</li>
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/cs1/overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">• repo:pytorch/pytorch</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ai-specifications" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">AI Specifications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ai-specifications">    
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/hugging_face_model_cards.html" rel="" target="">
+ <span class="dropdown-text">Hugging Face Model Cards</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/spdx3_aipackage.html" rel="" target="">
+ <span class="dropdown-text">SPDX3 AIPackage</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai_specifications/spdx3_aipackage.html">SPDX3 AIPackage</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai_specifications/hugging_face_model_cards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hugging Face Model Cards</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai_specifications/spdx3_aipackage.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">SPDX3 AIPackage</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#brief-introduction" id="toc-brief-introduction" class="nav-link active" data-scroll-target="#brief-introduction">Brief Introduction</a>
+  <ul class="collapse">
+  <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties">Properties</a></li>
+  <li><a href="#external-properties-restrictions" id="toc-external-properties-restrictions" class="nav-link" data-scroll-target="#external-properties-restrictions">External properties restrictions</a></li>
+  </ul></li>
+  <li><a href="#spdx3.0-ai-package-and-hugging-face-model-cards-hfmc" id="toc-spdx3.0-ai-package-and-hugging-face-model-cards-hfmc" class="nav-link" data-scroll-target="#spdx3.0-ai-package-and-hugging-face-model-cards-hfmc">SPDX3.0 AI Package and Hugging Face Model Cards (HFMC)</a>
+  <ul class="collapse">
+  <li><a href="#energy_consumption" id="toc-energy_consumption" class="nav-link" data-scroll-target="#energy_consumption">energy_consumption</a></li>
+  <li><a href="#standardcompliance" id="toc-standardcompliance" class="nav-link" data-scroll-target="#standardcompliance">standardCompliance</a></li>
+  <li><a href="#limitation" id="toc-limitation" class="nav-link" data-scroll-target="#limitation">Limitation</a></li>
+  <li><a href="#typeofmodel" id="toc-typeofmodel" class="nav-link" data-scroll-target="#typeofmodel">TypeOfModel</a></li>
+  <li><a href="#informationabouttraining" id="toc-informationabouttraining" class="nav-link" data-scroll-target="#informationabouttraining">InformationAboutTraining</a></li>
+  <li><a href="#informationaboutapplication" id="toc-informationaboutapplication" class="nav-link" data-scroll-target="#informationaboutapplication">InformationAboutApplication</a></li>
+  <li><a href="#hyperparameter" id="toc-hyperparameter" class="nav-link" data-scroll-target="#hyperparameter">hyperparameter</a></li>
+  <li><a href="#modeldatapreprocessing" id="toc-modeldatapreprocessing" class="nav-link" data-scroll-target="#modeldatapreprocessing">modelDataPreprocessing</a></li>
+  <li><a href="#modelexplainability" id="toc-modelexplainability" class="nav-link" data-scroll-target="#modelexplainability">ModelExplainability</a></li>
+  <li><a href="#sensitivepersonalinformation" id="toc-sensitivepersonalinformation" class="nav-link" data-scroll-target="#sensitivepersonalinformation">SensitivePersonalInformation</a></li>
+  <li><a href="#metricdecisionthreshold" id="toc-metricdecisionthreshold" class="nav-link" data-scroll-target="#metricdecisionthreshold">metricDecisionThreshold</a></li>
+  <li><a href="#metric" id="toc-metric" class="nav-link" data-scroll-target="#metric">metric</a></li>
+  <li><a href="#domain" id="toc-domain" class="nav-link" data-scroll-target="#domain">domain</a></li>
+  <li><a href="#autonomytype" id="toc-autonomytype" class="nav-link" data-scroll-target="#autonomytype">AutonomyType</a></li>
+  <li><a href="#safetyriskassessment" id="toc-safetyriskassessment" class="nav-link" data-scroll-target="#safetyriskassessment">SafetyRiskAssessment</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nd-crane/sbom-analysis/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SPDX 3.0 AI Package</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<section id="brief-introduction" class="level2">
+<h2 class="anchored" data-anchor-id="brief-introduction">Brief Introduction</h2>
+<p>AIPackage provides information about the fields in the AI package profile.</p>
+<p>It refers to metadata information that can be added to a package to describe an <strong>AI application</strong> or <strong>trained AI model</strong>.</p>
+<p>The AIPackage is instanciable class wichi is a <code>SubclassOf</code> <strong>/Software/Package</strong>.</p>
+<p>Here is an example of the package class in jsonld serialization on the 3.0 SPDX version https://github.com/spdx/spdx-3-model/blob/main/serialization/json_ld/examples/package.jsonld</p>
+<section id="properties" class="level3">
+<h3 class="anchored" data-anchor-id="properties">Properties</h3>
+<ul>
+<li>energyConsumption
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+<li>maxCount: 1</li>
+</ul></li>
+<li>standardCompliance
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>limitation
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+<li>maxCount: 1</li>
+</ul></li>
+<li>typeOfModel
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>informationAboutTraining
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+<li>maxCount: 1</li>
+</ul></li>
+<li>informationAboutApplication
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+<li>maxCount: 1</li>
+</ul></li>
+<li>hyperparameter
+<ul>
+<li>type: /Core/DictionaryEntry</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>modelDataPreprocessing
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>modelExplainability
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>sensitivePersonalInformation
+<ul>
+<li>type: PresenceType</li>
+<li>minCount: 0</li>
+<li>maxCount: 1</li>
+</ul></li>
+<li>metricDecisionThreshold
+<ul>
+<li>type: /Core/DictionaryEntry</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>metric
+<ul>
+<li>type: /Core/DictionaryEntry</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>domain
+<ul>
+<li>type: xsd:string</li>
+<li>minCount: 0</li>
+</ul></li>
+<li>autonomyType
+<ul>
+<li>type: PresenceType</li>
+<li>minCount: 0</li>
+<li>maxCount: 1</li>
+</ul></li>
+<li>safetyRiskAssessment
+<ul>
+<li>type: SafetyRiskAssessmentType</li>
+<li>minCount: 0</li>
+<li>maxCount: 1</li>
+</ul></li>
+</ul>
+</section>
+<section id="external-properties-restrictions" class="level3">
+<h3 class="anchored" data-anchor-id="external-properties-restrictions">External properties restrictions</h3>
+<ul>
+<li>/Core/Artifact/suppliedBy
+<ul>
+<li>minCount: 1</li>
+</ul></li>
+<li>/Software/Package/downloadLocation
+<ul>
+<li>minCount: 1</li>
+</ul></li>
+<li>/Software/Package/packageVersion
+<ul>
+<li>minCount: 1</li>
+</ul></li>
+<li>/Software/SoftwareArtifact/purpose
+<ul>
+<li>minCount: 1</li>
+</ul></li>
+<li>/Core/Artifact/releaseTime
+<ul>
+<li>minCount: 1</li>
+</ul></li>
+</ul>
+<p>In the SPDX repo we can find a code to generate a object from the AIPackage Class https://github.com/spdx/tools-python/blob/main/src/spdx_tools/spdx3/model/ai/ai_package.py.</p>
+</section>
+</section>
+<section id="spdx3.0-ai-package-and-hugging-face-model-cards-hfmc" class="level2">
+<h2 class="anchored" data-anchor-id="spdx3.0-ai-package-and-hugging-face-model-cards-hfmc">SPDX3.0 AI Package and Hugging Face Model Cards (HFMC)</h2>
+<p>The idea is to compare the information in the SPDX 3.0 AI package with the information in the Hugging Face Model Cards to verify their consistency or alignment.</p>
+<section id="energy_consumption" class="level3">
+<h3 class="anchored" data-anchor-id="energy_consumption">energy_consumption</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>energy_consumption</code> captures the amount of energy needed to train and operate the AI model. This value is also known as training energy consumption or inference energy consumption.</li>
+<li><strong>HFMC:</strong> <code>Environmental Impact</code> Section in HFMC summarizes the information necessary to calculate environmental impacts such as electricity usage and carbon emissions.</li>
+</ul>
+</section>
+<section id="standardcompliance" class="level3">
+<h3 class="anchored" data-anchor-id="standardcompliance">standardCompliance</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>StandardCompliance</code> captures a standard that the AI software complies with. This includes both published and unpublished standards, for example ISO, IEEE, ETSI etc. The standard could (but not necessarily have to) be used to satisfy a legal or regulatory requirement.</li>
+</ul>
+</section>
+<section id="limitation" class="level3">
+<h3 class="anchored" data-anchor-id="limitation">Limitation</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>limitation</code> captures a limitation of the AI Package (or of the AI models present in the AI package), expressed as free form text. Note that this is not guaranteed to be exhaustive. For instance, a limitation might be that the AI package cannot be used on datasets from a certain demography.</li>
+<li><strong>HFMC:</strong> <code>bias_risks_limitations</code>. This section identifies foreseeable harms, misunderstandings, and technical and sociotechnical limitations. It also provides information on warnings and potential mitigations.</li>
+</ul>
+</section>
+<section id="typeofmodel" class="level3">
+<h3 class="anchored" data-anchor-id="typeofmodel">TypeOfModel</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>typeOfModel</code> records the type of the AI model(s) used in the software. For instance, if it is a supervised model, unsupervised model, reinforcement learning model or a combination of those.</li>
+<li><strong>HFMC:</strong> <code>model_description:model_type</code> You can name the “type” as Supervision/Learning Method, Machine Learning Type, and Modality.</li>
+</ul>
+</section>
+<section id="informationabouttraining" class="level3">
+<h3 class="anchored" data-anchor-id="informationabouttraining">InformationAboutTraining</h3>
+<ul>
+<li><p><strong>SPDX3:</strong> <code>informationAboutTraining</code> describes the specific steps involved in the training of the AI model. For example, it can be specified whether supervised fine-tuning or active learning is used as part of training the model.</p></li>
+<li><p><strong>HFMC:</strong> <code>finetuned_from</code> If this model has another model as its base, link to that model here.</p></li>
+<li><p><strong>HFMC:</strong> <code>Training Details</code> is a section that provides information to describe and replicate training, including the training data, the speed and size of training elements, and the environmental impact of training. This relates heavily to the Technical Specifications as well, and content here should link to that section when it is relevant to the training procedure. It is useful for people who want to learn more about the model inputs and training footprint. It is relevant for anyone who wants to know the basics of what the model is learning. Some keys related to training can be used in the metadata YAML section:</p>
+<ul>
+<li><code>training_data</code> Write 1-2 sentences on what the training data is. Ideally this links to a Dataset Card for further information. Links to documentation related to data pre-processing or additional filtering may go here as well as in More Information.</li>
+<li><code>preprocessing</code> Detail tokenization, resizing/rewriting (depending on the modality), etc.</li>
+<li><code>speeds_sizes_times</code> Detail throughput, start/end time, checkpoint sizes, etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="informationaboutapplication" class="level3">
+<h3 class="anchored" data-anchor-id="informationaboutapplication">InformationAboutApplication</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>informationAboutApplication</code> describes any relevant information in free form text about how the AI model is used inside the software, as well as any relevant pre-processing steps, third party APIs etc.</li>
+<li><strong>HFMC:</strong> <code>Technical Specifications</code> This section includes details about the model objective and architecture, and the compute infrastructure. It is useful for people interested in model development. Writing this section usually requires the model developer to be directly involved.</li>
+<li><strong>HFMC:</strong> <code>software</code> is a key inside the <code>Technical Specifications</code> section that may be used to describe the application.</li>
+</ul>
+</section>
+<section id="hyperparameter" class="level3">
+<h3 class="anchored" data-anchor-id="hyperparameter">hyperparameter</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>hyperparameter</code> Records a hyperparameter used to build the AI model contained in the AI package.</li>
+<li><strong>HFMC:</strong> <code>Training Details</code> is a section that provides information to describe and replicate training, including the training data, the speed and size of training elements, and the environmental impact of training. This relates heavily to the Technical Specifications as well, and content here should link to that section when it is relevant to the training procedure. It is useful for people who want to learn more about the model inputs and training footprint. It is relevant for anyone who wants to know the basics of what the model is learning. Some keys related to training can be used in the metadata YAML section:</li>
+</ul>
+</section>
+<section id="modeldatapreprocessing" class="level3">
+<h3 class="anchored" data-anchor-id="modeldatapreprocessing">modelDataPreprocessing</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>modelDataPreprocessing</code> Describes all the preprocessing steps applied to the training data before the model training.</li>
+<li><strong>HFMC:</strong> <code>preprocessing</code> Detail tokenization, resizing/rewriting (depending on the modality), etc.</li>
+</ul>
+</section>
+<section id="modelexplainability" class="level3">
+<h3 class="anchored" data-anchor-id="modelexplainability">ModelExplainability</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>modelExplainability</code> is a free form text that lists the different explainability mechanisms (such as SHAP, or other model specific explainability mechanisms) that can be used to explain the model.</li>
+<li><strong>HFMC:</strong> <code>model_examination</code> This is an experimental section some developers are beginning to add, where work on explainability/interpretability may go.</li>
+</ul>
+</section>
+<section id="sensitivepersonalinformation" class="level3">
+<h3 class="anchored" data-anchor-id="sensitivepersonalinformation">SensitivePersonalInformation</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>sensitivePersonalInformation</code> notes if sensitive personal information is used in the training or inference of the AI models. This might include biometric data, addresses or other data that can be used to infer a person’s identity.</li>
+<li><strong>HFMC:</strong> None</li>
+</ul>
+</section>
+<section id="metricdecisionthreshold" class="level3">
+<h3 class="anchored" data-anchor-id="metricdecisionthreshold">metricDecisionThreshold</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>metricDecisionThreshold</code> Each metric might be computed based on a decision threshold. For instance, precision or recall is typically computed by checking if the probability of the outcome is larger than 0.5. Each decision threshold should match with a metric field defined in the AI Package.</li>
+<li><strong>HFMC:</strong> None</li>
+</ul>
+</section>
+<section id="metric" class="level3">
+<h3 class="anchored" data-anchor-id="metric">metric</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>metric</code> Metric records the measurement with which the AI model was evaluated. This makes statements about the prediction quality including uncertainty, accuracy, characteristics of the tested population, quality, fairness, explainability, robustness etc.</li>
+<li><strong>HFMC:</strong> <code>testing_metrics</code> What metrics will be used for evaluation in light of tradeoffs between different errors?</li>
+</ul>
+</section>
+<section id="domain" class="level3">
+<h3 class="anchored" data-anchor-id="domain">domain</h3>
+<ul>
+<li><strong>SPDX3:</strong> Domain describes the domain in which the AI model contained in the AI software can be expected to operate successfully. Examples include computer vision, natural language etc.</li>
+<li><strong>HFMC:</strong> ?? <code>testing_factors</code> What are the foreseeable characteristics that will influence how the model behaves? This includes domain and context, as well as population subgroups. Evaluation should ideally be disaggregated across factors in order to uncover disparities in performance.</li>
+</ul>
+</section>
+<section id="autonomytype" class="level3">
+<h3 class="anchored" data-anchor-id="autonomytype">AutonomyType</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>autonomyType</code> indicates if a human is involved in any of the decisions of the AI software or if that software is fully automatic.</li>
+<li><strong>HFMC:</strong> NOASSERTION</li>
+</ul>
+</section>
+<section id="safetyriskassessment" class="level3">
+<h3 class="anchored" data-anchor-id="safetyriskassessment">SafetyRiskAssessment</h3>
+<ul>
+<li><strong>SPDX3:</strong> <code>safetyRiskAssessment</code> categorizes the safety risk impact of the AI software in accordance with Article 20 of EC Regulation No 765/2008.</li>
+<li><strong>HFMC:</strong> <code>bias_risks_limitations</code>. This section identifies foreseeable harms, misunderstandings, and technical and sociotechnical limitations. It also provides information on warnings and potential mitigations.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

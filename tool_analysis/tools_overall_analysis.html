@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>sbom-analysis - Tools overall analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="sbom-analysis - Tools overall analysis">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://nd-crane.github.io/sbom-analysis/figs/logos/syft.png">
+<meta property="og:site-name" content="sbom-analysis">
+<meta property="og:image:height" content="361">
+<meta property="og:image:width" content="271">
+<meta name="twitter:title" content="sbom-analysis - Tools overall analysis">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://nd-crane.github.io/sbom-analysis/figs/logos/syft.png">
+<meta name="twitter:image-height" content="361">
+<meta name="twitter:image-width" content="271">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">sbom-analysis</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sboms" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">SBOMs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sboms">    
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/core.html" rel="" target="">
+ <span class="dropdown-text">Core Functions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/spdx_example.html" rel="" target="">
+ <span class="dropdown-text">Analyzing SPDX Example SBOM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/minimum_elements.html" rel="" target="">
+ <span class="dropdown-text">Minimum SBOM Elements</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Microsoft SBOMTool</li>
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/microsoft_sbomtool_overview.html" rel="" target="">
+ <span class="dropdown-text">General Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sbom-basic/frameworks_getting_started.html" rel="" target="">
+ <span class="dropdown-text">[Case Studies]</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tool-analysis" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tool Analysis</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tool-analysis">    
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/introduction.html" rel="" target="">
+ <span class="dropdown-text">Getting Started</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/tools_overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">Overall Analysis</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">[Case Studies]</li>
+        <li>
+    <a class="dropdown-item" href="../tool_analysis/cs1/overall_analysis.html" rel="" target="">
+ <span class="dropdown-text">• repo:pytorch/pytorch</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ai-specifications" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">AI Specifications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-ai-specifications">    
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/hugging_face_model_cards.html" rel="" target="">
+ <span class="dropdown-text">Hugging Face Model Cards</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../ai_specifications/spdx3_aipackage.html" rel="" target="">
+ <span class="dropdown-text">SPDX3 AIPackage</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tool_analysis/tools_overall_analysis.html">Overall Analysis</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/tools_overall_analysis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Overall Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">[Case Studies]</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">• repo:pytorch/pytorch</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/overall_analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overall Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Analysis by Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/syft.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syft</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/trivy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trivy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/tern.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tern</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/sbomtool.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Microsoft SBOM Tool</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/gssbom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gh-sbom</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/sbom4python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">sbom4python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/fossa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fossa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tool_analysis/cs1/bom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">bom</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#list-of-sbom-generation-tools" id="toc-list-of-sbom-generation-tools" class="nav-link active" data-scroll-target="#list-of-sbom-generation-tools">List of SBOM generation tools</a></li>
+  <li><a href="#syft" id="toc-syft" class="nav-link" data-scroll-target="#syft">Syft</a></li>
+  <li><a href="#tern" id="toc-tern" class="nav-link" data-scroll-target="#tern">Tern</a></li>
+  <li><a href="#trivy" id="toc-trivy" class="nav-link" data-scroll-target="#trivy">Trivy</a></li>
+  <li><a href="#fossa" id="toc-fossa" class="nav-link" data-scroll-target="#fossa">Fossa</a></li>
+  <li><a href="#bom" id="toc-bom" class="nav-link" data-scroll-target="#bom">bom</a></li>
+  <li><a href="#microsoft-sbom-tool" id="toc-microsoft-sbom-tool" class="nav-link" data-scroll-target="#microsoft-sbom-tool">Microsoft SBOM Tool</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nd-crane/sbom-analysis/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tools overall analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="list-of-sbom-generation-tools" class="level2">
+<h2 class="anchored" data-anchor-id="list-of-sbom-generation-tools">List of SBOM generation tools</h2>
+<div class="border">
+<ul>
+<li><p><a href="#syft">Syft</a></p></li>
+<li><p><a href="#tern">Tern</a></p></li>
+<li><p><a href="#fossa">Fossa</a></p></li>
+<li><p><a href="#trivy">Trivy</a></p></li>
+<li><p><a href="#bom">Bom</a></p></li>
+<li><p><a href="#microsoft-sbom-tool">Microsoft SBOM Ttool</a></p></li>
+<li><p><a href="#sbom4python">Sbom4python</a></p></li>
+<li><p><a href="#gh-sbom">gh-sbom</a></p></li>
+<li><p><a href="#cdxgen">CycloneDX Generator</a></p></li>
+<li><p><a href="#scancode-toolkit">ScanCode toolkit</a></p></li>
+<li><p><a href="#cosign">Cosign</a></p></li>
+<li><p><a href="#augur">Augur</a></p></li>
+<li><p><a href="#spdx-sbom-generator">SPDX SBOM Generator</a></p></li>
+<li><p><a href="#oss-review-toolkit">OSS Review Toolkit</a></p></li>
+<li><p><a href="#swiftbom">SwiftBOM</a></p></li>
+</ul>
+</div>
+<p><br>
+&nbsp;&nbsp;Some of the features we used to analyze the SBOM generation tools were based on the framework for Evaluating SBOM Tools in <a href="https://fossa.com/blog/framework-evaluating-sbom-tools/">fossa</a>, such as:<br>
+<br>
+&nbsp;&nbsp;1. What standards it supports (SPDX, Cyclone DX)<br>
+&nbsp;&nbsp;2. Compliance with the Cyber Security Executive Order<br>
+&nbsp;&nbsp;3. Data Field Coverage<br>
+&nbsp;&nbsp;4. Automation Support<br>
+&nbsp;&nbsp;5. Programming Language Support<br>
+&nbsp;&nbsp;6. Dependency Recognition Depth<br>
+<br>
+We classified the tools following the <a href="https://www.ntia.gov/files/ntia/publications/ntia_sbom_tooling_taxonomy-2021mar30.pdf">SBOM Tool Classification Taxonomy</a> document by the NTIA SBOM Formats &amp; Tooling Working Group.</p>
+</section>
+<section id="syft" class="level2" style="color: #003366">
+<h2 class="anchored" data-anchor-id="syft">Syft</h2>
+</section>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Logo</strong></td>
+<td><img src="../figs/logos/syft.png" class="img-fluid" style="width:10.0%"></td>
+</tr>
+<tr class="even">
+<td><strong>Version</strong></td>
+<td>0.83.1</td>
+</tr>
+<tr class="odd">
+<td><strong>License</strong></td>
+<td>Apache License 2.0</td>
+</tr>
+<tr class="even">
+<td><strong>Language</strong></td>
+<td>Go</td>
+</tr>
+<tr class="odd">
+<td><strong>Classification</strong></td>
+<td>Author after Creation (Audit tool)</td>
+</tr>
+<tr class="even">
+<td><strong>Functionality</strong></td>
+<td>Generates SBOMs for container images, filesystems, archives, and more to discover packages and librariesSupports OCI, Docker and Singularity image formatsLinux distribution identificationWorks seamlessly with Grype (a fast, modern vulnerability scanner)Able to create signed SBOM attestations using the in-toto specificationConvert between SBOM formats, such as CycloneDX, SPDX, and Syft’s own format.</td>
+</tr>
+<tr class="odd">
+<td><strong>Locations</strong></td>
+<td><a href="https://github.com/anchore/syft">https://github.com/anchore/syft</a></td>
+</tr>
+<tr class="even">
+<td><strong>Automation support</strong></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Fields</strong></td>
+<td>This tool assumes project metadata from the repo including name and license. It does identify find project version.</td>
+</tr>
+<tr class="even">
+<td><strong>Package Depth</strong></td>
+<td>This tool identifies dependencies between packages at the top level.</td>
+</tr>
+<tr class="odd">
+<td><strong>Relationships</strong></td>
+<td>The tool could identify relationships between the packages and their metadata files. Still, it could not assign the correct relationship type for the dependencies and instead assiged the type <code>other</code> between all packages and files.</td>
+</tr>
+<tr class="even">
+<td><strong>Support Specifications</strong></td>
+<td><strong>SPDX</strong><br>Versions: <code>2.2, 2.3</code><br>Formats: <code>JSON, tag-value</code><br><strong>CycloneDX</strong><br>Versions: <code>1.4</code><br>Formats: <code>JSON, XML</code></td>
+</tr>
+<tr class="odd">
+<td><strong>How to use</strong></td>
+<td>Container Images:<br><code>$ syft {image} -o {format}={output-file}</code><br>Directories:<br><code>$ syft {package-dir} -o {format}={output-file}</code></td>
+</tr>
+<tr class="even">
+<td><strong>Installation</strong></td>
+<td>Instructions: <a href="https://github.com/anchore/syft#installation">https://github.com/anchore/syft#installation</a><br>It requires sudo: No<br>It was installed: Yes<br></td>
+</tr>
+<tr class="odd">
+<td><strong>Testing</strong></td>
+<td>It was tested: Yes<br>Comments:</td>
+</tr>
+</tbody>
+</table>
+<section id="tern" class="level2" style="color: #003366">
+<h2 class="anchored" data-anchor-id="tern">Tern</h2>
+</section>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Logo</strong></td>
+<td><img src="../figs/logos/tern.png" class="img-fluid" style="width:10.0%"></td>
+</tr>
+<tr class="even">
+<td><strong>Version</strong></td>
+<td>2.12.0</td>
+</tr>
+<tr class="odd">
+<td><strong>License</strong></td>
+<td>BSD-2-Clause license</td>
+</tr>
+<tr class="even">
+<td><strong>Language</strong></td>
+<td>Python3 with a smattering of shell scripts</td>
+</tr>
+<tr class="odd">
+<td><strong>Classification</strong></td>
+<td>Author after Creation (Audit tool)</td>
+</tr>
+<tr class="even">
+<td><strong>Functionality</strong></td>
+<td>Tern is an inspection tool to find the metadata of the packages installed in a container image. The overall operation looks like this: <br>- 1) It analyzes the first layer of the container image to collect information like distro type, package format, and package managers; <br>- 2) It then executes scripts from the “command library” in a chroot environment to collect information about packages installed in that layer; <br>- 3) With that information as a starting point, it continues to analyze the subsequent layers in the container image; <br>- 4) Once done, it generates a report of packages with their metadata. Several formats are available. The report, in its default format, provides a layer by layer, explanation of the various software components imported. If a Dockerfile is provided, the report indicates the Dockerfile lines corresponding to each of the file system layers.</td>
+</tr>
+<tr class="odd">
+<td><strong>Locations</strong></td>
+<td><a href="https://github.com/tern-tools/tern">https://github.com/tern-tools/tern</a></td>
+</tr>
+<tr class="even">
+<td><strong>Automation support</strong></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Fields</strong></td>
+<td>This tool assumes project metadata from the repo including name and license. It does identify find project version.</td>
+</tr>
+<tr class="even">
+<td><strong>Package Depth</strong></td>
+<td>This tool also identifies dependencies between packages below the top level.</td>
+</tr>
+<tr class="odd">
+<td><strong>Relationships</strong></td>
+<td>In addition to contains and describes, there are two relationship types generatedFrom and hasPrerequisite.</td>
+</tr>
+<tr class="even">
+<td><strong>Support Specifications</strong></td>
+<td><strong>SPDX</strong><br>Versions: <code>2.1, 2.2</code><br>Formats: <code>JSON, tag-value</code><br><strong>CycloneDX</strong><br>Versions: <code>1.4</code><br>Formats: <code>JSON</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Functions</strong></td>
+<td><code>report</code><br><code>lock</code></td>
+</tr>
+<tr class="even">
+<td><strong>How to use</strong></td>
+<td>Container Images:<br><code>$ tern report -f {sbom-format} -i {image}:{version} -o {output-file}</code><br>Docker Files:<br><code>$  tern report -d {path_to_dockerfile}</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Installation</strong></td>
+<td>Instructions: <a href="https://github.com/tern-tools/tern#getting-started">https://github.com/tern-tools/tern#getting-started</a><br>It requires sudo: Yes<br>It was installed: No<br></td>
+</tr>
+<tr class="even">
+<td><strong>Testing</strong></td>
+<td>It was tested: Yes<br>Comments: I could run Tern by building a container with the Dockerfile provided.</td>
+</tr>
+</tbody>
+</table>
+<section id="trivy" class="level2" style="color: #003366">
+<h2 class="anchored" data-anchor-id="trivy">Trivy</h2>
+</section>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Logo</strong></td>
+<td><img src="../figs/logos/trivy.png" class="img-fluid" style="width:10.0%"></td>
+</tr>
+<tr class="even">
+<td><strong>Version</strong></td>
+<td>0.42.1</td>
+</tr>
+<tr class="odd">
+<td><strong>License</strong></td>
+<td>Apache-2.0 license</td>
+</tr>
+<tr class="even">
+<td><strong>Language</strong></td>
+<td>Go</td>
+</tr>
+<tr class="odd">
+<td><strong>Classification</strong></td>
+<td>Author during Build, Author after Creation (Audit tool), Consume(Analyze)</td>
+</tr>
+<tr class="even">
+<td><strong>Functionality</strong></td>
+<td>Scan the target for vulnerabilities, misconfigurations, secrets, and licenses. Targets can be <code>Container Image</code>, <code>Filesystem</code>, <code>Rootfs</code>, <code>Git Repository</code>, <code>Virtual Machine Image</code>, <code>Kubernetes</code>, <code>AWS</code>, and <code>SBOM</code>.<br>Trivy can take a CycloneDX(JSON) or SPDX(tag-value or JSON) SBOM as an input and scan for vulnerabilities. <br>The Trivy AWS CLI allows you to scan your AWS account for misconfigurations. You can either run the CLI locally or integrate it into your CI/CD pipeline.</td>
+</tr>
+<tr class="odd">
+<td><strong>Locations</strong></td>
+<td><a href="https://github.com/aquasecurity/trivy">https://github.com/aquasecurity/trivy</a>, <a href="https://aquasecurity.github.io/trivy/v0.43">https://aquasecurity.github.io/trivy/v0.43</a>, <a href="https://aquasecurity.github.io/trivy/v0.43/docs/target/aws/">https://aquasecurity.github.io/trivy/v0.43/docs/target/aws/</a></td>
+</tr>
+<tr class="even">
+<td><strong>Automation support</strong></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Fields</strong></td>
+<td>This tool assumes project metadata from the repo including name and license. It does identify find project version.</td>
+</tr>
+<tr class="even">
+<td><strong>Package Depth</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Relationships</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Support Specifications</strong></td>
+<td><strong>SPDX</strong><br>Versions: <code>2.3</code><br>Formats: <code>JSON, tag-value</code><br><strong>CycloneDX</strong><br>Versions: <code>1.4</code><br>Formats: <code>JSON</code></td>
+</tr>
+<tr class="odd">
+<td><strong>How to use</strong></td>
+<td>Directories:<br><code>$ trivy fs --list-all-pkgs  --format {sbom-format} --output {output-file} {package-dir}</code><br>Container Images:<br><code>$ trivy image --list-all-pkgs --format {sbom-format} --output {output-file} {image}:{version}</code><br>Repository:<br><code>$ trivy repo --list-all-pkgs --format {sbom-format} --output {output-file} {repository}</code></td>
+</tr>
+<tr class="even">
+<td><strong>Installation</strong></td>
+<td>Instructions: <a href="https://aquasecurity.github.io/trivy/v0.43/getting-started/installation/">https://aquasecurity.github.io/trivy/v0.43/getting-started/installation/</a><br>It requires sudo: No<br>It was installed: Yes<br></td>
+</tr>
+<tr class="odd">
+<td><strong>Testing</strong></td>
+<td>It was tested: Yes<br></td>
+</tr>
+</tbody>
+</table>
+<section id="fossa" class="level2" style="color: #003366">
+<h2 class="anchored" data-anchor-id="fossa">Fossa</h2>
+</section>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Logo</strong></td>
+<td><img src="../figs/logos/fossa.png" class="img-fluid" style="width:10.0%"></td>
+</tr>
+<tr class="even">
+<td><strong>Version</strong></td>
+<td>3.8.2</td>
+</tr>
+<tr class="odd">
+<td><strong>License</strong></td>
+<td>MPL-2.0 license</td>
+</tr>
+<tr class="even">
+<td><strong>Language</strong></td>
+<td>Java</td>
+</tr>
+<tr class="odd">
+<td><strong>Classification</strong></td>
+<td>Author during Build, Author after Creation (Audit tool), Consume(View, Analyze), Transform(Translate, Tool Integration)</td>
+</tr>
+<tr class="even">
+<td><strong>Functionality</strong></td>
+<td>It heps to track, manage, and remediate issues with open source to:<br>1. Stay compliant with software licenses and generate required attribution documents;<br>2. Enforce usage and licensing policies throughout your CI/CD workflow;<br>3. Monitor and remediate security vulnerabilities;<br>4. Flag code quality issues and outdated components proactively.</td>
+</tr>
+<tr class="odd">
+<td><strong>Locations</strong></td>
+<td><a href="https://app.fossa.com/">https://app.fossa.com/</a>, <a href="https://app.fossa.io">https://app.fossa.io</a>, <a href="https://docs.fossa.com/docs/getting-started">https://docs.fossa.com/docs/getting-started</a></td>
+</tr>
+<tr class="even">
+<td><strong>Automation support</strong></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Fields</strong></td>
+<td>This tool assumes project metadata from the repo including name and license. It does identify find project version.</td>
+</tr>
+<tr class="even">
+<td><strong>Package Depth</strong></td>
+<td>5 dependency depth levels</td>
+</tr>
+<tr class="odd">
+<td><strong>Relationships</strong></td>
+<td>In addition to contains and describes, there are two relationship types dependsOn and dependsOf.</td>
+</tr>
+<tr class="even">
+<td><strong>Support Specifications</strong></td>
+<td><strong>SPDX</strong><br>Versions: <code>2.3</code><br>Formats: <code>JSON, tag-value</code><br><strong>CycloneDX</strong><br>Versions: <code>1.2, 1.3, 1.4</code><br>Formats: <code>JSON, XML</code></td>
+</tr>
+<tr class="odd">
+<td><strong>How to use</strong></td>
+<td>Online Application:<br>You need to create an account at https://app.fossa.io/account/register than you can navigate to Projects &gt; Add Project to import the project you want to analyze and export the SBOM file. Its possible to analyze code locally with FOSSA CLI, but you still need to connect it to your account and the report is a link to their FOSSA web application, which will load the project and reports to be visualized and exported in .<br>For more details see https://docs.fossa.com/docs/getting-started</td>
+</tr>
+<tr class="even">
+<td><strong>Installation</strong></td>
+<td>Instructions: <a href="https://github.com/fossas/fossa-cli">https://github.com/fossas/fossa-cli</a><br>It requires sudo: No<br>It was installed: Yes<br></td>
+</tr>
+<tr class="odd">
+<td><strong>Testing</strong></td>
+<td>It was tested: Yes<br>Comments: It was tested using FOSSA CLI their online application to export the SBOM file.</td>
+</tr>
+</tbody>
+</table>
+<section id="bom" class="level2" style="color: #003366">
+<h2 class="anchored" data-anchor-id="bom">bom</h2>
+</section>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Logo</strong></td>
+<td><img src="../figs/logos/bom.png" class="img-fluid" style="width:10.0%"></td>
+</tr>
+<tr class="even">
+<td><strong>Version</strong></td>
+<td>v0.5.1</td>
+</tr>
+<tr class="odd">
+<td><strong>License</strong></td>
+<td>Apache-2.0 license</td>
+</tr>
+<tr class="even">
+<td><strong>Language</strong></td>
+<td>Go</td>
+</tr>
+<tr class="odd">
+<td><strong>Classification</strong></td>
+<td>Author after Creation (Audit tool)</td>
+</tr>
+<tr class="even">
+<td><strong>Functionality</strong></td>
+<td>bom is a general-purpose tool that can generate SPDX packages from directories, container images, single files, and other sources. The utility has a built-in license classifier that recognizes the 400+ licenses in the SPDX catalog. Other features include Golang dependency analysis and full .gitignore support when scanning git repositories.</td>
+</tr>
+<tr class="odd">
+<td><strong>Locations</strong></td>
+<td><a href="https://github.com/kubernetes-sigs/bom">https://github.com/kubernetes-sigs/bom</a>, <a href="https://kubernetes-sigs.github.io/bom/">https://kubernetes-sigs.github.io/bom/</a></td>
+</tr>
+<tr class="even">
+<td><strong>Automation support</strong></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Fields</strong></td>
+<td>This tool assumes project metadata from the repo including name and license. It does identify find project version.</td>
+</tr>
+<tr class="even">
+<td><strong>Package Depth</strong></td>
+<td>This tools does not identify any project dependencies</td>
+</tr>
+<tr class="odd">
+<td><strong>Relationships</strong></td>
+<td>This tool only identifies relationships between the project and its files.</td>
+</tr>
+<tr class="even">
+<td><strong>Support Specifications</strong></td>
+<td><strong>SPDX</strong><br>Versions: <code>2.3</code><br>Formats: <code>JSON, tag-value</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Functions</strong></td>
+<td><code>document</code><br><code>generate</code></td>
+</tr>
+<tr class="even">
+<td><strong>How to use</strong></td>
+<td>Container Images:<br><code>$ bom generate -a --format {sbom-format} --output {output-file} -i {image}:{version}</code><br>Directories:<br><code>$ bom generate -a --format {sbom-format} --output {output-file} -d {package-dir}</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Installation</strong></td>
+<td>Instructions: <a href="https://github.com/kubernetes-sigs/bom#installation">https://github.com/kubernetes-sigs/bom#installation</a><br>It requires sudo: Yes<br>It was installed: Yes<br></td>
+</tr>
+<tr class="even">
+<td><strong>Testing</strong></td>
+<td>It was tested: Yes<br>Comments:</td>
+</tr>
+</tbody>
+</table>
+<section id="microsoft-sbom-tool" class="level2" style="color: #003366">
+<h2 class="anchored" data-anchor-id="microsoft-sbom-tool">Microsoft SBOM Tool</h2>
+</section>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Version</strong></td>
+<td>1.1.6</td>
+</tr>
+<tr class="even">
+<td><strong>License</strong></td>
+<td>MIT license</td>
+</tr>
+<tr class="odd">
+<td><strong>Language</strong></td>
+<td>C#</td>
+</tr>
+<tr class="even">
+<td><strong>Classification</strong></td>
+<td>Author after Creation (Audit tool)</td>
+</tr>
+<tr class="odd">
+<td><strong>Functionality</strong></td>
+<td><code>Validate</code> a build artifact using the manifest, and <code>generate</code> a SBOM for all the files in the given build drop folder, and the packages in the components path.</td>
+</tr>
+<tr class="even">
+<td><strong>Locations</strong></td>
+<td><a href="https://github.com/microsoft/sbom-tool">https://github.com/microsoft/sbom-tool</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Automation support</strong></td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td><strong>Data Fields</strong></td>
+<td>This tool assumes project metadata from the repo including name and license.<br>It does identify find project version.<br>No files were detected.</td>
+</tr>
+<tr class="odd">
+<td><strong>Package Depth</strong></td>
+<td>All packages detected by this tool are directly related to the main package.</td>
+</tr>
+<tr class="even">
+<td><strong>Relationships</strong></td>
+<td>All relationships between the project and its packages are of the type <code>dependsOn</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Support Specifications</strong></td>
+<td><strong>SPDX</strong><br>Versions: <code>2.2</code><br>Formats: <code>json</code></td>
+</tr>
+<tr class="even">
+<td><strong>Functions</strong></td>
+<td><code>validate</code><br><code>generate</code></td>
+</tr>
+<tr class="odd">
+<td><strong>How to use</strong></td>
+<td>Directories:<br><code>$ sbom-tool generate -b {output-dir} -bc {package-dir} -pn {package-name} -pv {package-version}</code></td>
+</tr>
+<tr class="even">
+<td><strong>Installation</strong></td>
+<td>Instructions: <a href="https://github.com/microsoft/sbom-tool#download-and-installation">https://github.com/microsoft/sbom-tool#download-and-installation</a><br>It requires sudo: No<br>It was installed: Yes<br></td>
+</tr>
+<tr class="odd">
+<td><strong>Testing</strong></td>
+<td>It was tested: Yes<br>Comments:</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
