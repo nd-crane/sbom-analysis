@@ -1,27 +1,29 @@
-[tool.pdm]
-[tool.pdm.dev-dependencies]
-dev = [
-    "-e git+ssh://git@github.com/spdx/tools-python.git@cb680ccfb252e278ed9ffe23bde42487846c54d0#egg=spdx-tools",
-]
-
 [project]
 name = "sbom-analysis"
 version = "0.1.0"
 description = "Generating knowledge graph visualizations to analyze the performance and coverage of several SBOM generation tools"
 authors = [
     {name = "Peter Ainsworth", email = "painswor@nd.edu"},
+    {name = "Priscila Moreira", email = "pmoreira@nd.edu"},
 ]
 dependencies = [
-    "nbdev>=2.3.12",
+    "spdx-tools>=0.8.0",
     "kglab>=0.6.6",
-    "jupyter>=1.0.0",
     "pandas>=1.5.3",
     "networkx>=3.1",
     "setuptools>=67.8.0",
     "plotly>=5.15.0",
     "matplotlib>=3.7.1",
     "seaborn>=0.12.2",
-    "nbformat>=5.9.0",
+    
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.9,<3.11"
 license = {text = "MIT"}
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]  # This is dev dependencies
+dev = [
+    "nbformat>=5.9.0",
+    "nbdev>=2.3.12", 
+    "jupyter>=1.0.0",
+]
