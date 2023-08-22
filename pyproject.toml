@@ -15,15 +15,9 @@ dependencies = [
     "plotly>=5.15.0",
     "matplotlib>=3.7.1",
     "seaborn>=0.12.2",
-    
+    "nbformat>=5.9.0", # dev dependencies
+    "nbdev>=2.3.12",   # dev dependencies
+    "jupyter>=1.0.0",  # dev dependencies
 ]
 requires-python = ">=3.9,<3.11"
 license = {text = "MIT"}
-
-[tool.pdm]
-[tool.pdm.dev-dependencies]  # This is dev dependencies
-dev = [
-    "nbformat>=5.9.0",
-    "nbdev>=2.3.12", 
-    "jupyter>=1.0.0",
-]
